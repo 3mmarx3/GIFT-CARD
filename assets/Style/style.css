@@ -1,3 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --color-dark-main: #150c21;
+  --color-dark-3: #705df2;
+}
+
+body {
+  background: var(--color-dark-main);
+  font-size: 16px;
+}
+
+main {
+  padding: 20px;
+}
+
+.product-tile__clip-path[data-v-db7035ba] {
+  clip-path: polygon(
+    0 48%,
+    9% 48%,
+    18% 65%,
+    27% 49%,
+    36% 72%,
+    45% 58%,
+    55% 70%,
+    64% 58%,
+    73% 86%,
+    82% 48%,
+    91% 63%,
+    100% 70%,
+    100% calc(100% + 1px),
+    0 calc(100% + 1px)
+  );
+  -webkit-clip-path: polygon(
+    0 48%,
+    9% 48%,
+    18% 65%,
+    27% 49%,
+    36% 72%,
+    45% 58%,
+    55% 70%,
+    64% 58%,
+    73% 86%,
+    82% 48%,
+    91% 63%,
+    100% 70%,
+    100% calc(100% + 1px),
+    0 calc(100% + 1px)
+  );
+  background-color: var(--color-dark-3);
+  width: 100%;
+  height: 25px;
+  margin-top: -23px;
+}
+
 /* Google Fonts - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
@@ -344,5 +404,67 @@ a.button {
   }
   .column.is-logo {
     order: 4;
+  }
+}
+
+/* media */
+
+.card_us {
+  height: 40vh;
+  background: #705df2;
+  display: grid;
+  grid-template-rows: 10fr 1fr 1fr;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.product-tile__item-title {
+  padding: 10px;
+  margin: 10px;
+}
+
+.Game {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+.Game_ h2 {
+  color: white;
+  margin: 20px 0;
+}
+
+.card_img {
+  background: url(../img/CODM_oct23-tile.png);
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 992px) {
+  .ads_card {
+    grid-template-columns: 1fr;
+    height: 40vh;
+  }
+
+  .Game {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Game {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .Game {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
