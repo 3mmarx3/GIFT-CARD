@@ -16,7 +16,7 @@ body {
 }
 
 main {
-  padding: 20px;
+  padding: 20px 10vh;
 }
 
 .product-tile__clip-path[data-v-db7035ba] {
@@ -194,7 +194,7 @@ a {
     cursor: pointer;
   }
   .nav .search-box {
-    top: calc(100% + 10px);
+    top: 1vh;
     max-width: calc(100% - 20px);
     right: 50%;
     transform: translateX(50%);
@@ -220,6 +220,8 @@ a {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+  background-position: center center;
+  background-size: cover;
 }
 
 /* footer */
@@ -410,7 +412,7 @@ a.button {
 /* media */
 
 .card_us {
-  height: 40vh;
+  height: 30vh;
   background: #705df2;
   display: grid;
   grid-template-rows: 10fr 1fr 1fr;
@@ -419,7 +421,7 @@ a.button {
 }
 .product-tile__item-title {
   padding: 10px;
-  margin: 10px;
+  text-align: center;
 }
 
 .Game {
@@ -429,7 +431,7 @@ a.button {
 }
 .Game_ h2 {
   color: white;
-  margin: 20px 0;
+  margin: 5vh 0;
 }
 
 .card_img {
@@ -441,6 +443,10 @@ a.button {
 }
 
 @media screen and (max-width: 992px) {
+  main {
+    padding: 20px;
+  }
+
   .ads_card {
     grid-template-columns: 1fr;
     height: 40vh;
@@ -461,7 +467,7 @@ a.button {
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 320px) {
   .Game {
     display: grid;
     grid-template-columns: 1fr;
