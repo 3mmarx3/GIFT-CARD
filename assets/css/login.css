@@ -104,9 +104,9 @@ body {
   width: 100%;
 }
 .bg {
-  background: black;
+  background: url(../img/bg.jpg);
   border-radius: 30px;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   height: 60vh;

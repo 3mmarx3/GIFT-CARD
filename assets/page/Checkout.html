@@ -8,46 +8,24 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="../css/app.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.salla.network/fonts/default.css?v=2.0.3"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.salla.network/fonts/sallaicons.css?v=2.0.3"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/foot.css" />
   </head>
   <body>
     <body class="bg-gray-50">
       <!-- Header with Progress Indicator -->
-      <header class="bg-white shadow-sm">
-        <div class="max-w-5xl mx-auto px-4 py-4">
-          <div class="flex items-center justify-between">
-            <a href="#" class="text-2xl font-bold">NIKE</a>
-            <div class="hidden md:flex items-center space-x-4">
-              <div class="flex items-center">
-                <div
-                  class="w-8 h-8 rounded-full bg-black text-white flex items-center justify-center"
-                >
-                  1
-                </div>
-                <div class="ml-2">Cart</div>
-                <div class="w-16 h-1 bg-black mx-2"></div>
-              </div>
-              <div class="flex items-center">
-                <div
-                  class="w-8 h-8 rounded-full bg-black text-white flex items-center justify-center"
-                >
-                  2
-                </div>
-                <div class="ml-2 font-semibold">Checkout</div>
-                <div class="w-16 h-1 bg-gray-300 mx-2"></div>
-              </div>
-              <div class="flex items-center">
-                <div
-                  class="w-8 h-8 rounded-full bg-gray-300 text-gray-600 flex items-center justify-center"
-                >
-                  3
-                </div>
-                <div class="ml-2">Confirmation</div>
-              </div>
-            </div>
-            <div class="text-sm text-gray-600">Need help? 1-800-806-6453</div>
-          </div>
-        </div>
-      </header>
+      <header id="header_"></header>
 
       <main class="mx-auto px-4 py-8">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -266,11 +244,6 @@
 
               <!-- Product -->
               <div class="flex items-start space-x-4 mb-4 pb-4 border-b">
-                <img
-                  src="https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="Nike Air Max 2024"
-                  class="w-20 h-20 rounded-lg"
-                />
                 <div class="flex-1">
                   <h3 class="font-medium">Nike Air Max 2024</h3>
                   <p class="text-sm text-gray-600">Size: US 10</p>
@@ -364,6 +337,16 @@
           </div>
         </div>
       </section>
+
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      ></script>
+      <script src="../js/header.js"></script>
     </body>
   </body>
 </html>
