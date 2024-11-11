@@ -136,7 +136,6 @@ address {
 }
 
 body {
-  background-color: var(--raisin-black-3);
   line-height: 1.5;
 }
 
@@ -324,185 +323,9 @@ body {
   #HEADER
 \*-----------------------------------*/
 
-.header-top,
-.cart-btn,
-.header-bottom::before,
-.navbar-link::before {
-  display: none;
-}
-
-.header {
-  position: relative;
-  min-height: 1px;
-}
-
-.header-bottom {
-  position: absolute;
-  top: calc(100% - 1px);
-  left: 0;
-  width: 100%;
-  background-color: var(--raisin-black-2);
-  padding-block: 20px;
-  z-index: 4;
-}
-
-.header-bottom.active {
-  position: fixed;
-  top: -85px;
-  animation: slideIn 0.5s var(--cubic-out) forwards;
-}
-
-@keyframes slideIn {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(100%);
-  }
-}
-
-.header-bottom .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  color: var(--white);
-  font-size: 3rem;
-  font-weight: var(--fw-800);
-}
-
-.header-actions {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.search-btn {
-  color: white;
-}
-
-.search-btn ion-icon {
-  --ionicon-stroke-width: 80px;
-}
-
-.nav-toggle-btn {
-  color: var(--white);
-  font-size: 30px;
-  border: 1px solid var(--white);
-  padding: 4px;
-}
-
-.nav-toggle-btn.active .menu,
-.nav-toggle-btn .close {
-  display: none;
-}
-
-.nav-toggle-btn .menu,
-.nav-toggle-btn.active .close {
-  display: block;
-}
-
-.navbar {
-  background-color: var(--eerie-black-1);
-  color: var(--white);
-  position: absolute;
-  top: 100%;
-  right: 0;
-  width: 100%;
-  max-width: 350px;
-  visibility: hidden;
-  max-height: 0;
-  transition: 0.25s var(--cubic-out);
-  overflow: hidden;
-}
-
-.navbar.active {
-  visibility: visible;
-  max-height: 275px;
-  transition-duration: 0.5s;
-}
-
-.navbar-item:not(:last-child) {
-  border-block-end: 1px solid var(--white_15);
-}
-
-.navbar-link {
-  padding: 10px 25px;
-  transition: var(--transition);
-}
-
-.navbar-link:is(:hover, :focus) {
-  background-color: var(--white_10);
-}
-
 /*-----------------------------------*\
   #SEARCH BOX
 \*-----------------------------------*/
-
-.search-container {
-  background-color: var(--rich-black-fogra-29_95);
-  position: fixed;
-  inset: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-inline: 40px;
-  z-index: 6;
-  visibility: hidden;
-  opacity: 0;
-  transition: var(--transition);
-}
-
-.search-container.active {
-  visibility: visible;
-  opacity: 1;
-}
-
-.search-container .input-wrapper {
-  position: relative;
-  max-width: 560px;
-  width: 100%;
-}
-
-.search-container .search-field {
-  color: var(--white);
-  font-size: 2rem;
-  padding: 20px;
-  padding-inline-end: 60px;
-  border-block-end: 3px solid var(--white_10);
-  outline: none;
-  transition: var(--transition);
-}
-
-.search-container .search-field:focus {
-  border-color: var(--light-gray-2);
-}
-
-.search-container .search-field::-webkit-search-cancel-button {
-  display: none;
-}
-
-.search-container .search-submit {
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-  font-size: 25px;
-  color: var(--marigold);
-}
-
-.search-container .search-submit ion-icon {
-  --ionicon-stroke-width: 70px;
-}
-
-.search-container .search-close {
-  position: fixed;
-  inset: 0;
-  cursor: default;
-  z-index: -1;
-}
 
 /*-----------------------------------*\
   #HERO
@@ -1771,4 +1594,123 @@ a.collapsible-title {
   .main-content.w-full.flex-1.lg\:pt-10 {
     margin: 5vh 0;
   }
+}
+
+/*  */
+
+.header-btn__icon {
+  display: flex;
+  height: auto;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: #f8f8f8;
+  border-color: rgb(248 248 248 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: #f8f8f8;
+  background-color: rgb(248 248 248 / var(--tw-bg-opacity));
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  border: none;
+  color: white;
+  background: none;
+}
+i.header-btn__icon.sicon-user,
+i.header-btn__icon.icon.sicon-shopping-bag {
+  font-size: larger;
+}
+
+div#mainnav {
+  direction: rtl;
+}
+
+i.header-btn__icon.sicon-user,
+i.header-btn__icon.icon.sicon-shopping-bag {
+  color: black;
+  font-size: x-large;
+}
+
+.s-button-wrap {
+  background: black;
+}
+
+.product-tile__item-title {
+  color: white;
+  font-weight: 800;
+}
+
+div#s-cart-icon {
+  position: relative;
+}
+
+.s-button-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #027bff;
+}
+
+/*  */
+
+.s-modal-wrapper {
+  display: none;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+}
+
+.s-modal-wrapper.show {
+  display: flex;
+  opacity: 1;
+}
+
+.s-modal-body {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  position: relative;
+  text-align: right;
+}
+
+.s-modal-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.s-button-element {
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  background-color: #007bff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.viwe_card {
+  height: 60vh;
+  background: rebeccapurple;
+  border-radius: 10px;
+  background-position: center center;
+  background-size: cover;
 }

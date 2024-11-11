@@ -5,19 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gamics - Create Manage Matches</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/simple-icons@latest/dist/simple-icons.css"
-    />
 
     <link
       rel="stylesheet"
-      href="https://cdn.assets.salla.network/themes/1660707346/1.56.0/app.css"
+      href="https://cdn.salla.network/fonts/sallaicons.css?v=2.0.3"
     />
+    <link rel="stylesheet" href="./assets/css/foot.css" />
+
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdn.salla.network/fonts/default.css?v=2.0.3"
@@ -26,222 +31,17 @@
       rel="stylesheet"
       href="https://cdn.salla.network/fonts/sallaicons.css?v=2.0.3"
     />
-    <link rel="stylesheet" href="./assets/css/foot.css" />
-    <!-- 
-    - favicon
-  -->
-    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
 
-    <!-- 
-    - custom css link
-  -->
     <link rel="stylesheet" href="./assets/css/style.css" />
-
-    <!-- 
-    - google font link
-  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="./assets/css/foot.css" />
+    <link rel="stylesheet" href="./assets/css/app.css" />
 
     <!-- 
     - preload images
   --></head>
 
   <body>
-    <!--  -->
-    <!--  -->
-    <!--  -->
-
-    <header class="store-header">
-      <div id="mainnav" class="main-nav-container relative bg-white py-4">
-        <div class="inner bg-inherit">
-          <div class="container">
-            <div
-              class="inner__inner flex items-center justify-between gap-4 lg:gap-8"
-            >
-              <div class="flex items-center gap-4 lg:gap-8">
-                <a
-                  class="navbar-brand navbar-brand--main"
-                  href="https://abadystore.com"
-                >
-                  <img
-                    fetchpriority="high"
-                    width="100%"
-                    height="100%"
-                    loading="eager"
-                    src="https://cdn.salla.sa/cdn-cgi/image/fit=scale-down,width=400,height=400,onerror=redirect,format=auto/eZgq/cBp4GsTir8JhX3KPyn1nZxddG3Rx4Ngk2dbbQrDd.png"
-                    alt="عبادي ستور"
-                  />
-                  <h2 class="sr-only">عبادي ستور</h2>
-                </a>
-
-                <nav id="mobile-menu" class="mobile-menu">
-                  <a
-                    class="navbar-brand lg:hidden"
-                    href="https://abadystore.com"
-                  >
-                    <img
-                      fetchpriority="high"
-                      width="100%"
-                      height="100%"
-                      loading="eager"
-                      src="https://cdn.salla.sa/cdn-cgi/image/fit=scale-down,width=400,height=400,onerror=redirect,format=auto/eZgq/cBp4GsTir8JhX3KPyn1nZxddG3Rx4Ngk2dbbQrDd.png"
-                      alt="عبادي ستور"
-                    />
-                    <h2 class="sr-only">عبادي ستور</h2>
-                  </a>
-
-                  <ul class="main-menu">
-                    <li class="root-level" id="919562978">
-                      <a
-                        href="https://abadystore.com/"
-                        data-container=""
-                        class="collapsible-title"
-                        target="_self"
-                      >
-                        <span>الصفحة الرئيسية</span>
-                      </a>
-                    </li>
-                  </ul>
-                  <button
-                    class="btn--close close-mobile-menu sicon-cancel lg:hidden"
-                  ></button>
-
-                  <div
-                    class="mobile-lang-scopes-area flex lg:hidden m-4 pb-4 w-[calc(100%-32px)] rtl:space-x-reverse space-x-2"
-                  >
-                    <button
-                      type="button"
-                      onclick="salla.event.dispatch('localization::open')"
-                      class="btn--link"
-                    >
-                      <span class="sicon-money-circle"></span>
-                      <span class="rtl:mr-2 ltr:ml-2">ر.س</span>
-                    </button>
-                  </div>
-                </nav>
-              </div>
-
-              <div class="header-search min-w-[320px] flex-1 relative z-0">
-                <salla-search inline="" height="56" class="hydrated">
-                  <div class="s-search-modal">
-                    <div class="s-search-container s-search-inline">
-                      <div class="s-search-input-wrapper">
-                        <span class="s-search-icon-wrap"
-                          ><span class="s-search-icon"
-                            ><!-- Generated by IcoMoon.io -->
-                            <svg
-                              version="1.1"
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="32"
-                              height="32"
-                              viewBox="0 0 32 32"
-                            >
-                              <title>search</title>
-                              <path
-                                d="M30.276 28.391l-7.576-7.576c1.644-2.053 2.633-4.652 2.633-7.481 0-6.616-5.384-12-12-12s-12 5.384-12 12 5.384 12 12 12c2.829 0 5.428-0.989 7.481-2.633l7.576 7.576c0.26 0.26 0.601 0.391 0.943 0.391s0.683-0.131 0.943-0.391c0.521-0.521 0.521-1.364 0-1.885zM13.333 22.667c-5.147 0-9.333-4.187-9.333-9.333s4.187-9.333 9.333-9.333 9.333 4.187 9.333 9.333-4.187 9.333-9.333 9.333z"
-                              ></path>
-                            </svg> </span></span
-                        ><input
-                          type="search"
-                          enterkeyhint="search"
-                          autocomplete="off"
-                          class="s-search-input"
-                          placeholder="ادخل كلمة البحث"
-                          style="height: 56px"
-                        />
-                      </div>
-                      <div class="s-search-results">
-                        <p
-                          class="s-search-no-results-placeholder"
-                          style="display: none"
-                        >
-                          لا توجد نتائج
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </salla-search>
-              </div>
-
-              <div
-                class="header-user-cart flex items-center justify-end shrink-0"
-              >
-                <button
-                  class="header-btn"
-                  onclick="salla.event.dispatch('login::open')"
-                >
-                  <i class="header-btn__icon sicon-user"></i>
-                </button>
-                <salla-cart-summary
-                  class="ml-4 rtl:ml-[unset] rtl:mr-4 hydrated"
-                  ><!---->
-
-                  <a class="s-cart-summary-wrapper" href="./Cart.html">
-                    <div id="s-cart-icon">
-                      <slot-fb name="icon" hidden=""
-                        ><i class="s-cart-summary-icon"
-                          ><!-- Generated by IcoMoon.io -->
-                          <svg
-                            version="1.1"
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="30"
-                            height="32"
-                            viewBox="0 0 30 32"
-                          >
-                            <title>cart</title>
-                            <path
-                              d="M15.426 28.084c0-1.412-0.85-2.684-2.156-3.226-1.305-0.54-2.807-0.241-3.805 0.758-0.999 0.998-1.298 2.5-0.758 3.805 0.54 1.303 1.815 2.155 3.226 2.155 1.928-0.003 3.49-1.564 3.492-3.492h0.001zM10.597 28.084h0.001c0-0.54 0.326-1.027 0.825-1.235 0.498-0.206 1.074-0.091 1.455 0.29 0.383 0.382 0.497 0.957 0.29 1.456-0.208 0.5-0.695 0.825-1.235 0.825-0.355 0-0.695-0.142-0.944-0.391-0.251-0.251-0.392-0.591-0.392-0.946h-0.001l0.001 0.001zM28.23 28.084c0-1.412-0.85-2.684-2.155-3.226-1.305-0.54-2.807-0.241-3.806 0.758s-1.297 2.5-0.756 3.805c0.54 1.303 1.813 2.155 3.226 2.155 1.927-0.003 3.49-1.564 3.491-3.492zM23.401 28.084c0-0.54 0.326-1.027 0.825-1.235 0.5-0.206 1.075-0.091 1.457 0.29s0.497 0.957 0.289 1.456c-0.206 0.5-0.693 0.825-1.233 0.825-0.738 0-1.337-0.599-1.337-1.337l-0.001 0.001zM1.953 0.234l-0.342-0.059c-0.29-0.064-0.594-0.004-0.839 0.166-0.247 0.169-0.414 0.436-0.463 0.734-0.050 0.3 0.023 0.607 0.201 0.85s0.444 0.402 0.738 0.44l0.341 0.059c1.825 0.324 3.248 1.794 3.548 3.662l1.981 12.369h-0.001c0.218 1.387 0.913 2.651 1.96 3.563s2.379 1.412 3.754 1.41h14.242c0.601 0 1.088-0.498 1.088-1.112s-0.487-1.112-1.088-1.112h-14.242c-1.679-0.001-3.139-1.183-3.525-2.854h11.463c1.614 0.004 3.188-0.518 4.493-1.49 1.305-0.973 2.271-2.346 2.762-3.918l1.298-4.136c0.145-0.455 0.065-0.953-0.213-1.336-0.278-0.385-0.72-0.608-1.187-0.602h-20.467l-0.181-1.141c-0.218-1.367-0.849-2.631-1.802-3.615-0.954-0.983-2.184-1.64-3.518-1.878h-0.001zM26.946 9.096l-0.993 3.169v-0.001c-0.353 1.122-1.044 2.101-1.975 2.796s-2.056 1.067-3.208 1.067h-11.833l-1.125-7.042 19.134 0.011z"
-                            ></path>
-                          </svg> </i></slot-fb
-                      ><i
-                        slot="icon"
-                        class="header-btn__icon icon sicon-shopping-bag"
-                      ></i>
-                    </div>
-                    <span class="s-cart-summary-count">0</span>
-                    <button onclick="openModal()">تغيير العملة</button>
-                  </a></salla-cart-summary
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!--  -->
-    <!--  -->
-    <!--  -->
-    <div class="search-container" data-search-box>
-      <div class="input-wrapper">
-        <input
-          type="search"
-          name="search"
-          aria-label="search"
-          placeholder="Search here..."
-          class="search-field"
-        />
-
-        <button
-          class="search-submit"
-          aria-label="submit search"
-          data-search-toggler
-        >
-          <ion-icon name="search-outline"></ion-icon>
-        </button>
-
-        <button
-          class="search-close"
-          aria-label="close search"
-          data-search-toggler
-        ></button>
-      </div>
-    </div>
+    <header id="header_"></header>
 
     <main>
       <article>
@@ -866,240 +666,11 @@
     - #FOOTER
   -->
 
-    <footer class="footer">
-      <div class="footer-top">
-        <div class="container">
-          <div class="footer-brand">
-            <a href="#" class="logo">Gamics</a>
+    <footer id="footer_"></footer>
 
-            <p class="footer-text">
-              Gamics marketplace the relase etras thats sheets continig passag.
-            </p>
-
-            <ul class="contact-list">
-              <li class="contact-item">
-                <div class="contact-icon">
-                  <ion-icon
-                    name="location"
-                    role="img"
-                    class="md hydrated"
-                    aria-label="location"
-                  ></ion-icon>
-                </div>
-
-                <address class="item-text">
-                  Address : PO Box W75 Street lan West new queens
-                </address>
-              </li>
-
-              <li class="contact-item">
-                <div class="contact-icon">
-                  <ion-icon
-                    name="headset"
-                    role="img"
-                    class="md hydrated"
-                    aria-label="headset"
-                  ></ion-icon>
-                </div>
-
-                <a href="tel:+241245654235" class="item-text"
-                  >Phone : +24 1245 654 235</a
-                >
-              </li>
-
-              <li class="contact-item">
-                <div class="contact-icon">
-                  <ion-icon
-                    name="mail-open"
-                    role="img"
-                    class="md hydrated"
-                    aria-label="mail open"
-                  ></ion-icon>
-                </div>
-
-                <a href="mailto:info@exemple.com" class="item-text"
-                  >Email : info@exemple.com</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <ul class="footer-list">
-            <li>
-              <p class="footer-list-title">Products</p>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Graphics (26)</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Backgrounds (11)</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Fonts (9)</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Music (3)</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Photography (3)</a>
-            </li>
-          </ul>
-
-          <ul class="footer-list">
-            <li>
-              <p class="footer-list-title">Need Help?</p>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Terms &amp; Conditions</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Privacy Policy</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Refund Policy</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Affiliate</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Use Cases</a>
-            </li>
-          </ul>
-
-          <div class="footer-wrapper">
-            <div class="social-wrapper">
-              <p class="footer-list-title">Follow Us</p>
-
-              <ul class="social-list">
-                <li>
-                  <a
-                    href="#"
-                    class="social-link"
-                    style="background-color: #3b5998"
-                  >
-                    <ion-icon
-                      name="logo-facebook"
-                      role="img"
-                      class="md hydrated"
-                      aria-label="logo facebook"
-                    ></ion-icon>
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="#"
-                    class="social-link"
-                    style="background-color: #55acee"
-                  >
-                    <ion-icon
-                      name="logo-twitter"
-                      role="img"
-                      class="md hydrated"
-                      aria-label="logo twitter"
-                    ></ion-icon>
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="#"
-                    class="social-link"
-                    style="background-color: #d71e18"
-                  >
-                    <ion-icon
-                      name="logo-pinterest"
-                      role="img"
-                      class="md hydrated"
-                      aria-label="logo pinterest"
-                    ></ion-icon>
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="#"
-                    class="social-link"
-                    style="background-color: #1565c0"
-                  >
-                    <ion-icon
-                      name="logo-linkedin"
-                      role="img"
-                      class="md hydrated"
-                      aria-label="logo linkedin"
-                    ></ion-icon>
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="footer-newsletter">
-              <p class="footer-list-title">Newsletter Sign Up</p>
-
-              <form action="" class="footer-newsletter">
-                <input
-                  type="email"
-                  name="email_address"
-                  aria-label="email"
-                  placeholder="Enter your email"
-                  required=""
-                  class="email-field"
-                />
-
-                <button type="submit" class="footer-btn" aria-label="submit">
-                  <ion-icon
-                    name="rocket"
-                    role="img"
-                    class="md hydrated"
-                    aria-label="rocket"
-                  ></ion-icon>
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div class="container">
-          <p class="copyright">
-            © 2022 Gamics. All Right Reserved by
-            <a href="#" class="copyright-link">codewithsadee</a>
-          </p>
-
-          <img
-            src="./assets/images/footer-bottom-img.png"
-            width="340"
-            height="21"
-            loading="lazy"
-            alt=""
-            class="footer-bottom-img"
-          />
-        </div>
-      </div>
-    </footer>
     <!-- 
     - #BACK TO TOP
   -->
-
-    <a
-      href="#top"
-      class="back-top-btn"
-      aria-label="back to top"
-      data-back-top-btn
-    >
-      <ion-icon name="caret-up"></ion-icon>
-    </a>
 
     <!-- 
     - custom js link
@@ -1118,34 +689,6 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
 
-    <style>
-      .header-btn__icon {
-        display: flex;
-        height: auto;
-        width: auto;
-        align-items: center;
-        justify-content: center;
-        border-radius: 9999px;
-        border-width: 1px;
-        --tw-border-opacity: 1;
-        border-color: #f8f8f8;
-        border-color: rgb(248 248 248 / var(--tw-border-opacity));
-        --tw-bg-opacity: 1;
-        background-color: #f8f8f8;
-        background-color: rgb(248 248 248 / var(--tw-bg-opacity));
-        font-size: 1.25rem;
-        line-height: 1.75rem;
-        transition-property: opacity;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 300ms;
-        border: none;
-        color: white;
-        background: none;
-      }
-      i.header-btn__icon.sicon-user,
-      i.header-btn__icon.icon.sicon-shopping-bag {
-        font-size: larger;
-      }
-    </style>
+    <script src="./assets/js/header.js"></script>
   </body>
 </html>

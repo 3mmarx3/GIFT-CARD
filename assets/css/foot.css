@@ -9,11 +9,6 @@
   --color-dark-3: hsl(42, 99%, 46%);
 }
 
-body {
-  background: var(--color-dark-main);
-  font-size: 16px;
-}
-
 .product-tile__clip-path[data-v-db7035ba] {
   clip-path: polygon(
     0 48%,
@@ -367,12 +362,6 @@ a.button {
 }
 
 @media only screen and (max-width: 990px) and (min-width: 200px) {
-  body {
-    height: 200vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
-
   .footer .inner {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
