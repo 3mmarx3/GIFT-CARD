@@ -51,7 +51,7 @@ body {
   align-items: center;
 }
 .right-side a {
-  color: #ffc107;
+  color: black;
   font-weight: 500;
   text-decoration: none;
   transition: all 0.4s ease;
@@ -163,7 +163,7 @@ body {
   background: none;
 }
 .right-side form input:focus {
-  border: 0.1rem solid #ffc107;
+  border: 0.1rem solid black;
   background-color: none;
   outline: none;
   box-shadow: 0 0 0.8rem rgba(233, 130, 101, 0.241);
@@ -182,13 +182,13 @@ body {
   height: 100%;
   width: 100%;
   outline: none;
-  color: black;
+  color: white;
   border: none;
   font-size: 18px;
   font-weight: 500;
   border-radius: 5px;
   transition: all 0.3s ease;
-  background: #ffc107;
+  background: black;
   padding: 10px;
 }
 .right-side #register-button:hover {
