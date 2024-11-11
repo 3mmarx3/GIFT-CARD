@@ -626,5 +626,56 @@
         </div>
       </div>
     </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // تحديد جميع الـ input الخاصة بالكميات
+        const quantityInputs = document.querySelectorAll(
+          ".s-quantity-input-input"
+        );
+
+        // وظيفة لزيادة الكمية
+        function increaseQuantity(input) {
+          let value = parseInt(input.value);
+          if (!isNaN(value)) {
+            // التحقق من أن القيمة رقم
+            input.value = value + 1;
+            input.dispatchEvent(new Event("change")); // تفعيل الحدث لعمل التحديثات
+          }
+        }
+
+        // وظيفة لتقليل الكمية
+        function decreaseQuantity(input) {
+          let value = parseInt(input.value);
+          if (!isNaN(value) && value > 1) {
+            // التحقق من أن القيمة رقم وأن الكمية أكبر من 1
+            input.value = value - 1;
+            input.dispatchEvent(new Event("change")); // تفعيل الحدث لعمل التحديثات
+          }
+        }
+
+        // إضافة أحداث للزيادة والتقليل على الأزرار الخاصة بالكمية
+        document
+          .querySelectorAll(".s-quantity-input-increase-button")
+          .forEach((button) => {
+            button.addEventListener("click", function () {
+              let input = this.closest(
+                ".s-quantity-input-container"
+              ).querySelector(".s-quantity-input-input");
+              increaseQuantity(input);
+            });
+          });
+
+        document
+          .querySelectorAll(".s-quantity-input-decrease-button")
+          .forEach((button) => {
+            button.addEventListener("click", function () {
+              let input = this.closest(
+                ".s-quantity-input-container"
+              ).querySelector(".s-quantity-input-input");
+              decreaseQuantity(input);
+            });
+          });
+      });
+    </script>
   </body>
 </html>
