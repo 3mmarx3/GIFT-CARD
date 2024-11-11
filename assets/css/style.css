@@ -47,23 +47,6 @@
   --ff-oxanium: "Oxanium", cursive;
   --ff-poppins: "Poppins", sans-serif;
 
-  --fs-1: 7rem;
-  --fs-2: 4.5rem;
-  --fs-3: 3.6rem;
-  --fs-4: 2.4rem;
-  --fs-5: 2.2rem;
-  --fs-6: 2rem;
-  --fs-7: 1.6rem;
-  --fs-8: 1.5rem;
-  --fs-9: 1.4rem;
-  --fs-10: 1.3rem;
-  --fs-11: 1.2rem;
-
-  --fw-500: 500;
-  --fw-600: 600;
-  --fw-700: 700;
-  --fw-800: 800;
-
   /**
    * spacing
    */
@@ -152,15 +135,8 @@ address {
   font-style: normal;
 }
 
-html {
-  font-family: var(--ff-poppins);
-  font-size: 10px;
-  scroll-behavior: smooth;
-}
-
 body {
   background-color: var(--raisin-black-3);
-  font-size: 1.6rem;
   line-height: 1.5;
 }
 
@@ -277,6 +253,7 @@ body {
   position: relative;
   text-align: center;
   text-transform: uppercase;
+  font-size: xx-large;
 }
 
 .section-subtitle {
@@ -392,7 +369,6 @@ body {
 
 .logo {
   color: var(--white);
-  font-family: var(--ff-oxanium);
   font-size: 3rem;
   font-weight: var(--fw-800);
 }
@@ -538,7 +514,6 @@ body {
 
 .hero {
   --section-padding: 60px;
-  margin-block-start: 84px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1552,7 +1527,6 @@ body {
 
   .navbar-link {
     color: var(--white);
-    font-family: var(--ff-oxanium);
     font-size: var(--fs-11);
     text-transform: uppercase;
     font-weight: var(--fw-700);
@@ -1782,8 +1756,19 @@ body {
   }
 }
 
+a.collapsible-title {
+  color: black;
+}
+
+* {
+  text-decoration: none !important;
+}
+
 @media screen and (max-width: 767px) {
   section.newsletter {
     display: none;
+  }
+  .main-content.w-full.flex-1.lg\:pt-10 {
+    margin: 5vh 0;
   }
 }
