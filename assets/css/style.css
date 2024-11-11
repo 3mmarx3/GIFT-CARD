@@ -1709,8 +1709,37 @@ div#s-cart-icon {
 
 .viwe_card {
   height: 60vh;
-  background: rebeccapurple;
+  background: url(../img/imgg.webp);
   border-radius: 10px;
   background-position: center center;
   background-size: cover;
+}
+
+.center-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background: #3d2c700f;
+  border-radius: 5px;
+}
+
+input#quantityInput {
+  background: none;
+}
+
+.bg-none {
+  background: none !important;
+}
+
+salla-button.btn--wishlist.animated.hidden.sm\:inline-flex {
+  background: #ff6767;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
 }
