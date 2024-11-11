@@ -1747,3 +1747,7 @@ salla-button.btn--wishlist.animated.hidden.sm\:inline-flex {
 section.cart-item.p-5.xs\:p-7.rounded-md.mb-5.relative.bg-white.dark\:bg-darker {
   background: #f8f8f8;
 }
+
+input {
+  border: 1px solid black;
+}
