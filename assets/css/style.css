@@ -1653,7 +1653,7 @@ div#s-cart-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #027bff;
+  background: none;
 }
 
 /*  */
@@ -1702,7 +1702,7 @@ div#s-cart-icon {
   border-radius: 4px;
   border: none;
   color: #fff;
-  background-color: #007bff;
+  background-color: black;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -1742,4 +1742,8 @@ salla-button.btn--wishlist.animated.hidden.sm\:inline-flex {
   border-radius: 50%;
   color: white;
   cursor: pointer;
+}
+
+section.cart-item.p-5.xs\:p-7.rounded-md.mb-5.relative.bg-white.dark\:bg-darker {
+  background: #f8f8f8;
 }
