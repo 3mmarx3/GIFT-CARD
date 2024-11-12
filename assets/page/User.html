@@ -28,7 +28,7 @@
           aria-label="Sidebar"
           class="border-gray-200 dark:border-white/10 w-full lg:w-72 rtl:lg:ml-8 ltr:lg:mr-8 lg:py-5 lg:pt-8 lg:pb-11 sidebar space-y-px"
         >
-          <div class="hidden lg:block">
+          <div class=" lg:block">
             <salla-user-menu inline="" class="hydrated"
               ><!---->
               <ul class="s-user-menu-inline">
@@ -502,6 +502,26 @@
         margin: 0;
         grid-template-columns: 1fr 1fr 1fr;
       }
+
+      li.s-user-menu-dropdown-item a {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+      
+
+@media screen and (max-width:992px) {
+  .card_Cart-container_Cart{
+        grid-template-columns: 1fr  1fr;
+      }
+
+}
+
+@media screen and (max-width:767px) {
+  .card_Cart-container_Cart{
+        grid-template-columns: 1fr  ;
+      }
+
+}
     </style>
   </body>
 </html>
