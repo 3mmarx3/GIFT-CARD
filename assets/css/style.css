@@ -1751,3 +1751,27 @@ section.cart-item.p-5.xs\:p-7.rounded-md.mb-5.relative.bg-white.dark\:bg-darker 
 input {
   border: 1px solid black;
 }
+
+/* ADS */
+.section_ADS {
+  height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.Add_img {
+  margin: 10px;
+  border-radius: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../img/bg.jpg);
+  height: 45vh;
+}
+
+@media screen and (max-width: 767px) {
+  .section_ADS {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+}
