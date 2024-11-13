@@ -1883,12 +1883,13 @@ input {
 }
 
 .circel_red {
-  width: 20px;
-  height: 20px;
-  background: red;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  margin-left: 20px !important;
+}
+
+.circel_red .sp {
+  background: rgba(255, 0, 0, 0.407);
+  color: white;
+  padding: 5px 15px;
+  width: fit-content;
+  border-radius: 30px;
 }
