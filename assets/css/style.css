@@ -1881,3 +1881,14 @@ input {
     margin: 10vh 0;
   }
 }
+
+.circel_red {
+  width: 20px;
+  height: 20px;
+  background: red;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
