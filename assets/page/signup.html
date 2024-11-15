@@ -1,95 +1,184 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <link rel="stylesheet" href="../css/register.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      id="layout-styles-anchor"
+      href="/start-react-pro/splash-screen.css"
+    />
+
+    <link rel="stylesheet" href="../css/ex.css" />
   </head>
-  <body>
-    <main>
-      <div class="page-container">
-        <div class="grid-container">
-          <div class="left-side">
-            <div class="img-and-text"></div>
+  <body
+    id="kt_body"
+    class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled sidebar-enabled bg-white"
+    data-sidebar="on"
+  >
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div class="d-flex flex-column flex-root">
+        <div
+          class="d-flex flex-column flex-lg-row flex-column-fluid"
+          id="kt_login"
+        >
+          <div
+            class="d-flex flex-column flex-lg-row-auto bg-primary w-lg-600px pt-15 pt-lg-0"
+          >
+            <div
+              class="d-flex flex-column-auto flex-column pt-lg-40 pt-15 text-center"
+            >
+              <a class="mb-6" href="/start-react-pro/"
+                ><img
+                  alt="Logo"
+                  src="/start-react-pro/media/logos/logo-default.svg"
+                  class="h-75px"
+              /></a>
+              <h3 class="fw-bolder fs-2x text-white lh-lg">
+                Discover Start<br />with great build tools
+              </h3>
+            </div>
+            <div
+              class="d-flex flex-row-fluid bgi-size-contain bgi-no-repeat bgi-position-y-bottom bgi-position-x-center min-h-350px"
+              style="
+                background-image: url('/start-react-pro/media/illustrations/winner.png');
+              "
+            ></div>
           </div>
-          <div class="right-side">
-            <div class="wrapper">
-              <h2>Get started.</h2>
-              <p>
-                Already have an account ? <a href="./ Login.html">Log in</a>
-              </p>
-
-              <p class="socials-divider"><span>or</span></p>
-
-              <form action="">
-                <label for="email">Full Name</label>
-                <div class="email-input-container">
-                  <i class="fi fi-rr-user icon-email"></i>
-                  <input
-                    type="email"
-                    name="Full Name"
-                    placeholder="Ammar Ahmed"
-                    id="email"
+          <div
+            class="login-content flex-lg-row-fluid d-flex flex-column justify-content-center position-relative overflow-hidden py-20 px-10 p-lg-7 mx-auto mw-450px w-100"
+          >
+            <div class="d-flex flex-column-fluid flex-center py-10">
+              <form class="form w-100" novalidate="" id="kt_login_signup_form">
+                <div class="pb-5 pb-lg-15">
+                  <h3 class="fw-bolder text-dark display-6">Sign Up</h3>
+                  <p class="text-muted fw-bold fs-3">
+                    Enter your details to create your account
+                  </p>
+                </div>
+                <div class="fv-row mb-5">
+                  <label class="form-label fs-6 fw-bolder text-dark pt-5"
+                    >First name</label
+                  ><input
+                    placeholder="First name"
+                    type="text"
+                    autocomplete="off"
+                    name="firstname"
+                    class="form-control form-control-lg form-control-solid"
+                    value=""
                   />
                 </div>
-
-                <label for="email">Email address</label>
-                <div class="email-input-container">
-                  <i class="fi fi-rr-envelope icon-email"></i>
-                  <input
+                <div class="fv-row mb-5">
+                  <label class="form-label fs-6 fw-bolder text-dark pt-5"
+                    >Last name</label
+                  ><input
+                    placeholder="Last name"
+                    type="text"
+                    autocomplete="off"
+                    name="lastname"
+                    class="form-control form-control-lg form-control-solid is-invalid"
+                    value=""
+                  />
+                  <div class="fv-plugins-message-container">
+                    <div class="fv-help-block">Last name is required</div>
+                  </div>
+                </div>
+                <div class="fv-row mb-5">
+                  <label class="form-label fs-6 fw-bolder text-dark pt-5"
+                    >Email</label
+                  ><input
+                    placeholder="Email"
                     type="email"
-                    name="email_address"
-                    placeholder="exemple@gmail.com"
-                    id="email"
+                    autocomplete="off"
+                    name="email"
+                    class="form-control form-control-lg form-control-solid"
+                    value=""
                   />
                 </div>
-                <label for="password">Password</label>
-
-                <div class="password-input-container">
-                  <i class="fi fi-rr-lock icon-password"></i>
-                  <input
+                <div class="fv-row mb-5">
+                  <label class="form-label fs-6 fw-bolder text-dark pt-5"
+                    >Password</label
+                  ><input
                     type="password"
+                    placeholder="Password"
+                    autocomplete="off"
                     name="password"
-                    placeholder="Your password"
-                    id="password"
+                    class="form-control form-control-lg form-control-solid"
+                    value=""
                   />
+                </div>
+                <div class="fv-row mb-10">
+                  <label class="form-label fs-6 fw-bolder text-dark pt-5"
+                    >Confirm Password</label
+                  ><input
+                    type="password"
+                    placeholder="Password confirmation"
+                    autocomplete="off"
+                    name="changepassword"
+                    class="form-control form-control-lg form-control-solid"
+                    value=""
+                  />
+                </div>
+                <div class="fv-row mb-10">
+                  <div
+                    class="form-check form-check-custom form-check-solid mb-5"
+                  >
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="kt_login_toc_agree"
+                      name="acceptTerms"
+                      value="false"
+                    /><label
+                      class="form-check-label fw-bold text-gray-600"
+                      for="kt_login_toc_agree"
+                      >I Agree the
+                      <a class="ms-1" href="/start-react-pro/auth/terms"
+                        >terms and conditions</a
+                      >.</label
+                    >
+                  </div>
+                </div>
+                <div class="d-flex flex-wrap pb-lg-0 pb-5">
+                  <button
+                    type="submit"
+                    id="kt_login_signup_form_submit_button"
+                    class="btn btn-primary fw-bolder fs-6 px-8 py-4 my-3 me-4"
+                    disabled=""
+                  >
+                    <span class="indicator-label">Submit</span></button
+                  ><a href="/start-react-pro/auth/login"
+                    ><button
+                      type="button"
+                      id="kt_login_signup_form_cancel_button"
+                      class="btn btn-light-primary fw-bolder fs-6 px-8 py-4 my-3"
+                    >
+                      Cancel
+                    </button></a
+                  >
                 </div>
               </form>
-
-              <div class="agreement-check">
-                <input
-                  type="checkbox"
-                  name="terms_of_service_and_privacy_policy"
-                />
-                <span class="terms-of-use-text"
-                  >I agree to Plataform's <a href="#">Terms of Service</a> and
-                  <a href="#">Privacy Policy</a>
-                </span>
-              </div>
-
-              <button id="register-button" type="submit">Sign Up</button>
-              <p class="credits">
-                Made with ❤️ by
-                <a href="https://github.com/aluizamendes" target="_blank"
-                  >Appnest</a
-                >
-              </p>
+            </div>
+            <div
+              class="d-flex justify-content-lg-start justify-content-center align-items-center py-7 py-lg-0"
+            >
+              <span class="text-primary fw-bolder fs-4 cursor-pointer"
+                >Terms</span
+              ><span class="text-primary ms-10 fw-bolder fs-4">Plans</span
+              ><span class="text-primary ms-10 fw-bolder fs-4">Contact Us</span>
             </div>
           </div>
         </div>
       </div>
-    </main>
+    </div>
   </body>
 </html>
