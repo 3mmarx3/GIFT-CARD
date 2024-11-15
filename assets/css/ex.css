@@ -51755,6 +51755,7 @@ code:not([class*="language-"]).code-dark {
   background-position: center center;
   background-size: cover;
   border-radius: 0.65rem;
+  background-image: url(../img/bg.jpg);
 }
 
 .symbol .symbol-label:after {
