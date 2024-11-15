@@ -62766,6 +62766,12 @@ body {
     transition: right 0.3s;
   }
 
+  span.position-absolute.fs-6.num_ {
+    position: absolute;
+    left: 30px;
+    top: -10px;
+  }
+
   [data-sidebar="on"] .sidebar {
     transition: right 0.3s ease;
     right: 0;
@@ -62787,5 +62793,11 @@ body {
 @media (min-width: 992px) {
   .sidebar-enabled[data-sidebar="on"] .engage-toolbar {
     margin-right: 400px;
+  }
+}
+
+@media (max-width: 992px) {
+  .card.card-stretch {
+    height: auto !important;
   }
 }
