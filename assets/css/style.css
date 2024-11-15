@@ -189,7 +189,6 @@ body {
   font-size: var(--fs-8);
   text-transform: uppercase;
   font-weight: var(--fw-700);
-  min-height: 55px;
   padding-inline: 35px;
 }
 
@@ -1745,10 +1744,10 @@ input {
   height: 50vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 10px;
 }
 
 .Add_img {
-  margin: 10px;
   border-radius: 10px;
   background-size: cover;
   background-repeat: no-repeat;

@@ -6202,6 +6202,7 @@ input[type="radio"].sr-only:checked ~ div.s-gifting-remove-preview {
 .s-localization-modal-item {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .s-localization-modal-input {
   height: 1rem;
@@ -6217,14 +6218,9 @@ input[type="radio"].sr-only:checked ~ div.s-gifting-remove-preview {
 }
 .s-localization-modal-label {
   display: flex;
-  flex-grow: 1;
   cursor: pointer;
   align-items: center;
   justify-content: space-between;
-  font-weight: 500;
-  --tw-text-opacity: 1;
-  color: rgba(55, 65, 81, 1);
-  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 .s-localization-modal-label * {
   pointer-events: none;
@@ -27290,7 +27286,6 @@ button.swiper-pagination-bullet {
 /* cart */
 
 /*  */
-
 
 @media (max-width: 1024px) {
   .img.svelte-w5zyd8,
