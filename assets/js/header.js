@@ -23,32 +23,7 @@ let header = `
     
 
 
-       <div class="chat_Gpt">
-      <button class="chatbot-toggler">
-        <span class="material-symbols-rounded">mode_comment</span>
-        <span class="material-symbols-outlined">close</span>
-      </button>
-      <div class="chatbot">
-        <header>
-          <h2>Chatbot</h2>
-          <span class="close-btn material-symbols-outlined">close</span>
-        </header>
-        <ul class="chatbox">
-          <li class="chat incoming">
-            <span class="material-symbols-outlined">smart_toy</span>
-            <p>Hi there <br />How can I help you today?</p>
-          </li>
-        </ul>
-        <div class="chat-input">
-          <textarea
-            placeholder="Enter a message..."
-            spellcheck="false"
-            required
-          ></textarea>
-          <span id="send-btn" class="material-symbols-rounded">send</span>
-        </div>
-      </div>
-    </div>
+
 
     <style>
       /* Import Google font - Poppins */
@@ -56,11 +31,7 @@ let header = `
   
     
       .chatbot-toggler {
-        position: fixed;
-        bottom: 100px;
-        right: 30px;
-        outline: none;
-        border: none;
+       
         height: 50px;
         width: 50px;
         display: flex;
@@ -68,7 +39,6 @@ let header = `
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-        background: #724ae8;
         transition: all 0.2s ease;
         z-index: 99999999999;
 }
@@ -78,17 +48,13 @@ let header = `
 ul.chatbox {
     direction: ltr;
 }
-.chat_Gpt {
-    z-index: 999999999999999999999999999999999;
-    position: absolute;
-}
+
 
       }
       body.show-chatbot .chatbot-toggler {
         transform: rotate(90deg);
       }
       .chatbot-toggler span {
-        color: #fff;
         position: absolute;
       }
       .chatbot-toggler span:last-child,
@@ -255,74 +221,7 @@ ul.chatbox {
 
 
     <header class="store-header">
-      <div id="mainnav" class="main-nav-container relative bg-white py-4">
-        <div class="inner bg-inherit">
-          <div class="container">
-            <div
-              class="inner__inner flex items-center justify-between gap-4 lg:gap-8"
-            >
-              <div class="flex items-center gap-4 lg:gap-8">
-                <button class="header-btn">
-                  <i class="header-btn__icon sicon-user"></i>
-                </button>
-                <nav id="mobile-menu" class="mobile-menu">
-                  <a
-                    href="#"
-                    class="collapsible-title"
-                    target="_self"
-                  >
-                    <span>الرئيسية</span>
-                  </a>
-                  <button
-                    class="btn--close close-mobile-menu sicon-cancel lg:hidden"
-                  ></button>
-                </nav>
-              </div>
-
-              <div class="header-search min-w-[320px] flex-1 relative z-0">
-                <salla-search inline="" height="56" class="hydrated">
-                  <div class="s-search-modal">
-                    <div class="s-search-container s-search-inline">
-                      <div class="s-search-input-wrapper">
-                        <input
-                          type="search"
-                          enterkeyhint="search"
-                          autocomplete="off"
-                          class="s-search-input"
-                          placeholder="ادخل كلمة البحث"
-                          style="height: 56px"
-                        />
-                      </div>
-                      <div class="s-search-results">
-                        <p
-                          class="s-search-no-results-placeholder"
-                          style="display: none"
-                        >
-                          لا توجد نتائج
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </salla-search>
-              </div>
-
-              <div class="flex items-center gap-4 lg:gap-8">
-                <div id="s-cart-icon">
-                  <span class="s-cart-summary-count">0</span>
-                  <i
-                    slot="icon"
-                    class="header-btn__icon icon sicon-shopping-bag"
-                  ></i>
-                </div>
-
-                <a href="#" class="collapsible-title" target="_self">
-                  <button onclick="openModal()">تغيير العملة</button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+   
 
       <div class="s-modal-wrapper">
         <div class="s-modal-body">
@@ -397,6 +296,334 @@ ul.chatbox {
   
 
     </header>
+
+
+
+
+
+
+
+    <div
+    id="kt_header"
+    class="header"
+    data-kt-sticky="true"
+    data-kt-sticky-name="header"
+    data-kt-sticky-offset="{default: '200px', lg: '300px'}"
+  >
+    <!--begin::Container-->
+    <div
+      class="container-xxl d-flex align-items-stretch justify-content-between"
+    >
+      <!--begin::Left-->
+      <div class="d-flex align-items-center">
+        <!--begin::Mega Menu Toggler-->
+        <button
+          class="btn btn-icon btn-accent me-2 me-lg-6"
+          id="kt_mega_menu_toggle"
+          data-bs-toggle="modal"
+          data-bs-target="#kt_mega_menu_modal"
+        >
+          <i class="ki-duotone ki-burger-menu-2 fs-1"
+            ><span class="path1"></span><span class="path2"></span
+            ><span class="path3"></span><span class="path4"></span
+            ><span class="path5"></span><span class="path6"></span
+            ><span class="path7"></span><span class="path8"></span
+            ><span class="path9"></span><span class="path10"></span
+          ></i>
+        </button>
+        <!--end::Mega Menu Toggler-->
+
+        <!--begin::Logo-->
+        <a href="/start-html-pro/index.html">
+          GIFT-CARD
+        </a>
+        <!--end::Logo-->
+      </div>
+      <!--end::Left-->
+
+      <!--begin::Right-->
+      <div class="d-flex align-items-center">
+        <!--begin::Search-->
+       
+        <!--end::Search-->
+
+        <!--begin::Message-->
+       
+        
+        <div class="group">
+          <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
+          <input placeholder="Search" type="search" class="input">
+        </div>
+       
+
+        <style>
+
+.group {
+display: flex;
+line-height: 28px;
+align-items: center;
+position: relative;
+max-width: 190px;
+}
+
+.input {
+width: 100%;
+height: 40px;
+line-height: 28px;
+padding: 0 1rem;
+padding-left: 2.5rem;
+border: 2px solid transparent;
+border-radius: 8px;
+outline: none;
+background-color: #f3f3f4;
+color: #0d0c22;
+transition: .3s ease;
+}
+
+.input::placeholder {
+color: #9e9ea7;
+}
+
+.input:focus, input:hover {
+outline: none;
+border-color: rgba(234,76,137,0.4);
+background-color: #fff;
+box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+}
+
+.icon {
+position: absolute;
+left: 1rem;
+fill: #9e9ea7;
+width: 1rem;
+height: 1rem;
+}
+
+
+
+
+
+
+        </style>
+
+      
+
+
+        <!--  -->
+        <button
+        class="btn btn-icon btn-sm btn-active-bg-accent ms-1 ms-lg-6"
+        id="kt_drawer_chat_toggle"
+        onclick="openModal()"
+      >
+      
+      
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+        <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73z"/>
+      </svg>
+
+      </button>
+<!--  -->
+        <!--end::Message-->
+  
+                         <div class="chat_Gpt">
+      <button class="chatbot-toggler">
+        <span class="material-symbols-rounded"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-right-dots" viewBox="0 0 16 16">
+  <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"/>
+  <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+</svg></span>
+        <span class="material-symbols-outlined"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+  <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+</svg></span>
+      </button>
+      <div class="chatbot">
+        <header>
+          <h2>Chatbot</h2>
+          <span class="close-btn material-symbols-outlined">close</span>
+        </header>
+        <ul class="chatbox">
+          <li class="chat incoming">
+            <span class="material-symbols-outlined">smart_toy</span>
+            <p>Hi there <br />How can I help you today?</p>
+          </li>
+        </ul>
+        <div class="chat-input">
+          <textarea
+            placeholder="Enter a message..."
+            spellcheck="false"
+            required
+          ></textarea>
+          <span id="send-btn" class="material-symbols-rounded">send</span>
+        </div>
+      </div>
+    </div>
+        <!--begin::User-->
+        <div class="ms-1 ms-lg-6">
+          <!--begin::Toggle-->
+          <div
+            class="btn btn-icon btn-sm btn-active-bg-accent"
+            data-kt-menu-trigger="click"
+            data-kt-menu-placement="bottom-end"
+            id="kt_header_user_menu_toggle"
+          >
+          
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+          </svg>
+          
+          </div>
+          <!--begin::Menu-->
+      
+          <!--end::Menu-->
+        </div>
+        <!--end::User-->
+
+        <!--begin::Notifications-->
+        <div class="ms-1 ms-lg-6">
+          <!--begin::Dropdown-->
+          <button
+            class="btn btn-icon btn-sm btn-light-danger fw-bold pulse pulse-danger"
+            data-kt-menu-trigger="click"
+            data-kt-menu-placement="bottom-end"
+            id="kt_activities_toggle"
+          >
+           
+
+          <div class="d-flex">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+              <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+            </svg>
+            <span class="position-absolute fs-6 num_">3</span>
+          </div>
+        
+            <span class="pulse-ring"></span>
+          </button>
+          <!--begin::Menu-->
+          <div
+            class="menu menu-sub menu-sub-dropdown menu-column menu-rounded fw-semibold menu-title-gray-800 menu-hover-bg menu-state-title-primary w-250px w-md-300px"
+            data-kt-menu="true"
+          >
+            <div class="menu-item mx-3">
+              <div class="menu-content fs-6 text-gray-900 fw-bold py-6">
+                4 New Notifications
+              </div>
+            </div>
+
+            <div class="separator mb-3"></div>
+
+            <div class="menu-item mx-3">
+              <a href="#" class="menu-link px-4 py-3">
+                <div class="symbol symbol-35px">
+                  <span class="symbol-label bg-light-info">
+                    <i class="ki-duotone ki-abstract-26 fs-3 text-info"
+                      ><span class="path1"></span><span class="path2"></span
+                    ></i>
+                  </span>
+                </div>
+
+                <div class="ps-4">
+                  <span class="menu-title fw-semibold mb-1"
+                    >New Uer Library Added</span
+                  >
+                  <span class="text-muted fw-semibold d-block fs-7"
+                    >3 Hours ago</span
+                  >
+                </div>
+              </a>
+            </div>
+
+            <div class="menu-item mx-3">
+              <a href="#" class="menu-link px-4 py-3">
+                <div class="symbol symbol-35px">
+                  <span class="symbol-label bg-light-warning">
+                    <i class="ki-duotone ki-call fs-3 text-warning"
+                      ><span class="path1"></span><span class="path2"></span
+                      ><span class="path3"></span><span class="path4"></span
+                      ><span class="path5"></span><span class="path6"></span
+                      ><span class="path7"></span><span class="path8"></span
+                    ></i>
+                  </span>
+                </div>
+                <div class="ps-4">
+                  <span class="menu-title fw-semibold mb-1"
+                    >Clean Microphone</span
+                  >
+                  <span class="text-muted fw-semibold d-block fs-7"
+                    >5 Hours ago</span
+                  >
+                </div>
+              </a>
+            </div>
+
+            <div class="menu-item mx-3">
+              <a href="#" class="menu-link px-4 py-3">
+                <div class="symbol symbol-35px">
+                  <span class="symbol-label bg-light-primary">
+                    <i
+                      class="ki-duotone ki-message-text-2 fs-3 text-primary"
+                      ><span class="path1"></span><span class="path2"></span
+                      ><span class="path3"></span
+                    ></i>
+                  </span>
+                </div>
+
+                <div class="ps-4">
+                  <span class="menu-title fw-semibold mb-1"
+                    >Quick Chat Created</span
+                  >
+                  <span class="text-muted fw-semibold d-block fs-7"
+                    >A Day ago</span
+                  >
+                </div>
+              </a>
+            </div>
+
+            <div class="menu-item mx-3">
+              <a href="#" class="menu-link px-4 py-3">
+                <div class="symbol symbol-35px">
+                  <span class="symbol-label bg-light-danger">
+                    <i class="ki-duotone ki-disconnect fs-3 text-danger"
+                      ><span class="path1"></span><span class="path2"></span
+                      ><span class="path3"></span><span class="path4"></span
+                      ><span class="path5"></span
+                    ></i>
+                  </span>
+                </div>
+
+                <div class="ps-4">
+                  <span class="menu-title fw-semibold mb-1"
+                    >32 New Attachements</span
+                  >
+                  <span class="text-muted fw-semibold d-block fs-7"
+                    >2 Day ago</span
+                  >
+                </div>
+              </a>
+            </div>
+
+            <div class="separator mt-3"></div>
+
+            <div class="menu-item mx-2">
+              <div class="menu-content py-5">
+                <a href="#" class="btn btn-primary fw-bold me-2 px-5"
+                  >Report</a
+                >
+                <a href="#" class="btn btn-light fw-bold px-5">Reset</a>
+              </div>
+            </div>
+          </div>
+        
+
+
+        </div>
+       
+
+    
+        <!--end::Sidebar Toggler-->
+      </div>
+      <!--end::Right-->
+    </div>
+    <!--end::Container-->
+  </div>
 
 `;
 
