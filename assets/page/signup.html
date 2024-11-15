@@ -1,14 +1,14 @@
-<html lang="en">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="موقع إلكتروني تم إنشاؤه باستخدام create-react-app"
     />
     <link
-      href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
+      href="//fonts.googleapis.com/css?family=Cairo:300,400,500,600,700"
       rel="stylesheet"
     />
     <link
@@ -16,7 +16,6 @@
       id="layout-styles-anchor"
       href="/start-react-pro/splash-screen.css"
     />
-
     <link rel="stylesheet" href="../css/ex.css" />
   </head>
   <body
@@ -24,7 +23,7 @@
     class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled sidebar-enabled bg-white"
     data-sidebar="on"
   >
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>يجب تفعيل JavaScript لتشغيل هذا التطبيق.</noscript>
     <div id="root">
       <div class="d-flex flex-column flex-root">
         <div
@@ -39,12 +38,12 @@
             >
               <a class="mb-6" href="/start-react-pro/"
                 ><img
-                  alt="Logo"
+                  alt="الشعار"
                   src="/start-react-pro/media/logos/logo-default.svg"
                   class="h-75px"
               /></a>
               <h3 class="fw-bolder fs-2x text-white lh-lg">
-                Discover Start<br />with great build tools
+                اكتشف البداية<br />بأدوات بناء رائعة
               </h3>
             </div>
             <div
@@ -60,72 +59,64 @@
             <div class="d-flex flex-column-fluid flex-center py-10">
               <form class="form w-100" novalidate="" id="kt_login_signup_form">
                 <div class="pb-5 pb-lg-15">
-                  <h3 class="fw-bolder text-dark display-6">Sign Up</h3>
+                  <h3 class="fw-bolder text-dark display-6">تسجيل حساب جديد</h3>
                   <p class="text-muted fw-bold fs-3">
-                    Enter your details to create your account
+                    أدخل بياناتك لإنشاء حساب
                   </p>
                 </div>
                 <div class="fv-row mb-5">
                   <label class="form-label fs-6 fw-bolder text-dark pt-5"
-                    >First name</label
+                    >الاسم الأول</label
                   ><input
-                    placeholder="First name"
+                    placeholder="الاسم الأول"
                     type="text"
                     autocomplete="off"
                     name="firstname"
                     class="form-control form-control-lg form-control-solid"
-                    value=""
                   />
                 </div>
                 <div class="fv-row mb-5">
                   <label class="form-label fs-6 fw-bolder text-dark pt-5"
-                    >Last name</label
+                    >الاسم الأخير</label
                   ><input
-                    placeholder="Last name"
+                    placeholder="الاسم الأخير"
                     type="text"
                     autocomplete="off"
                     name="lastname"
-                    class="form-control form-control-lg form-control-solid is-invalid"
-                    value=""
+                    class="form-control form-control-lg form-control-solid"
                   />
-                  <div class="fv-plugins-message-container">
-                    <div class="fv-help-block">Last name is required</div>
-                  </div>
                 </div>
                 <div class="fv-row mb-5">
                   <label class="form-label fs-6 fw-bolder text-dark pt-5"
-                    >Email</label
+                    >البريد الإلكتروني</label
                   ><input
-                    placeholder="Email"
+                    placeholder="البريد الإلكتروني"
                     type="email"
                     autocomplete="off"
                     name="email"
                     class="form-control form-control-lg form-control-solid"
-                    value=""
                   />
                 </div>
                 <div class="fv-row mb-5">
                   <label class="form-label fs-6 fw-bolder text-dark pt-5"
-                    >Password</label
+                    >كلمة المرور</label
                   ><input
                     type="password"
-                    placeholder="Password"
+                    placeholder="كلمة المرور"
                     autocomplete="off"
                     name="password"
                     class="form-control form-control-lg form-control-solid"
-                    value=""
                   />
                 </div>
                 <div class="fv-row mb-10">
                   <label class="form-label fs-6 fw-bolder text-dark pt-5"
-                    >Confirm Password</label
+                    >تأكيد كلمة المرور</label
                   ><input
                     type="password"
-                    placeholder="Password confirmation"
+                    placeholder="تأكيد كلمة المرور"
                     autocomplete="off"
                     name="changepassword"
                     class="form-control form-control-lg form-control-solid"
-                    value=""
                   />
                 </div>
                 <div class="fv-row mb-10">
@@ -137,13 +128,12 @@
                       type="checkbox"
                       id="kt_login_toc_agree"
                       name="acceptTerms"
-                      value="false"
                     /><label
                       class="form-check-label fw-bold text-gray-600"
                       for="kt_login_toc_agree"
-                      >I Agree the
+                      >أوافق على
                       <a class="ms-1" href="/start-react-pro/auth/terms"
-                        >terms and conditions</a
+                        >الشروط والأحكام</a
                       >.</label
                     >
                   </div>
@@ -153,16 +143,15 @@
                     type="submit"
                     id="kt_login_signup_form_submit_button"
                     class="btn btn-primary fw-bolder fs-6 px-8 py-4 my-3 me-4"
-                    disabled=""
                   >
-                    <span class="indicator-label">Submit</span></button
+                    <span class="indicator-label">إرسال</span></button
                   ><a href="/start-react-pro/auth/login"
                     ><button
                       type="button"
                       id="kt_login_signup_form_cancel_button"
                       class="btn btn-light-primary fw-bolder fs-6 px-8 py-4 my-3"
                     >
-                      Cancel
+                      إلغاء
                     </button></a
                   >
                 </div>
@@ -172,9 +161,9 @@
               class="d-flex justify-content-lg-start justify-content-center align-items-center py-7 py-lg-0"
             >
               <span class="text-primary fw-bolder fs-4 cursor-pointer"
-                >Terms</span
-              ><span class="text-primary ms-10 fw-bolder fs-4">Plans</span
-              ><span class="text-primary ms-10 fw-bolder fs-4">Contact Us</span>
+                >الشروط</span
+              ><span class="text-primary ms-10 fw-bolder fs-4">الخطط</span
+              ><span class="text-primary ms-10 fw-bolder fs-4">اتصل بنا</span>
             </div>
           </div>
         </div>

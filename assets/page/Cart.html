@@ -487,15 +487,32 @@
                           <a
                             href="#"
                             class="text-gray-800 fw-bold text-hover-primary fs-6"
-                            >Top Authors</a
+                            >ملخص المطلوب</a
                           >
-                          <span class="text-muted fw-semibold d-block mt-1"
-                            >HTML/CSS/JS, Python</span
+                          <div
+                            class="d-flex align-items-center gap-2 justify-content-between mar"
                           >
+                            <span class="text-muted fw-semibold d-block mt-1"
+                              >HTML/CSS/JS, Python</span
+                            >
 
-                          <span class="text-muted fw-semibold d-block mt-1"
-                            >HTML/CSS/JS, Python</span
+                            <span class="text-muted fw-semibold d-block mt-1"
+                              >175 SAR</span
+                            >
+                          </div>
+
+                          <div
+                            class="d-flex align-items-center gap-2 justify-content-between mar"
                           >
+                            <span class="text-muted fw-semibold d-block mt-1"
+                              >HTML/CSS/JS, Python</span
+                            >
+
+                            <span class="text-muted fw-semibold d-block mt-1"
+                              >175 SAR</span
+                            >
+                          </div>
+
                           <!--end::Text-->
 
                           <!--begin::Action-->
@@ -625,9 +642,17 @@
                                       >
                                       <span
                                         class="text-muted fw-semibold d-block mt-1"
-                                        >HTML/CSS/JS, Python</span
+                                        >175 SAR</span
                                       >
                                     </td>
+
+                                    <td>1-1-2024</td>
+
+                                    <style>
+                                      a.btn.btn-icon.btn-bg-light.btn-active-primary.btnاطلب.الشحن-sm {
+                                        background: aquamarine;
+                                      }
+                                    </style>
 
                                     <td class="text-end pe-0">
                                       <a
@@ -645,14 +670,15 @@
 
                                   <tr>
                                     <th class="px-0 py-3">
-                                      <div class="symbol symbol-65px">
+                                      <div class="symbol symbol-65px me-5">
                                         <span
-                                          class="symbol-label bg-light-success"
+                                          class="symbol-label bg-light-primary"
                                         >
                                           <i
-                                            class="ki-duotone ki-abstract-25 fs-1 text-success"
+                                            class="ki-duotone ki-message-text-2 fs-1 text-primary"
                                             ><span class="path1"></span
                                             ><span class="path2"></span
+                                            ><span class="path3"></span
                                           ></i>
                                         </span>
                                       </div>
@@ -661,18 +687,26 @@
                                       <a
                                         href="#"
                                         class="text-gray-800 fw-bold text-hover-primary fs-6"
-                                        >New Products</a
+                                        >Top Authors</a
                                       >
                                       <span
                                         class="text-muted fw-semibold d-block mt-1"
-                                        >HTML/CSS/JS, Python</span
+                                        >175 SAR</span
                                       >
                                     </td>
+
+                                    <td>1-1-2024</td>
+
+                                    <style>
+                                      a.btn.btn-icon.btn-bg-light.btn-active-primary.btnاطلب.الشحن-sm {
+                                        background: aquamarine;
+                                      }
+                                    </style>
 
                                     <td class="text-end pe-0">
                                       <a
                                         href="#"
-                                        class="btn btn-icon btn-bg-light btn-active-primary btn-sm"
+                                        class="btn btn-icon btn-bg-light btn-active-primary btnاطلب الشحن-sm"
                                       >
                                         <i
                                           class="ki-duotone ki-arrow-right fs-4"
@@ -685,14 +719,15 @@
 
                                   <tr>
                                     <th class="px-0 py-3">
-                                      <div class="symbol symbol-65px">
+                                      <div class="symbol symbol-65px me-5">
                                         <span
-                                          class="symbol-label bg-light-danger"
+                                          class="symbol-label bg-light-primary"
                                         >
                                           <i
-                                            class="ki-duotone ki-abstract-26 fs-1 text-danger"
+                                            class="ki-duotone ki-message-text-2 fs-1 text-primary"
                                             ><span class="path1"></span
                                             ><span class="path2"></span
+                                            ><span class="path3"></span
                                           ></i>
                                         </span>
                                       </div>
@@ -701,24 +736,126 @@
                                       <a
                                         href="#"
                                         class="text-gray-800 fw-bold text-hover-primary fs-6"
-                                        >Weekly Bestsellers</a
+                                        >Top Authors</a
                                       >
                                       <span
                                         class="text-muted fw-semibold d-block mt-1"
-                                        >HTML/CSS/JS, Python</span
+                                        >175 SAR</span
                                       >
                                     </td>
+
+                                    <td>
+                                      <div class="counter-container">
+                                        <button
+                                          class="button"
+                                          onclick="decrement(this)"
+                                        >
+                                          -
+                                        </button>
+                                        <div class="count">0</div>
+                                        <button
+                                          class="button"
+                                          onclick="increment(this)"
+                                        >
+                                          +
+                                        </button>
+                                      </div>
+
+                                      <style>
+                                        .counter-container {
+                                          display: flex;
+                                          gap: 10px;
+                                        }
+                                        .counter-container .button {
+                                          font-size: 24px;
+                                          border: none;
+                                          border-radius: 5px;
+                                          background-color: aquamarine;
+                                          color: white;
+                                          cursor: pointer;
+                                          user-select: none;
+                                          transition: background-color 0.3s;
+                                        }
+                                        .counter-container .button:hover {
+                                          background-color: aquamarine;
+                                        }
+                                        .count {
+                                          font-weight: bold;
+                                          padding: 10px;
+                                          border-radius: 5px;
+                                          background-color: aquamarine;
+                                          color: white;
+                                          text-align: center;
+                                        }
+                                      </style>
+                                      <script>
+                                        function increment(button) {
+                                          const container =
+                                            button.closest(
+                                              ".counter-container"
+                                            );
+                                          const countElement =
+                                            container.querySelector(".count");
+                                          let count = parseInt(
+                                            countElement.textContent
+                                          );
+                                          count++;
+                                          countElement.textContent = count;
+                                        }
+
+                                        function decrement(button) {
+                                          const container =
+                                            button.closest(
+                                              ".counter-container"
+                                            );
+                                          const countElement =
+                                            container.querySelector(".count");
+                                          let count = parseInt(
+                                            countElement.textContent
+                                          );
+                                          if (count > 0) {
+                                            count--;
+                                            countElement.textContent = count;
+                                          }
+                                        }
+                                      </script>
+                                    </td>
+
+                                    <td>
+                                      <span
+                                        class="text-muted fw-semibold d-block mt-1"
+                                      >
+                                        175 SAR</span
+                                      >
+                                    </td>
+
+                                    <style>
+                                      a.btn.btn-icon.btn-bg-light.btn-active-primary.btnاطلب.الشحن-sm {
+                                        background: aquamarine;
+                                      }
+                                      .mar {
+                                        margin: 1vh 0;
+                                      }
+                                    </style>
 
                                     <td class="text-end pe-0">
                                       <a
                                         href="#"
-                                        class="btn btn-icon btn-bg-light btn-active-primary btn-sm"
+                                        class="btn btn-icon btn-bg-light btn-active-primary btnاطلب الشحن-sm"
                                       >
-                                        <i
-                                          class="ki-duotone ki-arrow-right fs-4"
-                                          ><span class="path1"></span
-                                          ><span class="path2"></span
-                                        ></i>
+                                        <!--  -->
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          width="16"
+                                          height="16"
+                                          fill="currentColor"
+                                          class="bi bi-x-lg"
+                                          viewBox="0 0 16 16"
+                                        >
+                                          <path
+                                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                                          />
+                                        </svg>
                                       </a>
                                     </td>
                                   </tr>
@@ -823,6 +960,8 @@
         <script src="/start-html-pro/assets/js/custom/apps/chat/chat.js"></script>
         <script src="/start-html-pro/assets/js/custom/utilities/modals/create-campaign.js"></script>
         <script src="/start-html-pro/assets/js/custom/utilities/modals/users-search.js"></script>
+        <!-- Iconify (إذا كانت تستخدم Iconify) -->
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
       </body>
     </html>
   </body>
