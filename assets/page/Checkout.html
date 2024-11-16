@@ -28,7 +28,10 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0"
     />
 
+    <link rel="stylesheet" href="../css/app.css" />
     <link rel="stylesheet" href="../css/style.css" />
+
+    <link rel="stylesheet" href="../css/ex.css" />
     <link rel="stylesheet" href="../css/foot.css" />
   </head>
   <body>
@@ -36,50 +39,14 @@
       <!-- Header with Progress Indicator -->
       <header id="header_"></header>
 
-      <main class="mx-auto px-4 py-8">
+      <main class="mx-auto px-4 py-8 container">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <!-- Checkout Form -->
           <div class="lg:col-span-2 space-y-8">
             <!-- Delivery Options -->
-            <section class="bg-white p-6 rounded-lg shadow-sm">
-              <h2 class="text-xl font-semibold mb-4">Delivery Method</h2>
-              <div class="space-y-4">
-                <label
-                  class="flex items-center p-4 border rounded-lg cursor-pointer hover:border-black"
-                >
-                  <input
-                    type="radio"
-                    name="delivery"
-                    class="form-radio text-black"
-                    checked
-                  />
-                  <div class="ml-4">
-                    <div class="font-semibold">Standard Delivery</div>
-                    <div class="text-sm text-gray-600">
-                      Free • 3-5 business days
-                    </div>
-                  </div>
-                </label>
-                <label
-                  class="flex items-center p-4 border rounded-lg cursor-pointer hover:border-black"
-                >
-                  <input
-                    type="radio"
-                    name="delivery"
-                    class="form-radio text-black"
-                  />
-                  <div class="ml-4">
-                    <div class="font-semibold">Express Delivery</div>
-                    <div class="text-sm text-gray-600">
-                      $12.99 • 1-2 business days
-                    </div>
-                  </div>
-                </label>
-              </div>
-            </section>
 
             <!-- Shipping Address -->
-            <section class="bg-white p-6 rounded-lg shadow-sm">
+            <section class="bg-white p-6 rounded-lg">
               <div class="flex items-center justify-between mb-4">
                 <h2 class="text-xl font-semibold">Shipping Address</h2>
                 <button class="text-sm text-gray-600 hover:text-black">
@@ -167,7 +134,7 @@
             </section>
 
             <!-- Payment Method -->
-            <section class="bg-white p-6 rounded-lg shadow-sm">
+            <section class="bg-white p-6 rounded-lg">
               <div class="flex items-center justify-between mb-4">
                 <h2 class="text-xl font-semibold">Payment Method</h2>
                 <div class="flex space-x-2">
@@ -248,7 +215,7 @@
 
           <!-- Order Summary -->
           <div class="lg:col-span-1">
-            <div class="bg-white p-6 rounded-lg shadow-sm sticky top-4">
+            <div class="bg-white p-6 rounded-lg sticky top-4">
               <h2 class="text-xl font-semibold mb-4">Order Summary</h2>
 
               <!-- Product -->
