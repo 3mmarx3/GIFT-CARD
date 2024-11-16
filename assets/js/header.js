@@ -673,153 +673,154 @@ header_.innerHTML = header;
 
 let footer = `
 <footer class="footer">
-      <div class="footer-top">
-        <div class="container">
-          <div class="footer-brand">
-            <a href="#" class="logo">Gamics</a>
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-brand">
+        <a href="#" class="logo">جاميكس</a>
 
-            <p class="footer-text">
-              Gamics marketplace the relase etras thats sheets continig passag.
-            </p>
+        <p class="footer-text">
+          جاميكس هو أفضل موقع لشراء بطاقات الألعاب الرقمية بأفضل الأسعار وخدمة متميزة.
+        </p>
 
-            <ul class="contact-list">
-              <li class="contact-item">
-                <div class="contact-icon">
-                  <ion-icon name="location" role="img" class="md hydrated" aria-label="location"></ion-icon>
-                </div>
-
-                <address class="item-text">
-                  Address : PO Box W75 Street lan West new queens
-                </address>
-              </li>
-
-              <li class="contact-item">
-                <div class="contact-icon">
-                  <ion-icon name="headset" role="img" class="md hydrated" aria-label="headset"></ion-icon>
-                </div>
-
-                <a href="tel:+241245654235" class="item-text">Phone : +24 1245 654 235</a>
-              </li>
-
-              <li class="contact-item">
-                <div class="contact-icon">
-                  <ion-icon name="mail-open" role="img" class="md hydrated" aria-label="mail open"></ion-icon>
-                </div>
-
-                <a href="mailto:info@exemple.com" class="item-text">Email : info@exemple.com</a>
-              </li>
-            </ul>
-          </div>
-
-          <ul class="footer-list">
-            <li>
-              <p class="footer-list-title">Products</p>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Graphics (26)</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Backgrounds (11)</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Fonts (9)</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Music (3)</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Photography (3)</a>
-            </li>
-          </ul>
-
-          <ul class="footer-list">
-            <li>
-              <p class="footer-list-title">Need Help?</p>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Terms &amp; Conditions</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Privacy Policy</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Refund Policy</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Affiliate</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Use Cases</a>
-            </li>
-          </ul>
-
-          <div class="footer-wrapper">
-            <div class="social-wrapper">
-              <p class="footer-list-title">Follow Us</p>
-
-              <ul class="social-list">
-                <li>
-                  <a href="#" class="social-link" style="background-color: #3b5998">
-                    <ion-icon name="logo-facebook" role="img" class="md hydrated" aria-label="logo facebook"></ion-icon>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="social-link" style="background-color: #55acee">
-                    <ion-icon name="logo-twitter" role="img" class="md hydrated" aria-label="logo twitter"></ion-icon>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="social-link" style="background-color: #d71e18">
-                    <ion-icon name="logo-pinterest" role="img" class="md hydrated" aria-label="logo pinterest"></ion-icon>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="social-link" style="background-color: #1565c0">
-                    <ion-icon name="logo-linkedin" role="img" class="md hydrated" aria-label="logo linkedin"></ion-icon>
-                  </a>
-                </li>
-              </ul>
+        <ul class="contact-list">
+          <li class="contact-item">
+            <div class="contact-icon">
+              <ion-icon name="location" role="img" class="md hydrated" aria-label="location"></ion-icon>
             </div>
 
-            <div class="footer-newsletter">
-              <p class="footer-list-title">Newsletter Sign Up</p>
+            <address class="item-text">
+              العنوان: صندوق بريد W75 شارع لان، كوينز الجديدة
+            </address>
+          </li>
 
-              <form action="" class="footer-newsletter">
-                <input type="email" name="email_address" aria-label="email" placeholder="Enter your email" required="" class="email-field">
-
-                <button type="submit" class="footer-btn" aria-label="submit">
-                  <ion-icon name="rocket" role="img" class="md hydrated" aria-label="rocket"></ion-icon>
-                </button>
-              </form>
+          <li class="contact-item">
+            <div class="contact-icon">
+              <ion-icon name="headset" role="img" class="md hydrated" aria-label="headset"></ion-icon>
             </div>
-          </div>
-        </div>
+
+            <a href="tel:+241245654235" class="item-text">الهاتف: +24 1245 654 235</a>
+          </li>
+
+          <li class="contact-item">
+            <div class="contact-icon">
+              <ion-icon name="mail-open" role="img" class="md hydrated" aria-label="mail open"></ion-icon>
+            </div>
+
+            <a href="mailto:info@gamics.com" class="item-text">البريد الإلكتروني: info@gamics.com</a>
+          </li>
+        </ul>
       </div>
 
-      <div class="footer-bottom">
-        <div class="container">
-          <p class="copyright">
-            © 2022 Gamics. All Right Reserved by
-            <a href="#" class="copyright-link">codewithsadee</a>
-          </p>
+      <ul class="footer-list">
+        <li>
+          <p class="footer-list-title">أهم الفئات</p>
+        </li>
 
-          <img src="./assets/images/footer-bottom-img.png" width="340" height="21" loading="lazy" alt="" class="footer-bottom-img">
+        <li>
+          <a href="#" class="footer-link">بطاقات ستيم</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">بطاقات بلاي ستيشن</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">بطاقات إكس بوكس</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">بطاقات نينتندو</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">بطاقات جوجل بلاي</a>
+        </li>
+      </ul>
+
+      <ul class="footer-list">
+        <li>
+          <p class="footer-list-title">روابط مهمة</p>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">الشروط والأحكام</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">سياسة الخصوصية</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">سياسة الاسترداد</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">كيفية الطلب</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">الأسئلة الشائعة</a>
+        </li>
+      </ul>
+
+      <div class="footer-wrapper">
+        <div class="social-wrapper">
+          <p class="footer-list-title">تابعنا على مواقع التواصل</p>
+
+          <ul class="social-list">
+            <li>
+              <a href="#" class="social-link" style="background-color: #3b5998">
+                <ion-icon name="logo-facebook" role="img" class="md hydrated" aria-label="logo facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link" style="background-color: #55acee">
+                <ion-icon name="logo-twitter" role="img" class="md hydrated" aria-label="logo twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link" style="background-color: #d71e18">
+                <ion-icon name="logo-pinterest" role="img" class="md hydrated" aria-label="logo pinterest"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link" style="background-color: #1565c0">
+                <ion-icon name="logo-linkedin" role="img" class="md hydrated" aria-label="logo linkedin"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter">
+          <p class="footer-list-title">اشترك في النشرة الإخبارية</p>
+
+          <form action="" class="footer-newsletter">
+            <input type="email" name="email_address" aria-label="email" placeholder="أدخل بريدك الإلكتروني" required="" class="email-field">
+
+            <button type="submit" class="footer-btn" aria-label="submit">
+              <ion-icon name="rocket" role="img" class="md hydrated" aria-label="rocket"></ion-icon>
+            </button>
+          </form>
         </div>
       </div>
-    </footer>`;
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p class="copyright">
+        © 2022 جاميكس. جميع الحقوق محفوظة. Powered by
+        <a href="#" class="copyright-link">Gamics Team</a>
+      </p>
+
+      <img src="./assets/images/footer-bottom-img.png" width="340" height="21" loading="lazy" alt="Gamics Footer Image" class="footer-bottom-img">
+    </div>
+  </div>
+</footer>
+`;
 
 let footer_ = document.getElementById("footer_");
 

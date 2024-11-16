@@ -897,7 +897,7 @@ body {
 .footer-list-title {
   position: relative;
   color: var(--silver);
-  font-family: var(--ff-oxanium);
+  font-family: "Cairo", serif !important;
   text-transform: uppercase;
   font-weight: var(--fw-800);
   padding-block-end: 20px;
@@ -1287,7 +1287,7 @@ body {
 
   .social-title {
     color: var(--white);
-    font-family: var(--ff-oxanium);
+    font-family: "Cairo", serif !important;
     font-size: var(--fs-8);
     font-weight: var(--fw-700);
   }
