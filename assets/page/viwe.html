@@ -1,542 +1,583 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl" color-theme="light" class="thememode-is-active">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>330 مجوهرات قنشن امباكت</title>
+    <title>Fall Limited Edition Sneakers</title>
+    <style>
+      .container_viwe {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        background: #ffffff;
+        border-radius: 10px;
+        padding: 20px;
+        height: 55vh;
+        align-items: center;
+        justify-content: center;
+      }
 
-  
-    <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
-  />
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0"
-  />
+      .image {
+        border-radius: 10px;
 
-  <link
-    rel="stylesheet"
-    href="https://cdn.salla.network/fonts/sallaicons.css?v=2.0.3"
-  />
+        background: red;
+        height: 50vh;
+      }
 
+      .details {
+        display: flex;
+        flex-direction: column;
+      }
 
-  
+      .details h1 {
+        font-size: 1.5rem;
+        color: #333;
+      }
 
-    <link
-    rel="stylesheet"
-    href="https://cdn.salla.network/fonts/sallaicons.css?v=2.0.3"
-  />
-  <link rel="stylesheet" href="../css/foot.css" />
+      .details p {
+        color: #666;
+        font-size: 0.9rem;
+        line-height: 1.6;
+      }
 
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+      .price {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+      }
 
-  <link rel="stylesheet" href="../css/style.css" />
+      .price span {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #333;
+        margin-right: 10px;
+      }
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap"
-    rel="stylesheet"
-  />
+      .price .discount {
+        background: #ff7043;
+        color: white;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-size: 0.8rem;
+      }
 
-  <link
-    rel="stylesheet"
-    href="https://cdn.salla.network/fonts/default.css?v=2.0.3"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdn.salla.network/fonts/sallaicons.css?v=2.0.3"
-  />
+      .price del {
+        font-size: 0.9rem;
+        color: #aaa;
+        margin-left: auto;
+      }
 
-  <link
-  rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
-/>
-<link
-  rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0"
-/>
+      .cart {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
 
-  <link rel="stylesheet" href="../css/style.css" />
-  <link rel="stylesheet" href="../css/foot.css" />
-  <link rel="stylesheet" href="../css/app.css" />
+      .cart input {
+        width: 40px;
+        text-align: center;
+        font-size: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 5px;
+      }
 
+      .cart button {
+        background-color: #ff7043;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+      }
 
-  <link rel="stylesheet" href="../css/ex.css">
+      .cart button:hover {
+        background-color: #ff5722;
+      }
 
+      @media screen and (max-width: 992px) {
+        .container_viwe {
+          display: block;
+        }
+      }
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
 
+      .block {
+        background: #fff;
+        padding: 1rem;
+        background: #ffffff;
+
+        display: block;
+      }
+      .block-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 16px;
+      }
+      .block-header .title {
+        display: flex;
+        align-items: flex-start;
+      }
+      .block-header .title .tag {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 4px;
+        background: #f7f7f7;
+        color: #1c1c1c;
+        text-align: center;
+        padding: 0 4px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 16px;
+        border: 1px solid #e8e8e8;
+        border-radius: 96px;
+      }
+
+      .writing {
+        background: #ffffff;
+        border: 1px solid #e8e8e8;
+        border-radius: 8px;
+        overflow: hidden;
+        margin-bottom: 24px;
+        padding: 12px;
+      }
+      .writing .textarea {
+        width: 100%;
+        font-family: "Inter";
+        color: #585757;
+        height: 50px;
+        overflow-y: auto;
+        appearance: none;
+        border: 0;
+        outline: 0;
+        resize: none;
+        font-size: 16px;
+        line-height: 24px;
+      }
+      .writing:focus-within {
+        border: 1px solid #0085ff;
+        box-shadow: 0px 0px 2px 2px rgba(0, 133, 255, 0.15);
+      }
+      .writing .footer {
+        margin-top: 12px;
+        padding-top: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid #e8e8e8;
+      }
+      .writing .footer .text-format {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .comment {
+        display: grid;
+        gap: 14px;
+      }
+      .comment .user-banner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .comment .user-banner .user {
+        gap: 8px;
+        align-items: center;
+        display: flex;
+      }
+      .comment .user-banner .user .avatar {
+        height: 32px;
+        width: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid transparent;
+        position: relative;
+        border-radius: 100px;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 20px;
+      }
+      .comment .user-banner .user .avatar img {
+        max-width: 100%;
+        border-radius: 50%;
+      }
+      .comment .user-banner .user .avatar .stat {
+        display: flex;
+        position: absolute;
+        right: -2px;
+        bottom: -2px;
+        display: block;
+        width: 12px;
+        height: 12px;
+        z-index: 9;
+        border: 2px solid #ffffff;
+        border-radius: 100px;
+      }
+      .comment .user-banner .user .avatar .stat.green {
+        background: #00ba34;
+      }
+      .comment .user-banner .user .avatar .stat.grey {
+        background: #969696;
+      }
+      .comment .footer {
+        gap: 12px;
+        display: flex;
+        align-items: center;
+      }
+      .comment .footer .reactions {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .comment .footer .divider {
+        height: 12px;
+        width: 1px;
+        background: #e8e8e8;
+      }
+      .comment:not(.comment:first-child) {
+        padding-bottom: 12px;
+        margin-bottom: 12px;
+        border-bottom: 1px solid #e8e8e8;
+      }
+      .comment + .comment {
+        padding-top: 12px;
+      }
+      .comment.reply .user-banner,
+      .comment.reply .content,
+      .comment.reply .footer {
+        margin-left: 32px;
+      }
+
+      .group-radio {
+        position: relative;
+        display: flex;
+        user-select: none;
+        align-items: stretch;
+      }
+      .group-radio .button-radio {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.06);
+      }
+      .group-radio .button-radio label {
+        cursor: pointer;
+        padding: 4px 8px;
+        font-weight: 500;
+        font-size: 14px;
+        display: flex;
+        height: 28px;
+        align-items: center;
+        line-height: 28px;
+        transition: 0.2s ease;
+      }
+      .group-radio .button-radio:first-child {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        border-left: 1px solid #e8e8e8;
+        border-top: 1px solid #e8e8e8;
+        border-bottom: 1px solid #e8e8e8;
+      }
+      .group-radio .button-radio:last-child {
+        border-top-right-radius: 8px;
+        border-right: 1px solid #e8e8e8;
+        border-top: 1px solid #e8e8e8;
+        border-bottom: 1px solid #e8e8e8;
+        border-bottom-right-radius: 8px;
+      }
+      .group-radio .button-radio input[type="radio"] {
+        display: none;
+      }
+      .group-radio .button-radio input[type="radio"]:checked + label {
+        background: #f7f7f7;
+      }
+      .group-radio .divider {
+        width: 1px;
+        background: #e8e8e8;
+      }
+
+      h5 {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        color: #1c1c1c;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+
+      .btn {
+        appearance: none;
+        background: transparent;
+        border: 0;
+        padding: 0;
+        display: flex;
+        font: inherit;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: #1c1c1c;
+        transition: 0.2s ease;
+        outline: none;
+      }
+      .btn i {
+        color: #969696;
+        font-size: 18px;
+        transition: 0.15s ease-in-out;
+      }
+      .btn.primary {
+        min-width: 64px;
+        padding: 8px 12px;
+        height: 40px;
+        color: #fff;
+        display: inline-flex;
+        background: #0085ff;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1),
+          0px 2px 1px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.08);
+        border-radius: 8px;
+      }
+      .btn.primary:hover {
+        background: #339dff;
+      }
+      .btn:hover i {
+        opacity: 0.7;
+      }
+      .btn img {
+        max-width: 18px;
+        height: auto;
+      }
+      .btn.react {
+        padding: 4px 8px 4px 4px;
+        background: #f7f7f7;
+        border: 1px solid #e8e8e8;
+        border-radius: 8px;
+        gap: 4px;
+      }
+      .btn.react:hover {
+        background-color: #eee;
+      }
+      .btn.dropdown {
+        display: flex;
+        cursor: pointer;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        width: 26px;
+        height: 26px;
+      }
+      .btn.dropdown:hover {
+        background-color: #eee;
+      }
+
+      p {
+        line-height: 24px;
+      }
+      p a.tagged-user {
+        display: inline-flex;
+        padding: 2px 8px;
+        background: #e5f3ff;
+        border-radius: 256px;
+        color: #0085ff;
+      }
+
+      .is-mute {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        color: #969696;
+      }
+
+      a {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 20px;
+        color: #1c1c1c;
+        text-decoration: none;
+        transition: opacity 0.15s ease-in-out;
+      }
+      a:hover {
+        opacity: 0.7;
+      }
+
+      h2 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        color: #1c1c1c;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .load {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .load span {
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        color: #969696;
+      }
+      .load span i {
+        margin-right: 6px;
+      }
+
+      .group-button {
+        display: flex;
+        gap: 16px;
+      }
+    </style>
+  </head>
   <body>
-    <header id="header_"></header>
-
-    <div class="app-inner flex flex-col min-h-full">
-      <div class="container">
-        <div
-          class="flex flex-col items-start md:flex-row"
-          id="product-767981475"
-        >
-          <div
-            class="sidebar md:sticky top-24 w-full md:!w-2/4 rtl:ml-8 ltr:mr-8 pb-8 md:pb-16 overflow-hidden shrink-0 viwe_card"
-          >
-          
-          </div>
-
-          <div class="main-content w-full md:w-2/4 md:pb-16">
-            <h1 class="text-xl md:text-2xl leading-10 font-bold mb-6">
-              330 مجوهرات قنشن امباكت
-            </h1>
-            <salla-rating-stars value="5" reviews="1"></salla-rating-stars>
-
-            <div class="flex whitespace-nowrap gap-4 items-center">
-              <h2 class="total-price font-bold text-xl inline-block">
-                17.99 SAR
-              </h2>
-            </div>
-
-            <div class="product__description p-2 sm:p-1 leading-7 mb-3">
-              <p>
-                نشحن لك مجوهرات قنشن إمباكت على جميع السيرفرات عن
-                <strong>طريق الايدي والسيرفر</strong> بسرعة تنفيذ خيالية حتى 5
-                دقائق متاح 24 ساعة.
-              </p>
-              <p>جرب الخدمة الجديدة واستمتع باللعب!</p>
-            </div>
-
-   
-            <salla-installment price="17.99"></salla-installment>
-
-            <form
-              class="form product-form"
-              method="post"
-              enctype="multipart/form-data"
-              onsubmit="return salla.form.onSubmit('cart.addItem', event)"
-            >
-              <input type="hidden" name="id" value="767981475" />
-              <salla-product-options
-                options="[...]"
-                product-id="767981475"
-              ></salla-product-options>
-
-              <section
-                class="flex bg-white dark:bg-darker p-5 sm:pb-0 rounded-md rounded-b-none"
-              >
-                <div class="center-between w-full">
-                  <label class="form-label">
-                    <b class="block"> السعر </b>
-                  </label>
-
-                  <div class="flex whitespace-nowrap gap-4 items-center">
-                    <div
-                      class="hidden price_is_on_sale space-x-2 rtl:space-x-reverse whitespace-nowrap"
-                    >
-                      <h2
-                        class="total-price text-red-400 font-bold text-xl inline-block"
-                      >
-                        0 SAR
-                      </h2>
-                      <span class="before-price opacity-80 line-through"
-                        >17.99 SAR</span
-                      >
-                    </div>
-                    <div class="starting-or-normal-price gap-4 flex">
-                      <h2 class="total-price font-bold text-xl inline-block">
-                        17.99 SAR
-                      </h2>
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-              <section
-                class="sticky-product-bar bg-white dark:bg-darker p-5 rounded-b"
-              >
-                <div class="sticky-product-bar__quantity center-between mb-5">
-                  <label class="form-label font-bold">الكمية</label>
-                  <div class="s-quantity-input-container">
-                    <button
-                      class="s-quantity-input-increase-button s-quantity-input-button"
-                      type="button"
-                      onclick="increaseQuantity()"
-                    >
-                      +
-                    </button>
-                    <input
-                      id="quantityInput"
-                      class="s-quantity-input-input"
-                      type="number"
-                      max="500"
-                      min="1"
-                      value="1"
-                      name="quantity"
-                    />
-                    <button
-                      class="s-quantity-input-decrease-button s-quantity-input-button"
-                      type="button"
-                      onclick="decreaseQuantity()"
-                    >
-                      -
-                    </button>
-                  </div>
-                </div>
-                <div class="s-add-product-button-main">
-                  <salla-button>
-                    <button
-                  
-                      type="submit"
-                      class="undefined s-button-element s-button-btn s-button-solid s-button-wide s-button-primary s-button-loader-center"
-                    >
-                      <span class="s-button-text">إضافة للسلة</span>
-                    </button></salla-button>
-              
-                    <salla-button>
-                      <button
-                       
-                        type="submit"
-                        class="undefined s-button-element s-button-btn s-button-solid s-button-wide s-button-primary s-button-loader-center bg-none"
-                      >
-                        <span class="s-button-text"> اشتري الان</span>
-                      </button></salla-button>
-
-                </div>
-              </section>
-
-              <script>
-                function increaseQuantity() {
-                  const input = document.getElementById("quantityInput");
-                  let currentValue = parseInt(input.value);
-                  if (currentValue < input.max) {
-                    input.value = currentValue + 1;
-                  }
-                }
-
-                function decreaseQuantity() {
-                  const input = document.getElementById("quantityInput");
-                  let currentValue = parseInt(input.value);
-                  if (currentValue > input.min) {
-                    input.value = currentValue - 1;
-                  }
-                }
-              </script>
-            </form>
-          </div>
+    <div class="container_viwe">
+      <div class="image"></div>
+      <div class="details">
+        <h1>Fall Limited Edition Sneakers</h1>
+        <p>
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they'll withstand everything
+          the weather can offer.
+        </p>
+        <div class="price">
+          <span>$125.00</span>
+          <span class="discount">50%</span>
+          <del>$250.00</del>
+        </div>
+        <div class="cart">
+          <input type="number" min="1" value="1" />
+          <button>Add to cart</button>
         </div>
       </div>
+      <!-- comernt -->
 
       <!--  -->
-
-<!-- 000 -->
-<div class="s-comments s-comments-product">
-  <div class="container">
-    <h2 class="text-lg font-bold opacity-70 mb-8">
-     
-       طريقة الاستخدام
-    </h2>
-    <salla-infinite-scroll next-page="" class="hydrated">
-      
-<p class="dis">
-  Free Fire Redeem Code (Garena)
-  كيفية إعادة شحن الماس في لعبة Free Fire عن طريق رقم التعريف أو باستخدام بطاقة؟
-  1. إعادة شحن الماس في لعبة Free Fire عن طريق رقم التعريف:
-  
-  - افتح لعبة Free Fire على جهازك.
-  
-  - انتقل إلى قسم Diamond داخل اللعبة.
-  
-  - حدد عدد الماس الذي ترغب في شرائه.
-  
-  - اختر طريقة الدفع باسم "ID" وأدخل رقم التعريف الخاص بك في Free Fire.
-  
-  - أكمل عملية الدفع لإضافة الماس إلى حسابك.
-  
-  2. إعادة شحن الماس في FF باستخدام بطاقة:
-  
-  - افتح لعبة FF Diamonds على جهازك.
-  
-  - انتقل إلى قسم Diamond داخل اللعبة.
-  
-  - حدد عدد الماس الذي ترغب في شرائه.
-  
-  - اختر طريقة الدفع باسم "Card" وأدخل تفاصيل بطاقتك.
-  
-  - اتبع التعليمات المعروضة على الشاشة لإكمال عملية الدفع وشحن الماس إلى حسابك.
-  
-  ماس Free Fire (FF)
-  هناك طرق مختلفة للحصول على المزيد من ماس Free Fire. يمكنك شراؤها داخل اللعبة أو استخدام مواقع الشحن.
-  
-  بالإضافة إلى ذلك ، هناك منصات أخرى يمكنك الحصول على ماس FF من خلالها. يمكن للاعبين الحصول على ماس FF سواء عن طريق استخدام رقم التعريف الخاص بهم أو عن طريق إجراء المعاملات عبر العديد من منصات الدفع عبر الإنترنت. تشمل هذه المنصات بطاقات الائتمان / الخصم ، Google Play ، Apple Store ، وطرق الدفع الأخرى عبر الإنترنت.
-  
-  استخدم دائمًا منصات موثوقة لشراء ماس FF لمنع وقوع عمليات احتيال أو مشاكل في حسابك. أمانك يأتي في المقام الأول.
-  
-  شراء ماس FF عبر الإنترنت
-  لاستخدام شراء ماس FF عبر الإنترنت ، يمكنك زيارة موقع ماس FF الرسمي أو استخدام متجر اللعبة داخل تطبيق Free Fire. تأكد من استخدام طريقة دفع آمنة لشراء الماس.
-  
-  من أين يمكنني العثور على متاجر الماس Garena؟
-  في لعبة متجر الماس Garena ، يمكنك شراء الماس من متجر الماس في متجر اللعبة. يوفر MTCGAME متجر الماس مريحًا للاعبين لشراء الماس بسهولة في منطقتهم المحلية. تتوفر متاجر أخرى للاعبين للتسوق في المواقع المناسبة لهم. ابدأ في التسوق الآن للعناصر والميزات داخل اللعبة.
-  
-  كيف يمكنني شراء ماس Free Fire؟
-  يمكنك الحصول على ماس Free Fire عن طريق شرائها في اللعبة أو من خلال المنصات المعتمدة. MTCGame هي منصة معروفة لشراء ماس Free Fire. قم بزيارة موقع MTCGAME ، حدد كمية الماس ، قم بالدفع ، واحصل على الماس في حساب Free Fire الخاص بك. تحقق دائمًا من صحة وأمان المنصة قبل المتابعة في أي عمليات.
-  
-  ما هي الكميات من ماس Free Fire التي يشتريها العملاء؟
-  Free Fire 100 + 10 Diamonds
-  
-  Free Fire 210 + 21 Diamonds
-  
-  Free Fire 530 + 53 Diamonds
-  
-  Free Fire 1080 + 108 Diamonds
-  
-  Free Fire 2200 + 220 Diamonds
-  
-  هل يمكنني استخدام الرمز المشترى من MTCGAME للشحن في ggtop.com و pagostore.com و shop2game.com؟
-  بالتأكيد! الرموز العالمية لـ Free Fire المشتراة من MTCGAME صالحة للاستخدام على الأماكن الثلاث التالية: ggtop.com و pagostore.com و shop2game.com.
-  
-  من أي بلد يمكنني شراء ماس Free Fire Garena؟
-  يمكنك الشراء من مجموعة واسعة من البلدان المدعومة بواسطة Visa و MasterCard وبطاقات الائتمان ، بما في ذلك:
-  
-  البلدان التي يمكنك شراء ماس Free Fire منها: ألبانيا ، الجزائر ، الأرجنتين ، أرمينيا ، أستراليا ، النمسا ، أذربيجان ، البحرين ، بنغلاديش ، بلجيكا ، بوليفيا ، البرازيل ، بلغاريا ، كندا ، تشيلي ، الصين ، كولومبيا ، كوستا ريكا ، ساحل العاج ، التشيك ، الدنمارك ، جمهورية الدومينيكان ، الإكوادور ، مصر ، السلفادور ، فرنسا ، جورجيا ، ألمانيا ، غانا ، اليونان ، غواتيمالا ، هندوراس ، المجر ، الهند ، إندونيسيا ، العراق ، أيرلندا ، إسرائيل ، إيطاليا ، جامايكا ، اليابان ، الأردن ، كازاخستان ، كينيا ، الكويت ، لاتفيا ، ليتوانيا ، ماليزيا ، موريشيوس ، المكسيك ، مولدافيا ، المغرب ، ميانمار (بورما) ، نيبال ، هولندا ، نيوزيلندا ، نيجيريا ، النرويج ، عُمان ، باكستان ، فلسطين ، بنما ، باراغواي ، بيرو ، الفلبين ، بولندا ، البرتغال ، قطر ، رومانيا ، السعودية ، صربيا ، سنغافورة ، سلوفاكيا ، جنوب أفريقيا ، كوريا الجنوبية ، إسبانيا ، سريلانكا ، السويد ، سويسرا ، تايوان ، تايلاند ، تونس ، تركيا ، أوكرانيا ، الإمارات العربية المتحدة ، المملكة المتحدة ، الولايات المتحدة ، أورغواي ، أوزبكستان ، فيتنام ، هونغ كونغ.
-  
-  أي طرق الدفع تقبل Garena Free Fire Diamonds؟
-  يمكنك دفع مبلغ شراء Free Fire Diamonds باستخدام طرق الدفع المختلفة مثل VISA وتحويل البنك والمحفظة الجوالة وغيرها الكثير. تتوفر أيضًا أكثر من 700 خيار دفع محلي.
-  
-  بعض طرق الدفع المشهورة تشمل Mastercard و Paypal و AmericanExpress وبطاقات الخصم. يمكنك أيضًا استخدام خدمات مثل Momo و Oxxo و Sofort لإجراء عملية الشراء الخاصة بك. بفضل تشكيلة واسعة من الخيارات ، يمكنك بسهولة اختيار الطريقة التي تعمل بشكل أفضل بالنسبة لك.
-  
-  ما هي طريقة الوصول إلى دعم العملاء لـ Garena؟
-  انتقل إلى صفحة المساعدة الخاصة بـ Garena FF واختر أحد الخيارات المتاحة.
-  
-  من أين يمكن الحصول على تنزيل تطبيق Free Fire؟
-  تطبيق Android ، تطبيق iOS
-  
-  ما هي حسابات وسائل التواصل الاجتماعي التي يستخدمها Free Fire رسميًا؟
-  Facebook، Twitter، Instagram، Youtube
-  
-  
-  تعليقات حول Free Fire Redeem Code (Garena) 
-</p>
- 
-      
-      
-   
-      
-      
-    </salla-infinite-scroll>
-  </div>
-</div>
-
-<!-- 0000 -->
-
-      <div class="s-comments s-comments-product">
-        <div class="container">
-          <h2 class="text-lg font-bold opacity-70 mb-8">
-            <span>4</span> تعليقات
-          </h2>
-          <salla-infinite-scroll next-page="" class="hydrated"
-            ><!---->
-            <div
-              class="border-b last:border-0 mb-8 pb-8 last:pb-0 border-gray-200 dark:border-white/10 list-block"
-            >
-              <div
-                class="comment flex text-sm rtl:space-x-reverse space-x-3 comment_id_995901720"
-              >
-                <div class="flex-none">
-                  <img
-                    data-src="https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png"
-                    alt="Mohmmad Mjrshi"
-                    src="https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png"
-                    class="w-10 h-10 object-cover rounded-full lazy loaded"
-                    loading="lazy"
-                    data-ll-status="loaded"
-                  />
-                </div>
-                <div class="flex-1">
-                  <div
-                    class="flex flex-wrap md:items-center justify-between mb-2 md:mb-0"
-                  >
-                    <div class="flex items-center mb-1">
-                      <h3
-                        class="font-bold text-base rtl:ml-10 ltr:mr-10 fix-align"
-                      >
-                        Mohmmad Mjrshi
-                      </h3>
-                    </div>
-                    <p class="opacity-70 text-sm">منذ سنتين</p>
-                  </div>
-
-                  <div class="prose prose-sm max-w-none opacity-70">
-                    <p>ماشاءالله المتجر مضمون وسريع</p>
-                  </div>
-                </div>
-              </div>
+    </div>
+    <div class="block">
+      <div class="comment">
+        <div class="user-banner">
+          <div class="user">
+            <div class="avatar">
+              <img src="https://randomuser.me/api/portraits/men/86.jpg" />
+              <span class="stat grey"></span>
             </div>
-            <div
-              class="border-b last:border-0 mb-8 pb-8 last:pb-0 border-gray-200 dark:border-white/10 list-block"
-            >
-              <div
-                class="comment flex text-sm rtl:space-x-reverse space-x-3 comment_id_359088738"
-              >
-                <div class="flex-none">
-                  <img
-                    data-src="https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_female.png"
-                    alt="منيره اليمني"
-                    src="https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_female.png"
-                    class="w-10 h-10 object-cover rounded-full lazy loaded"
-                    loading="lazy"
-                    data-ll-status="loaded"
-                  />
-                </div>
-                <div class="flex-1">
-                  <div
-                    class="flex flex-wrap md:items-center justify-between mb-2 md:mb-0"
-                  >
-                    <div class="flex items-center mb-1">
-                      <h3
-                        class="font-bold text-base rtl:ml-10 ltr:mr-10 fix-align"
-                      >
-                        منيره اليمني
-                      </h3>
-                    </div>
-                    <p class="opacity-70 text-sm">منذ سنتين</p>
-                    <div
-                      class="w-full comment__rating text-xs mb-2.5 rtl:space-x-reverse space-x-1"
-                    >
-                      <i class="sicon-star2 inline-block text-amber-400"></i>
-                      <i class="sicon-star2 inline-block text-amber-400"></i>
-                      <i class="sicon-star2 inline-block text-amber-400"></i>
-                      <i class="sicon-star2 inline-block text-amber-400"></i>
-                      <i class="sicon-star2 inline-block text-amber-400"></i>
-                    </div>
-                  </div>
-
-                  <div class="prose prose-sm max-w-none opacity-70">
-                    <p></p>
-                    <i
-                      class="icon-cart user-buy"
-                      data-toggle="tooltip"
-                      data-placement="right"
-                      title="قام بالشراء"
-                    ></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="border-b last:border-0 mb-8 pb-8 last:pb-0 border-gray-200 dark:border-white/10 list-block"
-            >
-              <div
-                class="comment flex text-sm rtl:space-x-reverse space-x-3 comment_id_248654503"
-              >
-                <div class="flex-none">
-                  <img
-                    data-src="https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png"
-                    alt="علي الأحبابي"
-                    src="https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png"
-                    class="w-10 h-10 object-cover rounded-full lazy loaded"
-                    loading="lazy"
-                    data-ll-status="loaded"
-                  />
-                </div>
-                <div class="flex-1">
-                  <div
-                    class="flex flex-wrap md:items-center justify-between mb-2 md:mb-0"
-                  >
-                    <div class="flex items-center mb-1">
-                      <h3
-                        class="font-bold text-base rtl:ml-10 ltr:mr-10 fix-align"
-                      >
-                        علي الأحبابي
-                      </h3>
-                    </div>
-                    <p class="opacity-70 text-sm">منذ سنتين</p>
-                  </div>
-
-                  <div class="prose prose-sm max-w-none opacity-70">
-                    <p>والله من افضل المواقع ، وسريعين ومضمون ، الله يوفقكم</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="border-b last:border-0 mb-8 pb-8 last:pb-0 border-gray-200 dark:border-white/10 list-block"
-            >
-              <div
-                class="comment flex text-sm rtl:space-x-reverse space-x-3 comment_id_1022692262"
-              >
-                <div class="flex-none">
-                  <img
-                    data-src="https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png"
-                    alt="Abodi Radi"
-                    src="https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png"
-                    class="w-10 h-10 object-cover rounded-full lazy loaded"
-                    loading="lazy"
-                    data-ll-status="loaded"
-                  />
-                </div>
-                <div class="flex-1">
-                  <div
-                    class="flex flex-wrap md:items-center justify-between mb-2 md:mb-0"
-                  >
-                    <div class="flex items-center mb-1">
-                      <h3
-                        class="font-bold text-base rtl:ml-10 ltr:mr-10 fix-align"
-                      >
-                        Abodi Radi
-                      </h3>
-                    </div>
-                    <p class="opacity-70 text-sm">منذ سنتين</p>
-                  </div>
-
-                  <div class="prose prose-sm max-w-none opacity-70">
-                    <p>شكراً على الموقع الجميل</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </salla-infinite-scroll>
+            <h5>Floyd Miles</h5>
+          </div>
+          <button class="btn dropdown"><i class="ri-more-line"></i></button>
+        </div>
+        <div class="content">
+          <p>
+            Actually, now that I try out the links on my message, above, none of
+            them take me to the secure site. Only my shortcut on my desktop,
+            which I created years ago.
+          </p>
+        </div>
+        <div class="footer">
+          <button class="btn"><i class="ri-emotion-line"></i></button>
+          <div class="reactions">
+            <button class="btn react">
+              <img
+                src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/325/thumbs-up_1f44d.png"
+                alt=""
+              />4
+            </button>
+            <button class="btn react">
+              <img
+                src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/325/angry-face-with-horns_1f47f.png"
+                alt=""
+              />1
+            </button>
+          </div>
+          <div class="divider"></div>
+          <a href="#">Reply</a>
+          <div class="divider"></div>
+          <span class="is-mute">6 hour</span>
         </div>
       </div>
+      <div>
+        <div class="comment">
+          <div class="user-banner">
+            <div class="user">
+              <div
+                class="avatar"
+                style="
+                  background-color: #fff5e9;
+                  border-color: #ffe0bd;
+                  color: #f98600;
+                "
+              >
+                AF
+                <span class="stat green"></span>
+              </div>
+              <h5>Albert Flores</h5>
+            </div>
+            <button class="btn dropdown"><i class="ri-more-line"></i></button>
+          </div>
+          <div class="content">
+            <p>
+              Before installing this plugin please put back again your wordpress
+              and site url back to http.
+            </p>
+          </div>
+          <div class="footer">
+            <button class="btn"><i class="ri-emotion-line"></i></button>
+            <div class="divider"></div>
+            <a href="#">Reply</a>
+            <div class="divider"></div>
+            <span class="is-mute">2 min</span>
+          </div>
+        </div>
+        <div class="reply comment">
+          <div class="user-banner">
+            <div class="user">
+              <div class="avatar">
+                <img
+                  src="https://images.unsplash.com/photo-1510227272981-87123e259b17?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=3759e09a5b9fbe53088b23c615b6312e"
+                  alt=""
+                />
+                <span class="stat green"></span>
+              </div>
+              <h5>Bessie Cooper</h5>
+            </div>
+            <button class="btn dropdown"><i class="ri-more-line"></i></button>
+          </div>
+          <div class="content">
+            <p>
+              Hi <a href="#" class="tagged-user">@Albert Flores</a>.Thanks for
+              your reply.
+            </p>
+          </div>
+          <div class="footer">
+            <button class="btn"><i class="ri-emotion-line"></i></button>
+            <div class="reactions">
+              <button class="btn react">
+                <img
+                  src="https://cdn-0.emojis.wiki/emoji-pics/apple/smiling-face-with-heart-eyes-apple.png"
+                  alt=""
+                />2
+              </button>
+            </div>
+            <div class="divider"></div>
+            <a href="#">Reply</a>
+            <div class="divider"></div>
+            <span class="is-mute">18 sec</span>
+          </div>
+        </div>
+      </div>
+      <div class="load">
+        <span><i class="ri-refresh-line"></i>Loading</span>
+      </div>
     </div>
-
-
-
-    <footer id="footer_"></footer>
-
-    
-    <!-- 
-    - #BACK TO TOP
-  -->
-
-
-    <!-- 
-    - custom js link
-  -->
-    <script src="../js/script.js" defer></script>
-
-    <!-- 
-    - ionicon link
-  -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-
-
-    <style>
-
-div#kt_header {
-    direction: ltr;
-}
-    </style>
-
-    <script src="./assets/js/header.js"></script>
-    <script src="../js/header.js"></script>
-    <style>
-      body{
-      font-family: "Cairo", serif !important;
-    
-    }
-    </style>
   </body>
 </html>
