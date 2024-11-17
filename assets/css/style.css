@@ -1736,19 +1736,20 @@ input {
 
 /* ADS */
 .section_ADS {
-  height: 50vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
+  padding: 20px;
+  margin-bottom: 5vh;
 }
 
 .Add_img {
   border-radius: 10px;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url(https://storegg-gametopup.vercel.app/img/Header-1.png);
-  height: 60vh;
+  background-image: url(../img/bg.jpg);
+  height: 40vh;
 }
 
 .hero-text {
@@ -1865,4 +1866,27 @@ section.section_ADS.container {
     grid-template-columns: 1fr;
     height: auto;
   }
+  .d-flex.align-items-center.none_ {
+    display: none !important;
+  }
+  .s-modal-body {
+    position: relative !important;
+  }
+
+  .s-modal-body {
+    border-radius: 10px;
+    margin: 15px;
+  }
+  .Add_img {
+    height: 25vh;
+  }
+}
+
+.chat_Gpt {
+  z-index: 999999999999999999;
+  position: relative;
+}
+button.s-button-element {
+  background: orange;
+  width: 100%;
 }

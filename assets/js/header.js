@@ -315,7 +315,7 @@ ul.chatbox {
       class="container-xxl d-flex align-items-stretch justify-content-between"
     >
       <!--begin::Left-->
-      <div class="d-flex align-items-center">
+      <div class="d-flex align-items-center none_">
         <!--begin::Mega Menu Toggler-->
         <button
           class="btn btn-icon btn-accent me-2 me-lg-6"
