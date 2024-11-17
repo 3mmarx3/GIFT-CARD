@@ -51,7 +51,7 @@
    * spacing
    */
 
-  --section-padding: 120px;
+  --section-padding: 5vh 10vh;
 
   /**
    * gradient
@@ -1964,4 +1964,20 @@ input.input {
     font-size: x-large;
     color: white !important;
   }
+}
+
+h2.h2.section-title {
+  position: relative;
+}
+
+h2.h2.section-title::before {
+  content: "";
+  position: absolute;
+  width: -webkit-fill-available;
+  background: #0e121c;
+  height: 3px;
+  margin: auto;
+  left: 0;
+  top: 39%;
+  z-index: -1;
 }
