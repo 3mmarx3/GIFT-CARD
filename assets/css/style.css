@@ -1866,9 +1866,9 @@ section.section_ADS.container {
     grid-template-columns: 1fr;
     height: auto;
   }
-  .d-flex.align-items-center.none_ {
+  /* .d-flex.align-items-center.none_ {
     display: none !important;
-  }
+  } */
   .s-modal-body {
     position: relative !important;
   }
