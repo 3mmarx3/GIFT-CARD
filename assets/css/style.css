@@ -1772,6 +1772,94 @@ section.section_ADS.container {
   margin-bottom: 25vh;
 }
 
+.bg_black section.section.latest-game .container h2 {
+  color: white !important;
+}
+
+.section-wrapper.bg_black {
+  background: black;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-text {
+  max-width: 100%;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  color: #232233;
+}
+
+.hero-text h1 span {
+  color: var(--marigold);
+  text-decoration: underline;
+}
+
+.hero-text p {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #666;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+}
+
+.hero-buttons a {
+  padding: 10px 20px;
+  margin-right: 15px;
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--marigold);
+  border-radius: 20px;
+}
+
+.hero-buttons a:last-child {
+  background-color: #fff;
+  color: var(--marigold);
+  border: 1px solid var(--marigold);
+}
+
+.hero-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.hero-images img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.hero-images .review {
+  position: relative;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.review-stars {
+  display: flex;
+  gap: 5px;
+}
+
+.review-stars span {
+  color: gold;
+}
+
 @media screen and (max-width: 767px) {
   .section_ADS {
     grid-template-columns: 1fr;
