@@ -1744,11 +1744,32 @@ input {
 
 .Add_img {
   border-radius: 10px;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url(../img/bg.jpg);
-  height: 45vh;
+  background-image: url(https://storegg-gametopup.vercel.app/img/Header-1.png);
+  height: 60vh;
+}
+
+.hero-text {
+  margin: 5vh 0;
+}
+
+.Add_img_ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.section_ADS.container {
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.container.section_ADS {
+  margin-top: 5vh;
+  margin-bottom: 25vh;
 }
 
 @media screen and (max-width: 767px) {
