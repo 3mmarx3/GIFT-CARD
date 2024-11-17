@@ -30,7 +30,7 @@
   --marigold_75: hsla(42, 99%, 46%, 0.75);
   --xiketic_90: hsla(280, 37%, 8%, 0.9);
   --cultured-2: hsl(0, 0%, 97%);
-  --marigold: hsl(42, 99%, 46%);
+  --marigold: hsl(218.89deg 100% 50.39%);
   --platinum: hsl(0, 0%, 89%);
   --dim-gray: hsl(0, 0%, 42%);
   --white_15: hsla(0, 0%, 100%, 0.15);
@@ -1897,4 +1897,50 @@ button.chatbot-toggler {
   position: fixed;
   bottom: 100px;
   right: 30px;
+}
+
+/* Categories */
+
+.Categories {
+  height: 15vh;
+  background: #141a2a;
+  margin: 5vh 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  overflow: auto;
+}
+
+.Categories_img {
+  background-image: url(../images/ca.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 10vh;
+  width: 110px;
+  height: 110px;
+}
+
+body {
+  background: #141a2a !important;
+}
+
+.container-xxl.d-flex.align-items-stretch.justify-content-between {
+  color: white !important;
+}
+
+.container-xxl.d-flex.align-items-stretch.justify-content-between svg {
+  color: white;
+  width: 25px;
+  height: 25px;
+}
+
+.Ads_Game {
+  margin-bottom: 5vh;
+}
+
+h2.h2.section-title {
+  font-size: xxx-large;
+  color: white !important;
 }
