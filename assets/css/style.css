@@ -1890,3 +1890,11 @@ button.s-button-element {
   background: orange;
   width: 100%;
 }
+
+button.chatbot-toggler {
+  background: orange;
+  color: white;
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+}
