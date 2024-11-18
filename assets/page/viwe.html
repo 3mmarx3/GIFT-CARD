@@ -4,12 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fall Limited Edition Sneakers</title>
+
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0&family=Oxanium:wght@600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+    />
+
+    <!-- Salla Network Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.salla.network/fonts/sallaicons.css?v=2.0.3"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.salla.network/fonts/default.css?v=2.0.3"
+    />
+
+    <!-- Local CSS Files -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/foot.css" />
+    <link rel="stylesheet" href="../css/ex.css" />
+    <link rel="stylesheet" href="../css/app.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- Preconnect for Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
     <style>
+      body,
+      a {
+        font-family: "Cairo", serif !important;
+      }
+    </style>
+
+    <!--  -->
+    <style>
+      body {
+        background: #141a2a;
+        color: white;
+      }
+
       .container_viwe {
         display: grid;
         gap: 20px;
         grid-template-columns: 1fr 1fr;
-        background: #ffffff;
         border-radius: 10px;
         padding: 20px;
         height: 55vh;
@@ -20,23 +67,28 @@
       .image {
         border-radius: 10px;
 
-        background: red;
+        background: url(../img/bg.jpg);
         height: 50vh;
+
+        background-position: center center;
+        background-size: cover;
       }
 
       .details {
         display: flex;
         flex-direction: column;
+        margin-top: 5vh;
+        gap: 15px;
       }
 
       .details h1 {
-        font-size: 1.5rem;
-        color: #333;
+        color: white;
+        font-size: xx-large;
       }
 
       .details p {
-        color: #666;
-        font-size: 0.9rem;
+        color: white;
+        font-size: larger;
         line-height: 1.6;
       }
 
@@ -49,12 +101,12 @@
       .price span {
         font-size: 1.2rem;
         font-weight: bold;
-        color: #333;
+        color: white;
         margin-right: 10px;
       }
 
       .price .discount {
-        background: #ff7043;
+        background: var(--marigold);
         color: white;
         padding: 2px 6px;
         border-radius: 4px;
@@ -84,17 +136,13 @@
       }
 
       .cart button {
-        background-color: #ff7043;
+        background-color: var(--marigold);
         color: white;
         border: none;
         padding: 10px 20px;
         font-size: 1rem;
         border-radius: 5px;
         cursor: pointer;
-      }
-
-      .cart button:hover {
-        background-color: #ff5722;
       }
 
       @media screen and (max-width: 992px) {
@@ -107,9 +155,7 @@
       @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
 
       .block {
-        background: #fff;
         padding: 1rem;
-        background: #ffffff;
 
         display: block;
       }
@@ -441,143 +487,141 @@
     </style>
   </head>
   <body>
-    <div class="container_viwe">
-      <div class="image"></div>
-      <div class="details">
-        <h1>Fall Limited Edition Sneakers</h1>
-        <p>
-          These low-profile sneakers are your perfect casual wear companion.
-          Featuring a durable rubber outer sole, they'll withstand everything
-          the weather can offer.
-        </p>
-        <div class="price">
-          <span>$125.00</span>
-          <span class="discount">50%</span>
-          <del>$250.00</del>
-        </div>
-        <div class="cart">
-          <input type="number" min="1" value="1" />
-          <button>Add to cart</button>
-        </div>
-      </div>
-      <!-- comernt -->
+    <main class="container">
+      <header id="header_"></header>
 
-      <!--  -->
-    </div>
-    <div class="block">
-      <div class="comment">
-        <div class="user-banner">
-          <div class="user">
-            <div class="avatar">
-              <img src="https://randomuser.me/api/portraits/men/86.jpg" />
-              <span class="stat grey"></span>
-            </div>
-            <h5>Floyd Miles</h5>
-          </div>
-          <button class="btn dropdown"><i class="ri-more-line"></i></button>
-        </div>
-        <div class="content">
+      <div class="container_viwe">
+        <div class="image"></div>
+        <div class="details">
+          <h1>Fall Limited Edition Sneakers</h1>
           <p>
-            Actually, now that I try out the links on my message, above, none of
-            them take me to the secure site. Only my shortcut on my desktop,
-            which I created years ago.
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they'll withstand everything
+            the weather can offer.
           </p>
-        </div>
-        <div class="footer">
-          <button class="btn"><i class="ri-emotion-line"></i></button>
-          <div class="reactions">
-            <button class="btn react">
-              <img
-                src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/325/thumbs-up_1f44d.png"
-                alt=""
-              />4
-            </button>
-            <button class="btn react">
-              <img
-                src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/325/angry-face-with-horns_1f47f.png"
-                alt=""
-              />1
-            </button>
+          <div class="price">
+            <span>$125.00</span>
+            <span class="discount">50%</span>
+            <del>$250.00</del>
           </div>
-          <div class="divider"></div>
-          <a href="#">Reply</a>
-          <div class="divider"></div>
-          <span class="is-mute">6 hour</span>
+          <div class="cart">
+            <input type="number" min="1" value="1" />
+            <button>اضافة الي السلة</button>
+          </div>
         </div>
+        <!-- comernt -->
+
+        <!--  -->
       </div>
-      <div>
-        <div class="comment">
-          <div class="user-banner">
-            <div class="user">
-              <div
-                class="avatar"
-                style="
-                  background-color: #fff5e9;
-                  border-color: #ffe0bd;
-                  color: #f98600;
-                "
-              >
-                AF
-                <span class="stat green"></span>
-              </div>
-              <h5>Albert Flores</h5>
+
+      <div class="section-wrapper">
+        <!-- 
+          - #LATEST GAME
+        -->
+
+        <section class="section latest-game" aria-label="latest game">
+          <div class="container">
+            <p class="section-subtitle">Latest Releases</p>
+
+            <h2 class="h2 section-title" style="color: black">
+              Create &amp; <span class="span">Manage</span>
+            </h2>
+
+            <div class="Ads_Game">
+              <img src="./assets/images/adss.webp" alt="" />
             </div>
-            <button class="btn dropdown"><i class="ri-more-line"></i></button>
-          </div>
-          <div class="content">
-            <p>
-              Before installing this plugin please put back again your wordpress
-              and site url back to http.
-            </p>
-          </div>
-          <div class="footer">
-            <button class="btn"><i class="ri-emotion-line"></i></button>
-            <div class="divider"></div>
-            <a href="#">Reply</a>
-            <div class="divider"></div>
-            <span class="is-mute">2 min</span>
-          </div>
-        </div>
-        <div class="reply comment">
-          <div class="user-banner">
-            <div class="user">
-              <div class="avatar">
-                <img
-                  src="https://images.unsplash.com/photo-1510227272981-87123e259b17?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=3759e09a5b9fbe53088b23c615b6312e"
-                  alt=""
-                />
-                <span class="stat green"></span>
-              </div>
-              <h5>Bessie Cooper</h5>
+
+            <div class="Game">
+              <a href="./assets/page/viwe.html">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="background-image: url(../img/bigo_33disc_sa.jpg)"
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
+
+              <a href="./assets/page/viwe.html">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="background-image: url(../img/codm-wl_178x178.jpg)"
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
+
+              <a href="./assets/page/viwe.html">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="background-image: url(../img/CODM_oct23-tile.png)"
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
+
+              <a href="#">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="background-image: url(../img/diablo_tile.png)"
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
+
+              <a href="#">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="
+                      background-image: url(../img/goddess-paradise-tile.png);
+                    "
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
+
+              <a href="#">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="background-image: url(../img/hago_tile.jpg)"
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
             </div>
-            <button class="btn dropdown"><i class="ri-more-line"></i></button>
           </div>
-          <div class="content">
-            <p>
-              Hi <a href="#" class="tagged-user">@Albert Flores</a>.Thanks for
-              your reply.
-            </p>
-          </div>
-          <div class="footer">
-            <button class="btn"><i class="ri-emotion-line"></i></button>
-            <div class="reactions">
-              <button class="btn react">
-                <img
-                  src="https://cdn-0.emojis.wiki/emoji-pics/apple/smiling-face-with-heart-eyes-apple.png"
-                  alt=""
-                />2
-              </button>
-            </div>
-            <div class="divider"></div>
-            <a href="#">Reply</a>
-            <div class="divider"></div>
-            <span class="is-mute">18 sec</span>
-          </div>
-        </div>
+        </section>
+
+        <!-- 
+          - #LIVE MATCH
+        -->
       </div>
-      <div class="load">
-        <span><i class="ri-refresh-line"></i>Loading</span>
-      </div>
-    </div>
+    </main>
+
+    <footer id="footer_"></footer>
+
+    <style>
+      @media screen and (max-width: 992px) {
+        .section-wrapper {
+          margin-top: 20vh;
+        }
+        .image {
+          height: 30vh;
+        }
+      }
+    </style>
+
+    <script src="../js/header.js"></script>
   </body>
 </html>

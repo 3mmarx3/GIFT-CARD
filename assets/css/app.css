@@ -15835,7 +15835,7 @@ body [type="submit"] {
   -webkit-appearance: listitem;
 }
 body input[type="number"] {
-  -moz-appearance: textfield;
+background: none;
 }
 body .unicode {
   unicode-bidi: plaintext;
