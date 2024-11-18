@@ -1902,9 +1902,7 @@ button.chatbot-toggler {
 /* Categories */
 
 .Categories {
-  height: 15vh;
   background: #141a2a;
-  margin: 5vh 0;
   display: flex;
   align-items: center;
   justify-content: center;
