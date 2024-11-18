@@ -32,13 +32,52 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
 />
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+/>
 
-  <style>
-    body,
-    a {
-      font-family: "Cairo", serif !important;
-    }
-  </style>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+  }
+  .swiper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .swiper-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #333;
+  }
+  .swiper-pagination-bullet {
+    background: #ccc;
+  }
+  .swiper-pagination-bullet-active {
+    background: #000;
+  }
+
+  div#kt_header {
+    direction: ltr;
+}
+section.section.latest-game {
+    margin-bottom: 7vh;
+    padding-bottom: 0;
+}
+</style>
+  
 </head>
 
 </html>
@@ -57,42 +96,8 @@
         - #BRAND
       -->
 
-   <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f5f5f5;
-        margin: 0;
-        padding: 0;
-        direction: rtl;
-      }
-      .swiper {
-        width: 100%;
-        max-width: 1200px;
-        margin: 20px auto;
-        border-radius: 10px;
-        overflow: hidden;
-      }
-      .swiper-slide img {
-        width: 100%;
-        height: auto;
-        object-fit: contain;
-        border-radius: 10px;
-      }
-      .swiper-button-next,
-      .swiper-button-prev {
-        color: #333;
-      }
-      .swiper-pagination-bullet {
-        background: #ccc;
-      }
-      .swiper-pagination-bullet-active {
-        background: #000;
-      }
-    </style>
+ 
+  
 
 <div class="container">
   <div class="swiper">
@@ -156,35 +161,15 @@
 
 </div>
 
-<style>
+
   
-</style>
-  
-    <!-- إضافة مكتبة Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script>
-      // إعداد السلايدر باستخدام Swiper.js
-      const swiper = new Swiper(".swiper", {
-        loop: true,
-        autoplay: {
-          delay: 3000,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-    </script>
+
 
     <!--  -->
 
 
 
-    <div class="Categories">
+<div class="Categories">
       
 <a href="#"><div class="Categories_img" style="background-image: url(./assets/img/ads2.webp);"></div></a>
 <a href="#"><div class="Categories_img" style="background-image: url(./assets/img/ads3.webp);"></div></a>
@@ -200,93 +185,10 @@
 
 
 
-    <div class="section-wrapper">
+
       <!-- 
         - #LATEST GAME
       -->
-
-      <section class="section latest-game" aria-label="latest game">
-        <div class="container">
-          <p class="section-subtitle">Latest Releases</p>
-
-          <h2 class="h2 section-title" style="color: black">
-            Create & <span class="span">Manage</span>
-          </h2>
-
-
-
-          <div class="Ads_Game">
-            <img src="./assets/images/adss.webp" alt="">
-          </div>
-
-          <div class="Game">
-            <a href="./assets/page/viwe.html">
-              <div class="card_us">
-                <div class="card_img" style="
-                      background-image: url(./assets/img/bigo_33disc_sa.jpg);
-                    "></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
-
-            <a href="./assets/page/viwe.html">
-              <div class="card_us">
-                <div class="card_img" style="
-                      background-image: url(./assets/img/codm-wl_178x178.jpg);
-                    "></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
-
-            <a href="./assets/page/viwe.html">
-              <div class="card_us">
-                <div class="card_img" style="
-                      background-image: url(./assets/img/CODM_oct23-tile.png);
-                    "></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
-
-            <a href="#">
-              <div class="card_us">
-                <div class="card_img" style="
-                      background-image: url(./assets/img/diablo_tile.png);
-                    "></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
-
-            <a href="#">
-              <div class="card_us">
-                <div class="card_img" style="
-                      background-image: url(./assets/img/goddess-paradise-tile.png);
-                    "></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
-
-            <a href="#">
-              <div class="card_us">
-                <div class="card_img" style="background-image: url(./assets/img/hago_tile.jpg)"></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- 
-        - #LIVE MATCH
-      -->
-    </div>
-
-
 
     <!--  -->
     <div class="section-wrapper">
@@ -739,13 +641,7 @@
     </div>
 
 
-    <!-- 
-        - #NEWSLETTER
-      -->
 
-    <section class="newsletter" aria-label="newsletter">
-      <div class="container"></div>
-    </section>
 
   </main>
 
@@ -762,25 +658,35 @@
   <!-- 
     - custom js link
   -->
-  <script src="./assets/js/script.js" defer></script>
-
-  <!-- 
-    - ionicon link
-  -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="./assets/js/script.js" defer></script>
+
+
+
 
   <script src="./assets/js/header.js"></script>
 
-<style>
-  div#kt_header {
-    direction: ltr;
-}
-section.section.latest-game {
-    margin-bottom: 7vh;
-    padding-bottom: 0;
-}
-</style>
+
+    <!-- إضافة مكتبة Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      // إعداد السلايدر باستخدام Swiper.js
+      const swiper = new Swiper(".swiper", {
+        loop: true,
+        autoplay: {
+          delay: 3000,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
 
 
 </body>
