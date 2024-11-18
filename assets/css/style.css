@@ -1887,7 +1887,7 @@ section.section_ADS.container {
   position: relative;
 }
 button.s-button-element {
-  background: orange;
+  background: #025bff !important;
   width: 100%;
 }
 

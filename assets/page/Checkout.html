@@ -32,7 +32,6 @@
     <link rel="stylesheet" href="../css/style.css" />
 
     <link rel="stylesheet" href="../css/ex.css" />
-    <link rel="stylesheet" href="../css/foot.css" />
   </head>
   <body>
     <body class="bg-gray-50">
@@ -229,20 +228,6 @@
               </div>
 
               <!-- Promo Code -->
-              <div class="mb-4 pb-4 border-b">
-                <div class="flex space-x-2">
-                  <input
-                    type="text"
-                    class="flex-1 p-2 border rounded-lg focus:ring-2 focus:ring-black focus:outline-none"
-                    placeholder="Promo Code"
-                  />
-                  <button
-                    class="px-4 py-2 bg-gray-900 text-white rounded-lg hover:bg-black"
-                  >
-                    Apply
-                  </button>
-                </div>
-              </div>
 
               <!-- Cost Breakdown -->
               <div class="space-y-2 mb-4 pb-4 border-b">
@@ -288,31 +273,57 @@
       </main>
 
       <!-- Trust Signals -->
-      <section class="max-w-5xl mx-auto px-4 py-8 border-t">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-          <div>
-            <i class="fas fa-lock text-2xl mb-2"></i>
-            <h3 class="font-semibold">Secure Payment</h3>
-            <p class="text-sm text-gray-600">
-              Your data is protected by 256-bit SSL encryption
-            </p>
+
+      <div class="footer py-4 d-flex flex-lg-column" id="kt_footer">
+        <!--begin::Container-->
+        <div class="container-xxl d-flex flex-column flex-md-row flex-stack">
+          <!--begin::Copyright-->
+          <div class="text-gray-900 order-2 order-md-1">
+            <span class="text-muted fw-semibold me-2">2024©</span>
+            <a
+              href="https://GIFT-CARD.com"
+              target="_blank"
+              class="text-gray-800 text-hover-primary"
+              >GIFT-CARD</a
+            >
           </div>
-          <div>
-            <i class="fas fa-undo text-2xl mb-2"></i>
-            <h3 class="font-semibold">Free Returns</h3>
-            <p class="text-sm text-gray-600">
-              60-day return policy for any reason
-            </p>
-          </div>
-          <div>
-            <i class="fas fa-headset text-2xl mb-2"></i>
-            <h3 class="font-semibold">24/7 Support</h3>
-            <p class="text-sm text-gray-600">
-              Our team is here to help anytime
-            </p>
-          </div>
+          <!--end::Copyright-->
+
+          <!--begin::Menu-->
+          <ul class="menu menu-gray-600 menu-hover-primary fw-semibold order-1">
+            <li class="menu-item">
+              <a
+                href="https://GIFT-CARD.com"
+                target="_blank"
+                class="menu-link px-2"
+                >About</a
+              >
+            </li>
+
+            <li class="menu-item">
+              <a
+                href="https://devs.GIFT-CARD.com"
+                target="_blank"
+                class="menu-link px-2"
+                >Support</a
+              >
+            </li>
+
+            <li class="menu-item">
+              <a
+                href="https://GIFT-CARD.com/products/start-html-pro"
+                target="_blank"
+                class="menu-link px-2"
+              >
+                Purchase
+              </a>
+            </li>
+          </ul>
+          <!--end::Menu-->
         </div>
-      </section>
+
+        <!--end::Container-->
+      </div>
 
       <script
         type="module"
@@ -323,6 +334,40 @@
         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
       ></script>
       <script src="../js/header.js"></script>
+      <style>
+        .bg-white {
+          background: #0e121c !important;
+          color: white !important;
+        }
+
+        .bg-black {
+          --bs-bg-rgb-color: var(--bs-black-bg-rgb);
+          background-color: #025bff !important;
+        }
+
+        /*  */
+
+        input.w-full.p-2.border.rounded-lg.focus\:ring-2.focus\:ring-black.focus\:outline-none {
+          border: none !important;
+          border-bottom: 2px solid #141a2a !important;
+          border-radius: 0 !important;
+        }
+
+        .h1,
+        .h2,
+        .h3,
+        .h4,
+        .h5,
+        .h6,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          color: white !important;
+        }
+      </style>
     </body>
   </body>
 </html>

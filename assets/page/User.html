@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-]
+
 
     <!-- Local CSS Files -->
     <link rel="stylesheet" href="../css/ex.css" />
@@ -57,22 +57,28 @@
               class="d-flex align-items-center flex-nowrap text-nowrap overflow-auto py-1"
             >
               <a
-                href="/start-html-pro/profile/overview.html"
-                class="btn btn-active-accent fw-bold"
+              href="#"
+              class="btn btn-active-accent fw-bold"
+              onclick="showDiv(0)"
               >
-                Overview
+                الحساب 
               </a>
+          
               <a
-                href="/start-html-pro/profile/account.html"
-                class="btn btn-active-accent active fw-bold ms-3"
-              >
-                Account
-              </a>
+              href="#"
+              class="btn btn-active-accent fw-bold ms-3"
+              onclick="showDiv(1)"
+            >
+              الطلبات 
+            </a>
+
+              
               <a
-                href="/start-html-pro/profile/settings.html"
+                href="#"
                 class="btn btn-active-accent fw-bold ms-3"
+                onclick="showDiv(2)"
               >
-                Settings
+                الرصيد
               </a>
             </div>
             <!--end::Nav-->
@@ -87,7 +93,7 @@
           <!--begin::Container-->
           <div class="container-xxl">
             <!--begin::Profile Account-->
-            <div class="card">
+            <div class="card divItem" >
               <!--begin::Form-->
               <form class="form d-flex flex-center">
                 <div class="card-body mw-800px py-20">
@@ -339,12 +345,277 @@
 
             <!--  -->
 
-            <br />
-            <br />
-            <br />
 
-            <div class="row g-0 g-xl-5 g-xxl-8">
-              <div class="col-xl-4">
+            
+
+            <div class="divItem">
+              <div class="row g-0 g-xl-5 g-xxl-8 ">
+            
+                <div class="or">
+                  <div class="card card-stretch mb-5 mb-xxl-8">
+                    <!--begin::Header-->
+                    <div class="card-header border-0 pt-5">
+                      <h3 class="card-title align-items-start flex-column">
+                        <span class="card-label fw-bold text-gray-900 fs-3"
+                          >الطلبات</span
+                        >
+                        <span class="text-muted mt-2 fw-semibold fs-6"
+                          >890,344 Sales</span
+                        >
+                      </h3>
+                      <div class="card-toolbar">
+                        <ul
+                          class="nav nav-pills nav-pills-sm nav-light"
+                          role="tablist"
+                        >
+                          <li class="nav-item" role="presentation">
+                            <a
+                              class="nav-link btn btn-active-light btn-color-muted py-2 px-4 active fw-bold me-2"
+                              data-bs-toggle="tab"
+                              href="#kt_tab_pane_1_1"
+                              aria-selected="true"
+                              role="tab"
+                              >Day</a
+                            >
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <a
+                              class="nav-link btn btn-active-light btn-color-muted py-2 px-4 fw-bold me-2"
+                              data-bs-toggle="tab"
+                              href="#kt_tab_pane_1_2"
+                              aria-selected="false"
+                              tabindex="-1"
+                              role="tab"
+                              >Week</a
+                            >
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <a
+                              class="nav-link btn btn-active-light btn-color-muted py-2 px-4 fw-bold"
+                              data-bs-toggle="tab"
+                              href="#kt_tab_pane_1_3"
+                              aria-selected="false"
+                              tabindex="-1"
+                              role="tab"
+                              >Month</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!--end::Header-->
+  
+                    <!--begin::Body-->
+                    <div class="card-body pt-2 pb-0 mt-n3">
+                      <div class="tab-content mt-5" id="myTabTables1">
+                        <!--begin::Tap pane-->
+                        <div
+                          class="tab-pane fade show active"
+                          id="kt_tab_pane_1_1"
+                          role="tabpanel"
+                          aria-labelledby="kt_tab_pane_1_1"
+                        >
+                          <!--begin::Table-->
+                          <div class="table-responsive">
+                            <table class="table table-borderless align-middle">
+                              <thead>
+                                <tr>
+                                  <th class="p-0 w-50px"></th>
+                                  <th class="p-0 min-w-200px"></th>
+                                  <th class="p-0 min-w-100px"></th>
+                                  <th class="p-0 min-w-40px"></th>
+                                </tr>
+                              </thead>
+                              <tbody>
+  
+                                <tr>
+                                  <th class="px-0 py-3">
+                                    <div class="symbol symbol-65px me-5">
+                                      <span class="symbol-label bg-light-primary">
+                                        <i
+                                          class="ki-duotone ki-message-text-2 fs-1 text-primary"
+                                          ><span class="path1"></span
+                                          ><span class="path2"></span
+                                          ><span class="path3"></span
+                                        ></i>
+                                      </span>
+                                    </div>
+                                  </th>
+                                  <td class="ps-0">
+                                    <a
+                                      href="#"
+                                      class="text-gray-800 fw-bold text-hover-primary fs-6"
+                                      >Top Authors</a
+                                    >
+                                    <span
+                                      class="text-muted fw-semibold d-block mt-1"
+                                      >100 EGY</span
+                                    >
+                                  </td>
+  
+  
+                                  <td>
+                                   <span
+                                   class="text-muted fw-semibold d-block mt-1"
+                                   >                                 1-1-2024
+                                   </span
+                                 >
+                                  </td>
+  
+                                  <style>
+                                    a.btn.btn-icon.btn-bg-light.btn-active-primary.btnاطلب.الشحن-sm {
+      background: aquamarine;
+  }
+                                  </style>
+                                  
+                                  <td class="text-end pe-0">
+                                    <a
+                                      href="#"
+                                      class="btn btn-icon btn-bg-light btn-active-primary btnاطلب الشحن-sm"
+                                    >
+                                      <i class="ki-duotone ki-arrow-right fs-4"
+                                        ><span class="path1"></span
+                                        ><span class="path2"></span
+                                      ></i>
+                                    </a>
+                                  </td>
+                                </tr>
+  
+                                <tr>
+                                  <th class="px-0 py-3">
+                                    <div class="symbol symbol-65px me-5">
+                                      <span class="symbol-label bg-light-primary">
+                                        <i
+                                          class="ki-duotone ki-message-text-2 fs-1 text-primary"
+                                          ><span class="path1"></span
+                                          ><span class="path2"></span
+                                          ><span class="path3"></span
+                                        ></i>
+                                      </span>
+                                    </div>
+                                  </th>
+                                  <td class="ps-0">
+                                    <a
+                                      href="#"
+                                      class="text-gray-800 fw-bold text-hover-primary fs-6"
+                                      >Top Authors</a
+                                    >
+                                    <span
+                                      class="text-muted fw-semibold d-block mt-1"
+                                      >100 EGY</span
+                                    >
+                                  </td>
+  
+  
+                                  <td>
+                                    <span
+                                    class="text-muted fw-semibold d-block mt-1"
+                                    >                                 1-1-2024
+                                    </span
+                                  >
+                                   </td>
+                                  <style>
+                                    a.btn.btn-icon.btn-bg-light.btn-active-primary.btnاطلب.الشحن-sm {
+      background: aquamarine;
+  }
+                                  </style>
+                                  
+                                  <td class="text-end pe-0">
+                                    <a
+                                      href="#"
+                                      class="btn btn-icon btn-bg-light btn-active-primary btnاطلب الشحن-sm"
+                                    >
+                                      <i class="ki-duotone ki-arrow-right fs-4"
+                                        ><span class="path1"></span
+                                        ><span class="path2"></span
+                                      ></i>
+                                    </a>
+                                  </td>
+                                </tr>
+  
+  
+                                <tr>
+                                  <th class="px-0 py-3">
+                                    <div class="symbol symbol-65px me-5">
+                                      <span class="symbol-label bg-light-primary">
+                                        <i
+                                          class="ki-duotone ki-message-text-2 fs-1 text-primary"
+                                          ><span class="path1"></span
+                                          ><span class="path2"></span
+                                          ><span class="path3"></span
+                                        ></i>
+                                      </span>
+                                    </div>
+                                  </th>
+                                  <td class="ps-0">
+                                    <a
+                                      href="#"
+                                      class="text-gray-800 fw-bold text-hover-primary fs-6"
+                                      >Top Authors</a
+                                    >
+                                    <span
+                                      class="text-muted fw-semibold d-block mt-1"
+                                      >100 EGY</span
+                                    >
+                                  </td>
+  
+  
+                                  <td>
+                                    <span
+                                    class="text-muted fw-semibold d-block mt-1"
+                                    >                                 1-1-2024
+                                    </span
+                                  >
+                                   </td>
+  
+                                  <style>
+                                    a.btn.btn-icon.btn-bg-light.btn-active-primary.btnاطلب.الشحن-sm {
+      background: aquamarine;
+  }
+                                  </style>
+                                  
+                                  <td class="text-end pe-0">
+                                    <a
+                                      href="#"
+                                      class="btn btn-icon btn-bg-light btn-active-primary btnاطلب الشحن-sm"
+                                    >
+                                      <i class="ki-duotone ki-arrow-right fs-4"
+                                        ><span class="path1"></span
+                                        ><span class="path2"></span
+                                      ></i>
+                                    </a>
+                                  </td>
+                                </tr>
+                                
+                              </tbody>
+                            </table>
+                          </div>
+                          <!--end::Table-->
+                        </div>
+                        <!--end::Tap pane-->
+  
+                        <!--begin::Tap pane-->
+                    
+                        <!--end::Tap pane-->
+  
+                        <!--begin::Tap pane-->
+                       
+                        <!--end::Tap pane-->
+                      </div>
+                    </div>
+                  </div>
+                  <!--end::Table Widget 1-->
+                </div>
+  
+  
+              </div>
+            </div>
+
+            
+
+
+            <div class="divItem">
+              <div class="pay">
                 <!--begin::Engage Widget 5-->
                 <div class="card card-stretch mb-5 mb-xxl-8">
                   <!--begin::Body-->
@@ -432,7 +703,6 @@ class="caer_py">
     .data p {
       margin-top: 1rem;
       margin-bottom: 1rem;
-      color: #1f2937;
       font-size: 2.25rem;
       line-height: 2.5rem;
       font-weight: 700;
@@ -463,15 +733,18 @@ class="caer_py">
 
 </div>
                       <!--begin::Text-->
-                      <h3
-                        class="text-gray-900 text-center fs-1 fw-bold pt-15 lh-lg"
-                      >
-                        شحن<br />
-                      رصيد الحساب
-                      </h3>
+                
+                      <div class="flex flex_py">
+                     
+                        
                       <!--end::Text-->
 
-                      <input class="form-control form-control-lg form-control-solid" type="text" placeholder="max_stone">
+
+                      <div class="payy">
+                        <span class="Sales">شحن رصيد الان</span>
+                        <input class="form-control form-control-lg form-control-solid" type="text" placeholder="max_stone">
+
+                      </div>
 
                       <!--begin::Action-->
                       <div class="text-center pt-7">
@@ -482,10 +755,11 @@ class="caer_py">
                           data-bs-target="#kt_modal_create_campaign"
                           >اطلب الشحن</a
                         >
-                        <br>
-                        <br>
+                        
                         
                       </div>
+                      </div>
+
                       <!--end::Action-->
 
                       <!--begin::Image-->
@@ -499,265 +773,8 @@ class="caer_py">
                 <!--end::Engage Widget 5-->
               </div>
 
-              <div class="col-xl-8">
-                <!--begin::Table Widget 1-->
-                <div class="card card-stretch mb-5 mb-xxl-8">
-                  <!--begin::Header-->
-                  <div class="card-header border-0 pt-5">
-                    <h3 class="card-title align-items-start flex-column">
-                      <span class="card-label fw-bold text-gray-900 fs-3"
-                        >الطلبات</span
-                      >
-                      <span class="text-muted mt-2 fw-semibold fs-6"
-                        >890,344 Sales</span
-                      >
-                    </h3>
-                    <div class="card-toolbar">
-                      <ul
-                        class="nav nav-pills nav-pills-sm nav-light"
-                        role="tablist"
-                      >
-                        <li class="nav-item" role="presentation">
-                          <a
-                            class="nav-link btn btn-active-light btn-color-muted py-2 px-4 active fw-bold me-2"
-                            data-bs-toggle="tab"
-                            href="#kt_tab_pane_1_1"
-                            aria-selected="true"
-                            role="tab"
-                            >Day</a
-                          >
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <a
-                            class="nav-link btn btn-active-light btn-color-muted py-2 px-4 fw-bold me-2"
-                            data-bs-toggle="tab"
-                            href="#kt_tab_pane_1_2"
-                            aria-selected="false"
-                            tabindex="-1"
-                            role="tab"
-                            >Week</a
-                          >
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <a
-                            class="nav-link btn btn-active-light btn-color-muted py-2 px-4 fw-bold"
-                            data-bs-toggle="tab"
-                            href="#kt_tab_pane_1_3"
-                            aria-selected="false"
-                            tabindex="-1"
-                            role="tab"
-                            >Month</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <!--end::Header-->
-
-                  <!--begin::Body-->
-                  <div class="card-body pt-2 pb-0 mt-n3">
-                    <div class="tab-content mt-5" id="myTabTables1">
-                      <!--begin::Tap pane-->
-                      <div
-                        class="tab-pane fade show active"
-                        id="kt_tab_pane_1_1"
-                        role="tabpanel"
-                        aria-labelledby="kt_tab_pane_1_1"
-                      >
-                        <!--begin::Table-->
-                        <div class="table-responsive">
-                          <table class="table table-borderless align-middle">
-                            <thead>
-                              <tr>
-                                <th class="p-0 w-50px"></th>
-                                <th class="p-0 min-w-200px"></th>
-                                <th class="p-0 min-w-100px"></th>
-                                <th class="p-0 min-w-40px"></th>
-                              </tr>
-                            </thead>
-                            <tbody>
-
-                              <tr>
-                                <th class="px-0 py-3">
-                                  <div class="symbol symbol-65px me-5">
-                                    <span class="symbol-label bg-light-primary">
-                                      <i
-                                        class="ki-duotone ki-message-text-2 fs-1 text-primary"
-                                        ><span class="path1"></span
-                                        ><span class="path2"></span
-                                        ><span class="path3"></span
-                                      ></i>
-                                    </span>
-                                  </div>
-                                </th>
-                                <td class="ps-0">
-                                  <a
-                                    href="#"
-                                    class="text-gray-800 fw-bold text-hover-primary fs-6"
-                                    >Top Authors</a
-                                  >
-                                  <span
-                                    class="text-muted fw-semibold d-block mt-1"
-                                    >HTML/CSS/JS, Python</span
-                                  >
-                                </td>
-
-
-                                <td>
-                                 <span
-                                 class="text-muted fw-semibold d-block mt-1"
-                                 >                                 1-1-2024
-                                 </span
-                               >
-                                </td>
-
-                                <style>
-                                  a.btn.btn-icon.btn-bg-light.btn-active-primary.btnاطلب.الشحن-sm {
-    background: aquamarine;
-}
-                                </style>
-                                
-                                <td class="text-end pe-0">
-                                  <a
-                                    href="#"
-                                    class="btn btn-icon btn-bg-light btn-active-primary btnاطلب الشحن-sm"
-                                  >
-                                    <i class="ki-duotone ki-arrow-right fs-4"
-                                      ><span class="path1"></span
-                                      ><span class="path2"></span
-                                    ></i>
-                                  </a>
-                                </td>
-                              </tr>
-
-                              <tr>
-                                <th class="px-0 py-3">
-                                  <div class="symbol symbol-65px me-5">
-                                    <span class="symbol-label bg-light-primary">
-                                      <i
-                                        class="ki-duotone ki-message-text-2 fs-1 text-primary"
-                                        ><span class="path1"></span
-                                        ><span class="path2"></span
-                                        ><span class="path3"></span
-                                      ></i>
-                                    </span>
-                                  </div>
-                                </th>
-                                <td class="ps-0">
-                                  <a
-                                    href="#"
-                                    class="text-gray-800 fw-bold text-hover-primary fs-6"
-                                    >Top Authors</a
-                                  >
-                                  <span
-                                    class="text-muted fw-semibold d-block mt-1"
-                                    >HTML/CSS/JS, Python</span
-                                  >
-                                </td>
-
-
-                                <td>
-                                  <span
-                                  class="text-muted fw-semibold d-block mt-1"
-                                  >                                 1-1-2024
-                                  </span
-                                >
-                                 </td>
-                                <style>
-                                  a.btn.btn-icon.btn-bg-light.btn-active-primary.btnاطلب.الشحن-sm {
-    background: aquamarine;
-}
-                                </style>
-                                
-                                <td class="text-end pe-0">
-                                  <a
-                                    href="#"
-                                    class="btn btn-icon btn-bg-light btn-active-primary btnاطلب الشحن-sm"
-                                  >
-                                    <i class="ki-duotone ki-arrow-right fs-4"
-                                      ><span class="path1"></span
-                                      ><span class="path2"></span
-                                    ></i>
-                                  </a>
-                                </td>
-                              </tr>
-
-
-                              <tr>
-                                <th class="px-0 py-3">
-                                  <div class="symbol symbol-65px me-5">
-                                    <span class="symbol-label bg-light-primary">
-                                      <i
-                                        class="ki-duotone ki-message-text-2 fs-1 text-primary"
-                                        ><span class="path1"></span
-                                        ><span class="path2"></span
-                                        ><span class="path3"></span
-                                      ></i>
-                                    </span>
-                                  </div>
-                                </th>
-                                <td class="ps-0">
-                                  <a
-                                    href="#"
-                                    class="text-gray-800 fw-bold text-hover-primary fs-6"
-                                    >Top Authors</a
-                                  >
-                                  <span
-                                    class="text-muted fw-semibold d-block mt-1"
-                                    >HTML/CSS/JS, Python</span
-                                  >
-                                </td>
-
-
-                                <td>
-                                  <span
-                                  class="text-muted fw-semibold d-block mt-1"
-                                  >                                 1-1-2024
-                                  </span
-                                >
-                                 </td>
-
-                                <style>
-                                  a.btn.btn-icon.btn-bg-light.btn-active-primary.btnاطلب.الشحن-sm {
-    background: aquamarine;
-}
-                                </style>
-                                
-                                <td class="text-end pe-0">
-                                  <a
-                                    href="#"
-                                    class="btn btn-icon btn-bg-light btn-active-primary btnاطلب الشحن-sm"
-                                  >
-                                    <i class="ki-duotone ki-arrow-right fs-4"
-                                      ><span class="path1"></span
-                                      ><span class="path2"></span
-                                    ></i>
-                                  </a>
-                                </td>
-                              </tr>
-                              
-                            </tbody>
-                          </table>
-                        </div>
-                        <!--end::Table-->
-                      </div>
-                      <!--end::Tap pane-->
-
-                      <!--begin::Tap pane-->
-                  
-                      <!--end::Tap pane-->
-
-                      <!--begin::Tap pane-->
-                     
-                      <!--end::Tap pane-->
-                    </div>
-                  </div>
-                </div>
-                <!--end::Table Widget 1-->
-              </div>
-
-
             </div>
+
             <!--  -->
 
             <!--end::Profile Account-->
@@ -776,10 +793,10 @@ class="caer_py">
           <div class="text-gray-900 order-2 order-md-1">
             <span class="text-muted fw-semibold me-2">2024©</span>
             <a
-              href="https://keenthemes.com"
+              href="https://GIFT-CARD.com"
               target="_blank"
               class="text-gray-800 text-hover-primary"
-              >Keenthemes</a
+              >GIFT-CARD</a
             >
           </div>
           <!--end::Copyright-->
@@ -788,7 +805,7 @@ class="caer_py">
           <ul class="menu menu-gray-600 menu-hover-primary fw-semibold order-1">
             <li class="menu-item">
               <a
-                href="https://keenthemes.com"
+                href="https://GIFT-CARD.com"
                 target="_blank"
                 class="menu-link px-2"
                 >About</a
@@ -797,7 +814,7 @@ class="caer_py">
 
             <li class="menu-item">
               <a
-                href="https://devs.keenthemes.com"
+                href="https://devs.GIFT-CARD.com"
                 target="_blank"
                 class="menu-link px-2"
                 >Support</a
@@ -806,7 +823,7 @@ class="caer_py">
 
             <li class="menu-item">
               <a
-                href="https://keenthemes.com/products/start-html-pro"
+                href="https://GIFT-CARD.com/products/start-html-pro"
                 target="_blank"
                 class="menu-link px-2"
               >
@@ -823,5 +840,52 @@ class="caer_py">
     </div>
 
 <script src="../js/header.js"></script>
+
+<style>
+  .card{
+
+    background: #0e121c;
+    color: white;
+
+  }
+  body{
+    color: white !important;
+  }
+</style>
+
+<script>
+  function showDiv(index) {
+    let divs = document.querySelectorAll(".divItem");
+    divs.forEach((div, i) => {
+      div.style.display = i === index ? "block" : "none";
+    });
+  }
+</script>
+
+<style>
+  .divItem {
+    display: none;
+  }
+  .divItem:first-child {
+    display: block;
+  }
+  .btn{
+    color: white !important;
+  }
+
+  .flex_py{display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5vh 0;
+  }
+  span.Sales {
+    margin-bottom: 2vh;
+}
+a.btn.btn-active-accent.fw-bold:hover{
+  background: none !important;
+}
+</style>
+
+
   </body>
 </html>

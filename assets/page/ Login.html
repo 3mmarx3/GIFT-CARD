@@ -24,12 +24,8 @@
           class="d-flex flex-column flex-lg-row flex-column-fluid"
           id="kt_login"
         >
-          <div
-            class="d-flex flex-column flex-lg-row-auto bg-primary w-lg-600px pt-15 pt-lg-0"
-          >
-            <div
-              class="d-flex flex-column-auto flex-column pt-lg-40 pt-15 text-center"
-            >
+          <div class="d-flex flex-column flex-lg-row-auto bg-primary">
+            <div class="d-flex flex-column-auto flex-column text-center">
               <a class="mb-6" href="/start-react-pro/"
                 ><img alt="الشعار" src="../img/gift.png"
               /></a>
@@ -38,7 +34,7 @@
               </h3>
             </div>
             <div
-              class="d-flex flex-row-fluid bgi-size-contain bgi-no-repeat bgi-position-y-bottom bgi-position-x-center min-h-350px"
+              class="d-flex flex-row-fluid bgi-size-contain bgi-no-repeat bgi-position-y-bottom bgi-position-x-center min-h-350px none_hid"
               style="
                 background-image: url('/start-react-pro/media/illustrations/winner.png');
               "
@@ -120,5 +116,28 @@
         </div>
       </div>
     </div>
+
+    <style>
+      body#kt_body {
+        background: #141a2a !important;
+        color: white !important;
+        direction: rtl;
+      }
+
+      .bg-primary {
+        margin: 20px;
+        border-radius: 20px;
+        background: #0e121c !important;
+      }
+      .d-flex.flex-column-auto.flex-column.text-center {
+        padding: 20px;
+      }
+
+      @media screen and (max-width: 992px) {
+        .d-flex.flex-row-fluid.bgi-size-contain.bgi-no-repeat.bgi-position-y-bottom.bgi-position-x-center.min-h-350px.none_hid {
+          display: none !important;
+        }
+      }
+    </style>
   </body>
 </html>
