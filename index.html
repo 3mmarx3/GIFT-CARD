@@ -1,672 +1,737 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GIFT-CARD - Buy and Sell Game Cards</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gamics - Create Manage Matches</title>
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="GIFT-CARD: Your trusted platform to buy and sell game cards securely. Discover a wide range of gaming gift cards at unbeatable prices. Founded by Ammar Ahmed."
+    />
+    <meta
+      name="keywords"
+      content="GIFT-CARD, game cards, buy game cards, sell game cards, gaming gift cards, digital gift cards, Ammar Ahmed, online gift cards"
+    />
+    <meta name="author" content="Ammar Ahmed" />
+    <meta name="robots" content="index, follow" />
 
-  <!-- Google Fonts -->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0&family=Oxanium:wght@600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap" />
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="GIFT-CARD - Buy and Sell Game Cards" />
+    <meta
+      property="og:description"
+      content="Explore GIFT-CARD: Your go-to platform for buying and selling gaming gift cards. Trusted by gamers worldwide."
+    />
+    <meta property="og:image" content="./assets/images/og-image.png" />
+    <meta property="og:url" content="https://gift-card.com" />
+    <meta property="og:type" content="website" />
 
-  <!-- Salla Network Fonts -->
-  <link rel="stylesheet" href="https://cdn.salla.network/fonts/sallaicons.css?v=2.0.3" />
-  <link rel="stylesheet" href="https://cdn.salla.network/fonts/default.css?v=2.0.3" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="GIFT-CARD - Buy and Sell Game Cards" />
+    <meta
+      name="twitter:description"
+      content="Your one-stop platform for buying and selling gaming gift cards. Founded by Ammar Ahmed."
+    />
+    <meta name="twitter:image" content="./assets/images/twitter-image.png" />
 
-  <!-- Local CSS Files -->
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <link rel="stylesheet" href="./assets/css/foot.css" />
-  <link rel="stylesheet" href="./assets/css/ex.css" />
-  <link rel="stylesheet" href="./assets/css/app.css" />
+    <!-- Other Meta Tags -->
+    <link rel="canonical" href="https://gift-card.com" />
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0&family=Oxanium:wght@600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+    />
 
-  <!-- Preconnect for Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Salla Network Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.salla.network/fonts/sallaicons.css?v=2.0.3"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.salla.network/fonts/default.css?v=2.0.3"
+    />
 
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-/>
-<link
-rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-/>
+    <!-- Styles and Fonts -->
+    <!-- Local CSS Files -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/foot.css" />
+    <link rel="stylesheet" href="./assets/css/ex.css" />
+    <link rel="stylesheet" href="./assets/css/app.css" />
+  </head>
 
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
-    direction: rtl;
-  }
-  .swiper {
-    width: 100%;
-    max-width: 1200px;
-    margin: 20px auto;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  .swiper-slide img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    border-radius: 10px;
-  }
-  .swiper-button-next,
-  .swiper-button-prev {
-    color: #333;
-  }
-  .swiper-pagination-bullet {
-    background: #ccc;
-  }
-  .swiper-pagination-bullet-active {
-    background: #000;
-  }
+  <body>
+    <header id="header_"></header>
 
-  div#kt_header {
-    direction: ltr;
-}
-section.section.latest-game {
-    margin-bottom: 7vh;
-    padding-bottom: 0;
-}
-</style>
-  
-</head>
-
-</html>
-
-
-<body>
-  <header id="header_"></header>
-
-  <main>
-    <!-- 
+    <main>
+      <!-- 
         - #HERO
       -->
 
-
-    <!-- 
+      <!-- 
         - #BRAND
       -->
 
- 
-  
+      <div class="container">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- الشريحة الأولى -->
+            <div class="swiper-slide">
+              <a href="#">
+                <img
+                  src="https://cdn.salla.sa/form-builder/w4IsiEed74Ua4QRiny3fNduy40SaL5JYw81bjLuN.png"
+                  alt="GIFT-CARD"
+                />
+              </a>
+            </div>
+            <!-- الشريحة الثانية -->
+            <div class="swiper-slide">
+              <a href="#">
+                <img
+                  src="https://cdn.salla.sa/form-builder/WrQ09VGuUy3YplFYMfAo39TH3GwyM3whbSPRfT2f.png"
+                  alt="GIFT-CARD"
+                />
+              </a>
+            </div>
+            <!-- الشريحة الثالثة -->
+            <div class="swiper-slide">
+              <a href="#">
+                <img
+                  src="https://cdn.salla.sa/form-builder/jKQRLcyOiSmlQfZTtDKFVFECvkiMfa5OKKg914we.png"
+                  alt="GIFT-CARD"
+                />
+              </a>
+            </div>
+            <!-- الشريحة الرابعة -->
+            <div class="swiper-slide">
+              <a href="#">
+                <img
+                  src="https://cdn.salla.sa/form-builder/hZSMX1eClfOaAFevtSbTJuXSstZTLThiZ7lcAFm6.png"
+                  alt="GIFT-CARD"
+                />
+              </a>
+            </div>
+            <!-- الشريحة الخامسة -->
+            <div class="swiper-slide">
+              <a href="#">
+                <img
+                  src="https://cdn.salla.sa/form-builder/SamjHkTilRELKM9PSJN0hwUyM4n3slrfS73J6Sod.png"
+                  alt="GIFT-CARD"
+                />
+              </a>
+            </div>
+          </div>
+          <!-- أزرار التنقل -->
 
-<div class="container">
-  <div class="swiper">
-    <div class="swiper-wrapper">
-      <!-- الشريحة الأولى -->
-      <div class="swiper-slide">
-        <a href="#">
-          <img
-            src="https://cdn.salla.sa/form-builder/w4IsiEed74Ua4QRiny3fNduy40SaL5JYw81bjLuN.png"
-            alt="صورة 1"
-          />
-        </a>
+          <div class="ptn_next">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+
+          <!-- النقاط السفلية -->
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
-      <!-- الشريحة الثانية -->
-      <div class="swiper-slide">
-        <a href="#">
-          <img
-            src="https://cdn.salla.sa/form-builder/WrQ09VGuUy3YplFYMfAo39TH3GwyM3whbSPRfT2f.png"
-            alt="صورة 2"
-          />
-        </a>
+
+      <!--  -->
+
+      <div class="Categories">
+        <a href="#"
+          ><div
+            class="Categories_img"
+            style="background-image: url(./assets/img/ads2.webp)"
+          ></div
+        ></a>
+        <a href="#"
+          ><div
+            class="Categories_img"
+            style="background-image: url(./assets/img/ads3.webp)"
+          ></div
+        ></a>
+        <a href="#"
+          ><div
+            class="Categories_img"
+            style="background-image: url(./assets/img/ads4.webp)"
+          ></div
+        ></a>
+        <a href="#"
+          ><div
+            class="Categories_img"
+            style="background-image: url(./assets/img/ads5.webp)"
+          ></div
+        ></a>
+        <a href="#"
+          ><div
+            class="Categories_img"
+            style="background-image: url(./assets/img/ads6.webp)"
+          ></div
+        ></a>
+        <a href="#"
+          ><div
+            class="Categories_img"
+            style="background-image: url(./assets/img/ads1.webp)"
+          ></div
+        ></a>
+        <a href="#"
+          ><div
+            class="Categories_img"
+            style="background-image: url(./assets/img/ads7.webp)"
+          ></div
+        ></a>
+        <a href="#"
+          ><div
+            class="Categories_img"
+            style="background-image: url(./assets/img/ads8.webp)"
+          ></div
+        ></a>
       </div>
-      <!-- الشريحة الثالثة -->
-      <div class="swiper-slide">
-        <a href="#">
-          <img
-            src="https://cdn.salla.sa/form-builder/jKQRLcyOiSmlQfZTtDKFVFECvkiMfa5OKKg914we.png"
-            alt="صورة 3"
-          />
-        </a>
-      </div>
-      <!-- الشريحة الرابعة -->
-      <div class="swiper-slide">
-        <a href="#">
-          <img
-            src="https://cdn.salla.sa/form-builder/hZSMX1eClfOaAFevtSbTJuXSstZTLThiZ7lcAFm6.png"
-            alt="صورة 4"
-          />
-        </a>
-      </div>
-      <!-- الشريحة الخامسة -->
-      <div class="swiper-slide">
-        <a href="#">
-          <img
-            src="https://cdn.salla.sa/form-builder/SamjHkTilRELKM9PSJN0hwUyM4n3slrfS73J6Sod.png"
-            alt="صورة 5"
-          />
-        </a>
-      </div>
-    </div>
-    <!-- أزرار التنقل -->
-  
-    <div class="ptn_next">
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-    </div>
-
-    <!-- النقاط السفلية -->
-    <div class="swiper-pagination"></div>
-  </div>
-
-</div>
-
-
-  
-
-
-    <!--  -->
-
-
-
-<div class="Categories">
-      
-<a href="#"><div class="Categories_img" style="background-image: url(./assets/img/ads2.webp);"></div></a>
-<a href="#"><div class="Categories_img" style="background-image: url(./assets/img/ads3.webp);"></div></a>
-<a href="#"><div class="Categories_img" style="background-image: url(./assets/img/ads4.webp);"></div></a>
-<a href="#"><div class="Categories_img" style="background-image: url(./assets/img/ads5.webp);"></div></a>
-<a href="#"><div class="Categories_img" style="background-image: url(./assets/img/ads6.webp);"></div></a>
-<a href="#"><div class="Categories_img" style="background-image: url(./assets/img/ads1.webp);"></div></a>
-<a href="#"><div class="Categories_img" style="background-image: url(./assets/img/ads7.webp);"></div></a>
-<a href="#"><div class="Categories_img" style="background-image: url(./assets/img/ads8.webp);"></div></a>
-
-
-    </div>
-
-
-
 
       <!-- 
         - #LATEST GAME
       -->
 
-    <!--  -->
-    <div class="section-wrapper">
-      <!-- 
+      <!--  -->
+      <div class="section-wrapper">
+        <!-- 
           - #LATEST GAME
         -->
 
-      <section class="section latest-game" aria-label="latest game">
-        <div class="container">
-          <p class="section-subtitle">Latest Releases</p>
+        <section class="section latest-game" aria-label="latest game">
+          <div class="container">
+            <p class="section-subtitle">Latest Releases</p>
 
-          <h2 class="h2 section-title" style="color: black">
-            Create & <span class="span">Manage</span>
-          </h2>
+            <h2 class="h2 section-title" style="color: black">
+              Create & <span class="span">Manage</span>
+            </h2>
 
-          <div class="Ads_Game">
-            <img src="./assets/images/adss.webp" alt="">
+            <div class="Ads_Game">
+              <img src="./assets/images/adss.webp" alt="GIFT-CARD" />
+            </div>
+
+            <div class="Game">
+              <a href="./assets/page/viwe.html">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="
+                      background-image: url(./assets/img/bigo_33disc_sa.jpg);
+                    "
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
+
+              <a href="./assets/page/viwe.html">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="
+                      background-image: url(./assets/img/codm-wl_178x178.jpg);
+                    "
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
+
+              <a href="./assets/page/viwe.html">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="
+                      background-image: url(./assets/img/CODM_oct23-tile.png);
+                    "
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
+
+              <a href="./assets/page/viwe.html">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="background-image: url(./assets/img/diablo_tile.png)"
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
+
+              <a href="#">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="
+                      background-image: url(./assets/img/goddess-paradise-tile.png);
+                    "
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
+
+              <a href="#">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="background-image: url(./assets/img/hago_tile.jpg)"
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
+            </div>
           </div>
+        </section>
 
-
-          <div class="Game">
-            <a href="./assets/page/viwe.html">
-              <div class="card_us">
-                <div class="card_img" style="
-                        background-image: url(./assets/img/bigo_33disc_sa.jpg);
-                      "></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
-
-            <a href="./assets/page/viwe.html">
-              <div class="card_us">
-                <div class="card_img" style="
-                        background-image: url(./assets/img/codm-wl_178x178.jpg);
-                      "></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
-
-            <a href="./assets/page/viwe.html">
-              <div class="card_us">
-                <div class="card_img" style="
-                        background-image: url(./assets/img/CODM_oct23-tile.png);
-                      "></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
-
-            <a href="./assets/page/viwe.html">
-              <div class="card_us">
-                <div class="card_img" style="
-                        background-image: url(./assets/img/diablo_tile.png);
-                      "></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
-
-            <a href="#">
-              <div class="card_us">
-                <div class="card_img" style="
-                        background-image: url(./assets/img/goddess-paradise-tile.png);
-                      "></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
-
-            <a href="#">
-              <div class="card_us">
-                <div class="card_img" style="background-image: url(./assets/img/hago_tile.jpg)"></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- 
+        <!-- 
           - #LIVE MATCH
         -->
-    </div>
+      </div>
 
-    <!-- 
+      <!-- 
         - #FEATURED GAME
       -->
 
-
-    <div class="section-wrapper">
-      <!-- 
+      <div class="section-wrapper">
+        <!-- 
         - #LATEST GAME
       -->
 
-      <section class="section latest-game bg_black" aria-label="latest game">
-        <div class="container">
-          <p class="section-subtitle">Latest Releases</p>
+        <section class="section latest-game bg_black" aria-label="latest game">
+          <div class="container">
+            <p class="section-subtitle">Latest Releases</p>
 
-          <h2 class="h2 section-title" style="color: black">
-            Create & <span class="span">Manage</span>
-          </h2>
+            <h2 class="h2 section-title" style="color: black">
+              Create & <span class="span">Manage</span>
+            </h2>
 
-          <div class="Ads_Game">
-            <img src="./assets/images/adss.webp" alt="">
-          </div>
+            <div class="Ads_Game">
+              <img src="./assets/images/adss.webp" alt="GIFT-CARD" />
+            </div>
 
-          <div class="Game">
-            <a href="#">
-              <div class="card_us">
-                <div class="card_img" style="
+            <div class="Game">
+              <a href="#">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="
                       background-image: url(./assets/img/bigo_33disc_sa.jpg);
-                    "></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
+                    "
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
 
-            <a href="#">
-              <div class="card_us">
-                <div class="card_img" style="
+              <a href="#">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="
                       background-image: url(./assets/img/codm-wl_178x178.jpg);
-                    "></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
+                    "
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
 
-            <a href="#">
-              <div class="card_us">
-                <div class="card_img" style="
+              <a href="#">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="
                       background-image: url(./assets/img/CODM_oct23-tile.png);
-                    "></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
+                    "
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
 
-            <a href="#">
-              <div class="card_us">
-                <div class="card_img" style="
-                      background-image: url(./assets/img/diablo_tile.png);
-                    "></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
+              <a href="#">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="background-image: url(./assets/img/diablo_tile.png)"
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
 
-            <a href="#">
-              <div class="card_us">
-                <div class="card_img" style="
+              <a href="#">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="
                       background-image: url(./assets/img/goddess-paradise-tile.png);
-                    "></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
+                    "
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
 
-            <a href="#">
-              <div class="card_us">
-                <div class="card_img" style="background-image: url(./assets/img/hago_tile.jpg)"></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
+              <a href="#">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="background-image: url(./assets/img/hago_tile.jpg)"
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- 
+        <!-- 
         - #LIVE MATCH
-      -->
-    </div>
+      --></div>
 
-    <!--  -->
+      <!--  -->
 
-
-
-    <div class="section-wrapper">
-      <!-- 
+      <div class="section-wrapper">
+        <!-- 
         - #LATEST GAME
       -->
 
-      <section class="section latest-game" aria-label="latest game">
-        <div class="container">
-          <p class="section-subtitle">Latest Releases</p>
+        <section class="section latest-game" aria-label="latest game">
+          <div class="container">
+            <p class="section-subtitle">Latest Releases</p>
 
-          <h2 class="h2 section-title" style="color: black">
-            Create & <span class="span">Manage</span>
-          </h2>
+            <h2 class="h2 section-title" style="color: black">
+              Create & <span class="span">Manage</span>
+            </h2>
 
+            <div class="Ads_Game">
+              <img src="./assets/images/adss.webp" alt="GIFT-CARD" />
+            </div>
 
-          <div class="Ads_Game">
-            <img src="./assets/images/adss.webp" alt="">
-          </div>
-
-          <div class="Game">
-            <a href="#">
-              <div class="card_us">
-                <div class="card_img" style="
+            <div class="Game">
+              <a href="#">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="
                       background-image: url(./assets/img/bigo_33disc_sa.jpg);
-                    "></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
+                    "
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
 
-            <a href="#">
-              <div class="card_us">
-                <div class="card_img" style="
+              <a href="#">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="
                       background-image: url(./assets/img/codm-wl_178x178.jpg);
-                    "></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
+                    "
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
 
-            <a href="#">
-              <div class="card_us">
-                <div class="card_img" style="
+              <a href="#">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="
                       background-image: url(./assets/img/CODM_oct23-tile.png);
-                    "></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
+                    "
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
 
-            <a href="#">
-              <div class="card_us">
-                <div class="card_img" style="
-                      background-image: url(./assets/img/diablo_tile.png);
-                    "></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
+              <a href="#">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="background-image: url(./assets/img/diablo_tile.png)"
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
 
-            <a href="#">
-              <div class="card_us">
-                <div class="card_img" style="
+              <a href="#">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="
                       background-image: url(./assets/img/goddess-paradise-tile.png);
-                    "></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
+                    "
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
 
-            <a href="#">
-              <div class="card_us">
-                <div class="card_img" style="background-image: url(./assets/img/hago_tile.jpg)"></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
+              <a href="#">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="background-image: url(./assets/img/hago_tile.jpg)"
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+        <!-- 
+        - #LIVE MATCH
+      --></div>
 
       <!-- 
-        - #LIVE MATCH
-      -->
-    </div>
-
-
-    <!-- 
         - #SHOP
       -->
 
-
-
-    <div class="section-wrapper">
-      <!-- 
+      <div class="section-wrapper">
+        <!-- 
         - #LATEST GAME
       -->
 
-      <section class="section latest-game" aria-label="latest game">
-        <div class="container">
-          <p class="section-subtitle">Latest Releases</p>
+        <section class="section latest-game" aria-label="latest game">
+          <div class="container">
+            <p class="section-subtitle">Latest Releases</p>
 
-          <h2 class="h2 section-title" style="color: black">
-            Create & <span class="span">Manage</span>
-          </h2>
+            <h2 class="h2 section-title" style="color: black">
+              Create & <span class="span">Manage</span>
+            </h2>
 
+            <div class="Ads_Game">
+              <img src="./assets/images/adss.webp" alt="GIFT-CARD" />
+            </div>
 
-          <div class="Ads_Game">
-            <img src="./assets/images/adss.webp" alt="">
-          </div>
-
-
-          <div class="Game">
-            <a href="#">
-              <div class="card_us">
-                <div class="card_img" style="
+            <div class="Game">
+              <a href="#">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="
                       background-image: url(./assets/img/bigo_33disc_sa.jpg);
-                    "></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
+                    "
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
 
-            <a href="#">
-              <div class="card_us">
-                <div class="card_img" style="
+              <a href="#">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="
                       background-image: url(./assets/img/codm-wl_178x178.jpg);
-                    "></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
+                    "
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
 
-            <a href="#">
-              <div class="card_us">
-                <div class="card_img" style="
+              <a href="#">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="
                       background-image: url(./assets/img/CODM_oct23-tile.png);
-                    "></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
+                    "
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
 
-            <a href="#">
-              <div class="card_us">
-                <div class="card_img" style="
-                      background-image: url(./assets/img/diablo_tile.png);
-                    "></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
+              <a href="#">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="background-image: url(./assets/img/diablo_tile.png)"
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
 
-            <a href="#">
-              <div class="card_us">
-                <div class="card_img" style="
+              <a href="#">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="
                       background-image: url(./assets/img/goddess-paradise-tile.png);
-                    "></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
+                    "
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
 
-            <a href="#">
-              <div class="card_us">
-                <div class="card_img" style="background-image: url(./assets/img/hago_tile.jpg)"></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
+              <a href="#">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="background-image: url(./assets/img/hago_tile.jpg)"
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+        <!-- 
+        - #LIVE MATCH
+      --></div>
 
       <!-- 
-        - #LIVE MATCH
-      -->
-    </div>
-
-
-    <!-- 
         - #BLOG
       -->
 
-
-
-    <div class="section-wrapper">
-      <!-- 
+      <div class="section-wrapper">
+        <!-- 
         - #LATEST GAME
       -->
 
-      <section class="section latest-game" aria-label="latest game">
-        <div class="container">
-          <p class="section-subtitle">Latest Releases</p>
+        <section class="section latest-game" aria-label="latest game">
+          <div class="container">
+            <p class="section-subtitle">Latest Releases</p>
 
-          <h2 class="h2 section-title" style="color: black">
-            Create & <span class="span">Manage</span>
-          </h2>
+            <h2 class="h2 section-title" style="color: black">
+              Create & <span class="span">Manage</span>
+            </h2>
 
-          <div class="Ads_Game">
-            <img src="./assets/images/adss.webp" alt="">
-          </div>
+            <div class="Ads_Game">
+              <img src="./assets/images/adss.webp" alt="GIFT-CARD" />
+            </div>
 
-
-
-          <div class="Game">
-            <a href="#">
-              <div class="card_us">
-                <div class="card_img" style="
+            <div class="Game">
+              <a href="#">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="
                       background-image: url(./assets/img/bigo_33disc_sa.jpg);
-                    "></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
+                    "
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
 
-            <a href="#">
-              <div class="card_us">
-                <div class="card_img" style="
+              <a href="#">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="
                       background-image: url(./assets/img/codm-wl_178x178.jpg);
-                    "></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
+                    "
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
 
-            <a href="#">
-              <div class="card_us">
-                <div class="card_img" style="
+              <a href="#">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="
                       background-image: url(./assets/img/CODM_oct23-tile.png);
-                    "></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
+                    "
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
 
-            <a href="#">
-              <div class="card_us">
-                <div class="card_img" style="
-                      background-image: url(./assets/img/diablo_tile.png);
-                    "></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
+              <a href="#">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="background-image: url(./assets/img/diablo_tile.png)"
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
 
-            <a href="#">
-              <div class="card_us">
-                <div class="card_img" style="
+              <a href="#">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="
                       background-image: url(./assets/img/goddess-paradise-tile.png);
-                    "></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
+                    "
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
 
-            <a href="#">
-              <div class="card_us">
-                <div class="card_img" style="background-image: url(./assets/img/hago_tile.jpg)"></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
+              <a href="#">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="background-image: url(./assets/img/hago_tile.jpg)"
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- 
+        <!-- 
         - #LIVE MATCH
-      -->
-    </div>
+      --></div>
+    </main>
 
-
-
-
-  </main>
-
-  <!-- 
+    <!-- 
     - #FOOTER
   -->
 
-  <footer id="footer_"></footer>
+    <footer id="footer_"></footer>
 
-  <!-- 
+    <!-- 
     - #BACK TO TOP
   -->
 
-  <!-- 
+    <!-- 
     - custom js link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="./assets/js/script.js" defer></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./assets/js/script.js" defer></script>
 
-
-
-
-  <script src="./assets/js/header.js"></script>
-
+    <script src="./assets/js/header.js"></script>
 
     <!-- إضافة مكتبة Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
@@ -687,8 +752,5 @@ section.section.latest-game {
         },
       });
     </script>
-
-
-</body>
-
+  </body>
 </html>
