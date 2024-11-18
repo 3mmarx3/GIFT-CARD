@@ -385,7 +385,7 @@ body {
 }
 
 .latest-game .section-title {
-  margin-block-end: 80px;
+  margin-block-end: 5vh;
 }
 
 .latest-game .has-scrollbar {
@@ -1984,4 +1984,23 @@ h2.h2.section-title::before {
 
 .s-modal-body {
   color: black !important;
+}
+
+div#kt_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 5vh 0;
+}
+
+input.input {
+  width: 100% !important;
+  color: white !important;
+}
+
+.group {
+  width: 100%;
+  margin: 10px 50px;
+  max-width: auto !important;
 }
