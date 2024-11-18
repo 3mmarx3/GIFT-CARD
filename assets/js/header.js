@@ -334,7 +334,7 @@ ul.chatbox {
         <!--end::Mega Menu Toggler-->
 
         <!--begin::Logo-->
-        <a href="/start-html-pro/index.html">
+        <a href="/index.html">
           GIFT-CARD
         </a>
         <!--end::Logo-->
