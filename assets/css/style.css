@@ -2243,3 +2243,7 @@ input:hover {
   width: 1rem;
   height: 1rem;
 }
+
+input.input {
+  border-radius: 5px;
+}

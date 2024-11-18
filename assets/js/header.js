@@ -20,7 +20,7 @@ let header = `
 
     </div>
 
-    
+
 
 
 
@@ -31,12 +31,14 @@ let header = `
 
       <div class="s-modal-wrapper">
         <div class="s-modal-body">
+
           <div class="s-modal-header">
             <label class="s-localization-modal-title">العملة</label>
             <button class="s-modal-close" type="button" onclick="closeModal()">
               ✕
             </button>
           </div>
+
           <div class="s-localization-modal-inner">
             <div class="s-localization-modal-section">
               <div class="s-localization-modal-section-inner">
@@ -99,10 +101,8 @@ let header = `
         </div>
       </div>
 
+   
   
-
-    </header>
-
 
 
 
@@ -116,13 +116,10 @@ let header = `
     data-kt-sticky-name="header"
     data-kt-sticky-offset="{default: '200px', lg: '300px'}"
   >
-    <!--begin::Container-->
     <div
       class="container-xxl d-flex align-items-stretch justify-content-between"
     >
-      <!--begin::Left-->
       <div class="d-flex align-items-center none_">
-        <!--begin::Mega Menu Toggler-->
         <button
           class="btn btn-icon btn-accent me-2 me-lg-6"
           id="kt_mega_menu_toggle"
@@ -137,23 +134,16 @@ let header = `
             ><span class="path9"></span><span class="path10"></span
           ></i>
         </button>
-        <!--end::Mega Menu Toggler-->
-
-        <!--begin::Logo-->
+    
+        
         <a href="/index.html">
           GIFT-CARD
         </a>
-        <!--end::Logo-->
       </div>
-      <!--end::Left-->
-
-      <!--begin::Right-->
+ 
+      
       <div class="d-flex align-items-center">
-        <!--begin::Search-->
-       
-        <!--end::Search-->
 
-        <!--begin::Message-->
        
         
      
@@ -161,7 +151,6 @@ let header = `
       
 
 
-        <!--  -->
         <button
         class="btn btn-icon btn-sm btn-active-bg-accent ms-1 ms-lg-6"
         id="kt_drawer_chat_toggle"
@@ -174,9 +163,7 @@ let header = `
       </svg>
 
       </button>
-<!--  -->
-        <!--end::Message-->
-  
+
                          <div class="chat_Gpt">
       <button class="chatbot-toggler">
         <span class="material-symbols-rounded"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-right-dots" viewBox="0 0 16 16">
@@ -225,11 +212,8 @@ let header = `
 </a>
           
           </div>
-          <!--begin::Menu-->
-      
-          <!--end::Menu-->
+    
         </div>
-        <!--end::User-->
 
         <!--begin::Notifications-->
         <div class="ms-1 ms-lg-6">
@@ -301,73 +285,16 @@ let header = `
                     ></i>
                   </span>
                 </div>
-                <div class="ps-4">
-                  <span class="menu-title fw-semibold mb-1"
-                    >Clean Microphone</span
-                  >
-                  <span class="text-muted fw-semibold d-block fs-7"
-                    >5 Hours ago</span
-                  >
-                </div>
+              
               </a>
             </div>
 
-            <div class="menu-item mx-3">
-              <a href="#" class="menu-link px-4 py-3">
-                <div class="symbol symbol-35px">
-                  <span class="symbol-label bg-light-primary">
-                    <i
-                      class="ki-duotone ki-message-text-2 fs-3 text-primary"
-                      ><span class="path1"></span><span class="path2"></span
-                      ><span class="path3"></span
-                    ></i>
-                  </span>
-                </div>
+       
 
-                <div class="ps-4">
-                  <span class="menu-title fw-semibold mb-1"
-                    >Quick Chat Created</span
-                  >
-                  <span class="text-muted fw-semibold d-block fs-7"
-                    >A Day ago</span
-                  >
-                </div>
-              </a>
-            </div>
+       
 
-            <div class="menu-item mx-3">
-              <a href="#" class="menu-link px-4 py-3">
-                <div class="symbol symbol-35px">
-                  <span class="symbol-label bg-light-danger">
-                    <i class="ki-duotone ki-disconnect fs-3 text-danger"
-                      ><span class="path1"></span><span class="path2"></span
-                      ><span class="path3"></span><span class="path4"></span
-                      ><span class="path5"></span
-                    ></i>
-                  </span>
-                </div>
 
-                <div class="ps-4">
-                  <span class="menu-title fw-semibold mb-1"
-                    >32 New Attachements</span
-                  >
-                  <span class="text-muted fw-semibold d-block fs-7"
-                    >2 Day ago</span
-                  >
-                </div>
-              </a>
-            </div>
-
-            <div class="separator mt-3"></div>
-
-            <div class="menu-item mx-2">
-              <div class="menu-content py-5">
-                <a href="#" class="btn btn-primary fw-bold me-2 px-5"
-                  >Report</a
-                >
-                <a href="#" class="btn btn-light fw-bold px-5">Reset</a>
-              </div>
-            </div>
+         
           </div>
         
 
@@ -376,11 +303,9 @@ let header = `
        
 
     
-        <!--end::Sidebar Toggler-->
       </div>
-      <!--end::Right-->
     </div>
-    <!--end::Container-->
+
        <div class="group container-xxl d-flex align-items-stretch justify-content-between">
           <input placeholder="Search" type="search" class="input">
         </div>
@@ -560,13 +485,7 @@ let footer = `
         <div class="footer-newsletter">
           <p class="footer-list-title">اشترك في النشرة الإخبارية</p>
 
-          <form action="" class="footer-newsletter">
-            <input type="email" name="email_address" aria-label="email" placeholder="أدخل بريدك الإلكتروني" required="" class="email-field">
-
-            <button type="submit" class="footer-btn" aria-label="submit">
-              <ion-icon name="rocket" role="img" class="md hydrated" aria-label="rocket"></ion-icon>
-            </button>
-          </form>
+         
         </div>
       </div>
     </div>
