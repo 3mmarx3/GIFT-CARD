@@ -1,6 +1,4 @@
-'use strict';
-
-
+"use strict";
 
 const navbar = document.querySelector("[data-navbar]");
 const navbarLinks = document.querySelectorAll("[data-nav-link]");
@@ -18,8 +16,6 @@ for (let i = 0; i < navbarLinks.length; i++) {
   });
 }
 
-
-
 /**
  * search toggle
  */
@@ -32,8 +28,6 @@ for (let i = 0; i < searchTogglers.length; i++) {
     searchBox.classList.toggle("active");
   });
 }
-
-
 
 /**
  * header
