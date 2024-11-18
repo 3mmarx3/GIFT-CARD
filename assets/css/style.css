@@ -1981,3 +1981,7 @@ h2.h2.section-title::before {
   top: 39%;
   z-index: -1;
 }
+
+.s-modal-body {
+  color: black !important;
+}
