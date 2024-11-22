@@ -1,642 +1,689 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fall Limited Edition Sneakers</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fall Limited Edition Sneakers</title>
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0&family=Oxanium:wght@600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+    />
 
-  <!-- Google Fonts -->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0&family=Oxanium:wght@600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap" />
+    <!-- Salla Network Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.salla.network/fonts/sallaicons.css?v=2.0.3"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.salla.network/fonts/default.css?v=2.0.3"
+    />
 
-  <!-- Salla Network Fonts -->
-  <link rel="stylesheet" href="https://cdn.salla.network/fonts/sallaicons.css?v=2.0.3" />
-  <link rel="stylesheet" href="https://cdn.salla.network/fonts/default.css?v=2.0.3" />
+    <!-- Local CSS Files -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/foot.css" />
+    <link rel="stylesheet" href="../css/ex.css" />
+    <link rel="stylesheet" href="../css/app.css" />
 
-  <!-- Local CSS Files -->
-  <link rel="stylesheet" href="../css/style.css" />
-  <link rel="stylesheet" href="../css/foot.css" />
-  <link rel="stylesheet" href="../css/ex.css" />
-  <link rel="stylesheet" href="../css/app.css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+    <!-- Preconnect for Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <!-- Preconnect for Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-
-  <style>
-    body,
-    a {
-      font-family: "Cairo", serif !important;
-    }
-  </style>
-
-  <!--  -->
-  <style>
-    body {
-      background: #141a2a;
-      color: white;
-    }
-
-    .container_viwe {
-      display: grid;
-      gap: 20px;
-      grid-template-columns: 1fr 1fr;
-      border-radius: 10px;
-      padding: 20px;
-      height: 55vh;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .image {
-      border-radius: 10px;
-
-      background: url(../img/bg.jpg);
-      height: 50vh;
-
-      background-position: center center;
-      background-size: cover;
-    }
-
-    .details {
-      display: flex;
-      flex-direction: column;
-      margin-top: 5vh;
-      gap: 15px;
-    }
-
-    .details h1 {
-      color: white;
-      font-size: xx-large;
-    }
-
-    .details p {
-      color: white;
-      font-size: larger;
-      line-height: 1.6;
-    }
-
-    .price {
-      display: flex;
-      align-items: center;
-      margin-top: 10px;
-    }
-
-    .price span {
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: white;
-      margin-right: 10px;
-    }
-
-    .price .discount {
-      background: var(--marigold);
-      color: white;
-      padding: 2px 6px;
-      border-radius: 4px;
-      font-size: 0.8rem;
-    }
-
-    .price del {
-      font-size: 0.9rem;
-      color: #aaa;
-      margin-left: auto;
-    }
-
-    .cart {
-      margin-top: 20px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .cart input {
-      width: 40px;
-      text-align: center;
-      font-size: 1rem;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      padding: 5px;
-    }
-
-    .cart button {
-      background-color: var(--marigold);
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      font-size: 1rem;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    @media screen and (max-width: 992px) {
-      .container_viwe {
-        display: block;
+    <style>
+      body,
+      a {
+        font-family: "Cairo", serif !important;
       }
-    }
-  </style>
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
-
-    .block {
-      padding: 1rem;
-
-      display: block;
-    }
-
-    .block-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 16px;
-    }
-
-    .block-header .title {
-      display: flex;
-      align-items: flex-start;
-    }
-
-    .block-header .title .tag {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-left: 4px;
-      background: #f7f7f7;
-      color: #1c1c1c;
-      text-align: center;
-      padding: 0 4px;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      font-weight: 500;
-      font-size: 10px;
-      line-height: 16px;
-      border: 1px solid #e8e8e8;
-      border-radius: 96px;
-    }
-
-    .writing {
-      background: #ffffff;
-      border: 1px solid #e8e8e8;
-      border-radius: 8px;
-      overflow: hidden;
-      margin-bottom: 24px;
-      padding: 12px;
-    }
-
-    .writing .textarea {
-      width: 100%;
-      font-family: "Inter";
-      color: #585757;
-      height: 50px;
-      overflow-y: auto;
-      appearance: none;
-      border: 0;
-      outline: 0;
-      resize: none;
-      font-size: 16px;
-      line-height: 24px;
-    }
-
-    .writing:focus-within {
-      border: 1px solid #0085ff;
-      box-shadow: 0px 0px 2px 2px rgba(0, 133, 255, 0.15);
-    }
-
-    .writing .footer {
-      margin-top: 12px;
-      padding-top: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border-top: 1px solid #e8e8e8;
-    }
-
-    .writing .footer .text-format {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .comment {
-      display: grid;
-      gap: 14px;
-    }
-
-    .comment .user-banner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .comment .user-banner .user {
-      gap: 8px;
-      align-items: center;
-      display: flex;
-    }
-
-    .comment .user-banner .user .avatar {
-      height: 32px;
-      width: 32px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 1px solid transparent;
-      position: relative;
-      border-radius: 100px;
-      font-weight: 500;
-      font-size: 13px;
-      line-height: 20px;
-    }
-
-    .comment .user-banner .user .avatar img {
-      max-width: 100%;
-      border-radius: 50%;
-    }
-
-    .comment .user-banner .user .avatar .stat {
-      display: flex;
-      position: absolute;
-      right: -2px;
-      bottom: -2px;
-      display: block;
-      width: 12px;
-      height: 12px;
-      z-index: 9;
-      border: 2px solid #ffffff;
-      border-radius: 100px;
-    }
-
-    .comment .user-banner .user .avatar .stat.green {
-      background: #00ba34;
-    }
-
-    .comment .user-banner .user .avatar .stat.grey {
-      background: #969696;
-    }
-
-    .comment .footer {
-      gap: 12px;
-      display: flex;
-      align-items: center;
-    }
-
-    .comment .footer .reactions {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .comment .footer .divider {
-      height: 12px;
-      width: 1px;
-      background: #e8e8e8;
-    }
-
-    .comment:not(.comment:first-child) {
-      padding-bottom: 12px;
-      margin-bottom: 12px;
-      border-bottom: 1px solid #e8e8e8;
-    }
-
-    .comment+.comment {
-      padding-top: 12px;
-    }
-
-    .comment.reply .user-banner,
-    .comment.reply .content,
-    .comment.reply .footer {
-      margin-left: 32px;
-    }
-
-    .group-radio {
-      position: relative;
-      display: flex;
-      user-select: none;
-      align-items: stretch;
-    }
-
-    .group-radio .button-radio {
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.06);
-    }
-
-    .group-radio .button-radio label {
-      cursor: pointer;
-      padding: 4px 8px;
-      font-weight: 500;
-      font-size: 14px;
-      display: flex;
-      height: 28px;
-      align-items: center;
-      line-height: 28px;
-      transition: 0.2s ease;
-    }
-
-    .group-radio .button-radio:first-child {
-      border-top-left-radius: 8px;
-      border-bottom-left-radius: 8px;
-      border-left: 1px solid #e8e8e8;
-      border-top: 1px solid #e8e8e8;
-      border-bottom: 1px solid #e8e8e8;
-    }
-
-    .group-radio .button-radio:last-child {
-      border-top-right-radius: 8px;
-      border-right: 1px solid #e8e8e8;
-      border-top: 1px solid #e8e8e8;
-      border-bottom: 1px solid #e8e8e8;
-      border-bottom-right-radius: 8px;
-    }
-
-    .group-radio .button-radio input[type="radio"] {
-      display: none;
-    }
-
-    .group-radio .button-radio input[type="radio"]:checked+label {
-      background: #f7f7f7;
-    }
-
-    .group-radio .divider {
-      width: 1px;
-      background: #e8e8e8;
-    }
-
-    h5 {
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 24px;
-      color: #1c1c1c;
-      letter-spacing: 0em;
-      text-align: left;
-    }
-
-    .btn {
-      appearance: none;
-      background: transparent;
-      border: 0;
-      padding: 0;
-      display: flex;
-      font: inherit;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      color: #1c1c1c;
-      transition: 0.2s ease;
-      outline: none;
-    }
-
-    .btn i {
-      color: #969696;
-      font-size: 18px;
-      transition: 0.15s ease-in-out;
-    }
-
-    .btn.primary {
-      min-width: 64px;
-      padding: 8px 12px;
-      height: 40px;
-      color: #fff;
-      display: inline-flex;
-      background: #0085ff;
-      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1),
-        0px 2px 1px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.08);
-      border-radius: 8px;
-    }
-
-    .btn.primary:hover {
-      background: #339dff;
-    }
-
-    .btn:hover i {
-      opacity: 0.7;
-    }
-
-    .btn img {
-      max-width: 18px;
-      height: auto;
-    }
-
-    .btn.react {
-      padding: 4px 8px 4px 4px;
-      background: #f7f7f7;
-      border: 1px solid #e8e8e8;
-      border-radius: 8px;
-      gap: 4px;
-    }
-
-    .btn.react:hover {
-      background-color: #eee;
-    }
-
-    .btn.dropdown {
-      display: flex;
-      cursor: pointer;
-      border-radius: 50%;
-      align-items: center;
-      justify-content: center;
-      padding: 0;
-      width: 26px;
-      height: 26px;
-    }
-
-    .btn.dropdown:hover {
-      background-color: #eee;
-    }
-
-    p {
-      line-height: 24px;
-    }
-
-    p a.tagged-user {
-      display: inline-flex;
-      padding: 2px 8px;
-      background: #e5f3ff;
-      border-radius: 256px;
-      color: #0085ff;
-    }
-
-    .is-mute {
-      font-weight: 400;
-      font-size: 13px;
-      line-height: 20px;
-      color: #969696;
-    }
-
-    a {
-      font-weight: 500;
-      font-size: 13px;
-      line-height: 20px;
-      color: #1c1c1c;
-      text-decoration: none;
-      transition: opacity 0.15s ease-in-out;
-    }
-
-    a:hover {
-      opacity: 0.7;
-    }
-
-    h2 {
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 28px;
-      color: #1c1c1c;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    .load {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .load span {
-      display: flex;
-      align-items: center;
-      font-weight: 400;
-      font-size: 13px;
-      line-height: 20px;
-      color: #969696;
-    }
-
-    .load span i {
-      margin-right: 6px;
-    }
-
-    .group-button {
-      display: flex;
-      gap: 16px;
-    }
-  </style>
-</head>
-
-<body>
-  <main class="container">
-    <header id="header_"></header>
-
-    <div class="container_viwe">
-      <div class="image"></div>
-      <div class="details">
-        <h1>Fall Limited Edition Sneakers</h1>
-        <p>
-          These low-profile sneakers are your perfect casual wear companion.
-          Featuring a durable rubber outer sole, they'll withstand everything
-          the weather can offer.
-        </p>
-        <div class="price">
-          <span>$125.00</span>
-          <span class="discount">50%</span>
-          <del>$250.00</del>
-        </div>
-        <div class="cart">
-          <input type="number" min="1" value="1" />
-          <button>اضافة الي السلة</button>
-        </div>
-      </div>
-      <!-- comernt -->
-
-      <!--  -->
-    </div>
-
-    <div class="section-wrapper">
-      <!-- 
-          - #LATEST GAME
-        -->
-
-      <section class="section latest-game" aria-label="latest game">
-        <div class="container">
-          <p class="section-subtitle">Latest Releases</p>
-
-          <h2 class="h2 section-title" style="color: black">
-            Create &amp; <span class="span">Manage</span>
-          </h2>
-
-          <div class="Ads_Game">
-            <img src="./assets/images/adss.webp" alt="" />
-          </div>
-
-          <div class="Game">
-            <a href="./assets/page/viwe.html">
-              <div class="card_us">
-                <div class="card_img" style="background-image: url(../img/bigo_33disc_sa.jpg)"></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
-
-            <a href="./assets/page/viwe.html">
-              <div class="card_us">
-                <div class="card_img" style="background-image: url(../img/codm-wl_178x178.jpg)"></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
-
-            <a href="./assets/page/viwe.html">
-              <div class="card_us">
-                <div class="card_img" style="background-image: url(../img/CODM_oct23-tile.png)"></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
-
-            <a href="#">
-              <div class="card_us">
-                <div class="card_img" style="background-image: url(../img/diablo_tile.png)"></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
-
-            <a href="#">
-              <div class="card_us">
-                <div class="card_img" style="
-                      background-image: url(../img/goddess-paradise-tile.png);
-                    "></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
-
-            <a href="#">
-              <div class="card_us">
-                <div class="card_img" style="background-image: url(../img/hago_tile.jpg)"></div>
-                <div data-v-db7035ba="" class="product-tile__clip-path"></div>
-                <div class="product-tile__item-title">COD:M Web Store</div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- 
-          - #LIVE MATCH
-        -->
-    </div>
-  </main>
-
-  <footer id="footer_"></footer>
-
-  <style>
-    @media screen and (max-width: 992px) {
-      .section-wrapper {
-        margin-top: 20vh;
+    </style>
+
+    <!--  -->
+    <style>
+      body {
+        background: #141a2a;
+        color: white;
+      }
+
+      .container_viwe {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        border-radius: 10px;
+        padding: 20px;
+        height: 55vh;
+        align-items: center;
+        justify-content: center;
       }
 
       .image {
-        height: 30vh;
+        border-radius: 10px;
+
+        background: url(../img/bg.jpg);
+        height: 50vh;
+
+        background-position: center center;
+        background-size: cover;
       }
-    }
-  </style>
 
-  <script src="../js/header.js"></script>
-</body>
+      .details {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5vh;
+        gap: 15px;
+      }
 
+      .details h1 {
+        color: white;
+        font-size: xx-large;
+      }
+
+      .details p {
+        color: white;
+        font-size: larger;
+        line-height: 1.6;
+      }
+
+      .price {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+      }
+
+      .price span {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: white;
+        margin-right: 10px;
+      }
+
+      .price .discount {
+        background: var(--marigold);
+        color: white;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-size: 0.8rem;
+      }
+
+      .price del {
+        font-size: 0.9rem;
+        color: #aaa;
+        margin-left: auto;
+      }
+
+      .cart {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .cart input {
+        width: 40px;
+        text-align: center;
+        font-size: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 5px;
+      }
+
+      .cart button {
+        background-color: var(--marigold);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      @media screen and (max-width: 992px) {
+        .container_viwe {
+          display: block;
+        }
+      }
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+
+      .block {
+        padding: 1rem;
+
+        display: block;
+      }
+
+      .block-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 16px;
+      }
+
+      .block-header .title {
+        display: flex;
+        align-items: flex-start;
+      }
+
+      .block-header .title .tag {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 4px;
+        background: #f7f7f7;
+        color: #1c1c1c;
+        text-align: center;
+        padding: 0 4px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 16px;
+        border: 1px solid #e8e8e8;
+        border-radius: 96px;
+      }
+
+      .writing {
+        background: #ffffff;
+        border: 1px solid #e8e8e8;
+        border-radius: 8px;
+        overflow: hidden;
+        margin-bottom: 24px;
+        padding: 12px;
+      }
+
+      .writing .textarea {
+        width: 100%;
+        font-family: "Inter";
+        color: #585757;
+        height: 50px;
+        overflow-y: auto;
+        appearance: none;
+        border: 0;
+        outline: 0;
+        resize: none;
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .writing:focus-within {
+        border: 1px solid #0085ff;
+        box-shadow: 0px 0px 2px 2px rgba(0, 133, 255, 0.15);
+      }
+
+      .writing .footer {
+        margin-top: 12px;
+        padding-top: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid #e8e8e8;
+      }
+
+      .writing .footer .text-format {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .comment {
+        display: grid;
+        gap: 14px;
+      }
+
+      .comment .user-banner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .comment .user-banner .user {
+        gap: 8px;
+        align-items: center;
+        display: flex;
+      }
+
+      .comment .user-banner .user .avatar {
+        height: 32px;
+        width: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid transparent;
+        position: relative;
+        border-radius: 100px;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 20px;
+      }
+
+      .comment .user-banner .user .avatar img {
+        max-width: 100%;
+        border-radius: 50%;
+      }
+
+      .comment .user-banner .user .avatar .stat {
+        display: flex;
+        position: absolute;
+        right: -2px;
+        bottom: -2px;
+        display: block;
+        width: 12px;
+        height: 12px;
+        z-index: 9;
+        border: 2px solid #ffffff;
+        border-radius: 100px;
+      }
+
+      .comment .user-banner .user .avatar .stat.green {
+        background: #00ba34;
+      }
+
+      .comment .user-banner .user .avatar .stat.grey {
+        background: #969696;
+      }
+
+      .comment .footer {
+        gap: 12px;
+        display: flex;
+        align-items: center;
+      }
+
+      .comment .footer .reactions {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .comment .footer .divider {
+        height: 12px;
+        width: 1px;
+        background: #e8e8e8;
+      }
+
+      .comment:not(.comment:first-child) {
+        padding-bottom: 12px;
+        margin-bottom: 12px;
+        border-bottom: 1px solid #e8e8e8;
+      }
+
+      .comment + .comment {
+        padding-top: 12px;
+      }
+
+      .comment.reply .user-banner,
+      .comment.reply .content,
+      .comment.reply .footer {
+        margin-left: 32px;
+      }
+
+      .group-radio {
+        position: relative;
+        display: flex;
+        user-select: none;
+        align-items: stretch;
+      }
+
+      .group-radio .button-radio {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.06);
+      }
+
+      .group-radio .button-radio label {
+        cursor: pointer;
+        padding: 4px 8px;
+        font-weight: 500;
+        font-size: 14px;
+        display: flex;
+        height: 28px;
+        align-items: center;
+        line-height: 28px;
+        transition: 0.2s ease;
+      }
+
+      .group-radio .button-radio:first-child {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        border-left: 1px solid #e8e8e8;
+        border-top: 1px solid #e8e8e8;
+        border-bottom: 1px solid #e8e8e8;
+      }
+
+      .group-radio .button-radio:last-child {
+        border-top-right-radius: 8px;
+        border-right: 1px solid #e8e8e8;
+        border-top: 1px solid #e8e8e8;
+        border-bottom: 1px solid #e8e8e8;
+        border-bottom-right-radius: 8px;
+      }
+
+      .group-radio .button-radio input[type="radio"] {
+        display: none;
+      }
+
+      .group-radio .button-radio input[type="radio"]:checked + label {
+        background: #f7f7f7;
+      }
+
+      .group-radio .divider {
+        width: 1px;
+        background: #e8e8e8;
+      }
+
+      h5 {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        color: #1c1c1c;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+
+      .btn {
+        appearance: none;
+        background: transparent;
+        border: 0;
+        padding: 0;
+        display: flex;
+        font: inherit;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: #1c1c1c;
+        transition: 0.2s ease;
+        outline: none;
+      }
+
+      .btn i {
+        color: #969696;
+        font-size: 18px;
+        transition: 0.15s ease-in-out;
+      }
+
+      .btn.primary {
+        min-width: 64px;
+        padding: 8px 12px;
+        height: 40px;
+        color: #fff;
+        display: inline-flex;
+        background: #0085ff;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1),
+          0px 2px 1px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.08);
+        border-radius: 8px;
+      }
+
+      .btn.primary:hover {
+        background: #339dff;
+      }
+
+      .btn:hover i {
+        opacity: 0.7;
+      }
+
+      .btn img {
+        max-width: 18px;
+        height: auto;
+      }
+
+      .btn.react {
+        padding: 4px 8px 4px 4px;
+        background: #f7f7f7;
+        border: 1px solid #e8e8e8;
+        border-radius: 8px;
+        gap: 4px;
+      }
+
+      .btn.react:hover {
+        background-color: #eee;
+      }
+
+      .btn.dropdown {
+        display: flex;
+        cursor: pointer;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        width: 26px;
+        height: 26px;
+      }
+
+      .btn.dropdown:hover {
+        background-color: #eee;
+      }
+
+      p {
+        line-height: 24px;
+      }
+
+      p a.tagged-user {
+        display: inline-flex;
+        padding: 2px 8px;
+        background: #e5f3ff;
+        border-radius: 256px;
+        color: #0085ff;
+      }
+
+      .is-mute {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        color: #969696;
+      }
+
+      a {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 20px;
+        color: #1c1c1c;
+        text-decoration: none;
+        transition: opacity 0.15s ease-in-out;
+      }
+
+      a:hover {
+        opacity: 0.7;
+      }
+
+      h2 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        color: #1c1c1c;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .load {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .load span {
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        color: #969696;
+      }
+
+      .load span i {
+        margin-right: 6px;
+      }
+
+      .group-button {
+        display: flex;
+        gap: 16px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="container">
+      <header id="header_"></header>
+
+      <div class="container_viwe">
+        <div class="image"></div>
+        <div class="details">
+          <h1>Fall Limited Edition Sneakers</h1>
+          <p>
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they'll withstand everything
+            the weather can offer.
+          </p>
+          <div class="price">
+            <span>$125.00</span>
+            <span class="discount">50%</span>
+            <del>$250.00</del>
+          </div>
+          <div class="cart">
+            <input type="number" min="1" value="1" />
+            <button>اضافة الي السلة</button>
+          </div>
+        </div>
+        <!-- comernt -->
+
+        <!--  -->
+      </div>
+
+      <div class="section-wrapper">
+        <!-- 
+          - #LATEST GAME
+        -->
+
+        <section class="section latest-game" aria-label="latest game">
+          <div class="container">
+            <p class="section-subtitle">Latest Releases</p>
+
+            <h2 class="h2 section-title" style="color: black">
+              Create &amp; <span class="span">Manage</span>
+            </h2>
+
+            <!-- <div class="Ads_Game">
+            <img src="./assets/images/adss.webp" alt="" />
+          </div> -->
+
+            <div class="Game">
+              <a href="./viwe.html">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="background-image: url(../img/bigo_33disc_sa.jpg)"
+                  >
+                    <div class="desc">11%</div>
+                  </div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                  <div class="product-tile__item-title"><p>150,00 EGP</p></div>
+                </div>
+              </a>
+
+              <a href="./assets/page/viwe.html">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="background-image: url(../img/codm-wl_178x178.jpg)"
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
+
+              <a href="./assets/page/viwe.html">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="background-image: url(../img/CODM_oct23-tile.png)"
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
+
+              <a href="#">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="background-image: url(../img/diablo_tile.png)"
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
+
+              <a href="#">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="
+                      background-image: url(../img/goddess-paradise-tile.png);
+                    "
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
+
+              <a href="#">
+                <div class="card_us">
+                  <div
+                    class="card_img"
+                    style="background-image: url(../img/hago_tile.jpg)"
+                  ></div>
+                  <div data-v-db7035ba="" class="product-tile__clip-path"></div>
+                  <div class="product-tile__item-title">COD:M Web Store</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+          - #LIVE MATCH
+        -->
+      </div>
+    </main>
+
+    <footer id="footer_"></footer>
+
+    <style>
+      @media screen and (max-width: 992px) {
+        .section-wrapper {
+          margin-top: 20vh;
+        }
+
+        .image {
+          height: 30vh;
+        }
+      }
+
+      .desc {
+        color: white;
+        font-weight: bold;
+        padding: 0 5px;
+        border-radius: 5px;
+        width: max-content;
+        /* right: 0; */
+        /* left: 0; */
+        /* position: absolute; */
+        background: #025bff;
+        margin: 10px;
+        float: right;
+      }
+      .product-tile__item-title {
+        padding: 0 !important;
+      }
+    </style>
+
+    <script src="../js/header.js"></script>
+  </body>
 </html>
