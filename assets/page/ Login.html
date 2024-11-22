@@ -24,22 +24,6 @@
           class="d-flex flex-column flex-lg-row flex-column-fluid"
           id="kt_login"
         >
-          <div class="d-flex flex-column flex-lg-row-auto bg-primary">
-            <div class="d-flex flex-column-auto flex-column text-center">
-              <a class="mb-6" href="/start-react-pro/"
-                ><img alt="الشعار" src="../img/gift.png"
-              /></a>
-              <h3 class="fw-bolder fs-2x text-white lh-lg">
-                اكتشفGIFT-CARD<br />مع بطاقات العاب رائعة
-              </h3>
-            </div>
-            <div
-              class="d-flex flex-row-fluid bgi-size-contain bgi-no-repeat bgi-position-y-bottom bgi-position-x-center min-h-350px none_hid"
-              style="
-                background-image: url('/start-react-pro/media/illustrations/winner.png');
-              "
-            ></div>
-          </div>
           <div
             class="login-content flex-lg-row-fluid d-flex flex-column justify-content-center position-relative overflow-hidden py-20 px-10 p-lg-7 mx-auto mw-450px w-100"
           >
@@ -51,17 +35,16 @@
                   </h3>
                   <div class="text-muted fw-bold fs-3">
                     <br />
-                    <br />
 
                     <a
                       class="text-primary fw-bolder"
                       id="kt_login_signin_form_singup_button"
-                      href="/start-react-pro/auth/registration"
+                      href="./signup.html"
                       >إنشاء حساب</a
                     >
                   </div>
                 </div>
-                <div class="mb-lg-15 alert alert-info">
+                <div class="mb-lg-10 alert alert-info">
                   <div class="alert-text">
                     استخدم بيانات الاعتماد <strong>admin@demo.com</strong> و
                     <strong>demo</strong> لتسجيل الدخول.
@@ -137,6 +120,12 @@
         .d-flex.flex-row-fluid.bgi-size-contain.bgi-no-repeat.bgi-position-y-bottom.bgi-position-x-center.min-h-350px.none_hid {
           display: none !important;
         }
+      }
+
+      body#kt_body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     </style>
   </body>

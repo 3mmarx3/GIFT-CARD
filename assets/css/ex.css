@@ -62401,15 +62401,7 @@ body {
     padding-top: 120px;
   }
 
-  .container,
-  .container-fluid,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl,
-  .container-xxl {
-    padding: 0 40px;
-  }
+ 
 }
 
 @media (max-width: 991.98px) {

@@ -908,7 +908,7 @@ body {
   content: "";
   position: absolute;
   bottom: 0;
-  left: 0;
+  right: 0;
   width: 30px;
   height: 3px;
   background-color: var(--marigold);
@@ -2246,4 +2246,8 @@ input:hover {
 
 input.input {
   border-radius: 5px;
+}
+
+* {
+  direction: rtl !important;
 }

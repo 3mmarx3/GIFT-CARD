@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fall Limited Edition Sneakers</title>
+  </head>
+  <body>
+    <main>
+      <div id="header">
+        <h1>تاريخ الطلب</h1>
+      </div>
+      <div id="leaderboard">
+        <div class="ribbon"></div>
+        <table>
+          <tr>
+            <td class="number">1</td>
+            <td class="name">Mark Lee</td>
+            <td class="points">نسخ الكود</td>
+          </tr>
+
+          <tr>
+            <td class="number">2</td>
+            <td class="name">Mark Lee</td>
+            <td class="points">نسخ الكود</td>
+          </tr>
+          <tr>
+            <td class="number">3</td>
+            <td class="name">Xiao Dejun</td>
+            <td class="points">نسخ الكود</td>
+          </tr>
+          <tr>
+            <td class="number">4</td>
+            <td class="name">Qian Kun</td>
+            <td class="points">نسخ الكود</td>
+          </tr>
+          <tr>
+            <td class="number">5</td>
+            <td class="name">Johnny Suh</td>
+            <td class="points">نسخ الكود</td>
+          </tr>
+        </table>
+      </div>
+    </main>
+    <style>
+      * {
+        font-size: 62, 5%;
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+      body {
+        height: 100%;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      main {
+        background-color: #ffffff;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0.5rem;
+      }
+
+      #header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2.5rem 2rem;
+      }
+
+      .share:active {
+        border-bottom: 0;
+      }
+
+      .share i {
+        color: #fff;
+        font-size: 2rem;
+      }
+
+      h1 {
+        font-family: "Rubik", sans-serif;
+        font-size: 1.7rem;
+        color: #141a39;
+        text-transform: uppercase;
+        cursor: default;
+      }
+
+      #leaderboard {
+        width: 100%;
+        position: relative;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+        color: #141a39;
+        cursor: default;
+      }
+
+      tr {
+        transition: all 0.2s ease-in-out;
+        border-radius: 0.2rem;
+      }
+
+      tr:nth-child(odd) {
+        background-color: #f9f9f9;
+      }
+
+      td {
+        height: 5rem;
+        font-family: "Rubik", sans-serif;
+        font-size: 1.4rem;
+        padding: 1rem 2rem;
+        position: relative;
+      }
+
+      .number {
+        width: 1rem;
+        text-align: left;
+      }
+
+      .name {
+        text-align: left;
+        font-size: 1.2rem;
+      }
+
+      .points {
+        font-size: large;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+
+      .points:first-child {
+        width: 10rem;
+      }
+
+      .gold-medal {
+        height: 3rem;
+        margin-left: 1.5rem;
+      }
+
+      .continue:active {
+        border-bottom: 0;
+      }
+
+      @media (max-width: 740px) {
+        * {
+          font-size: 70%;
+        }
+      }
+
+      @media (max-width: 500px) {
+        * {
+          font-size: 55%;
+        }
+      }
+
+      @media (max-width: 390px) {
+        * {
+          font-size: 45%;
+        }
+      }
+      main {
+        padding: 5vh;
+      }
+    </style>
+  </body>
+</html>

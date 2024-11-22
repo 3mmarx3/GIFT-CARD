@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-
     <!-- Local CSS Files -->
     <link rel="stylesheet" href="../css/ex.css" />
     <link rel="stylesheet" href="../css/app.css" />
@@ -15,7 +14,7 @@
   <body>
     <div class="wrapper d-flex flex-column flex-row-fluid" id="kt_wrapper">
       <!--begin::Header-->
-   
+
       <!--end::Header-->
 
       <header id="header_"></header>
@@ -57,22 +56,21 @@
               class="d-flex align-items-center flex-nowrap text-nowrap overflow-auto py-1"
             >
               <a
-              href="#"
-              class="btn btn-active-accent fw-bold"
-              onclick="showDiv(0)"
+                href="#"
+                class="btn btn-active-accent fw-bold"
+                onclick="showDiv(0)"
               >
-                الحساب 
+                الحساب
               </a>
-          
-              <a
-              href="#"
-              class="btn btn-active-accent fw-bold ms-3"
-              onclick="showDiv(1)"
-            >
-              الطلبات 
-            </a>
 
-              
+              <a
+                href="#"
+                class="btn btn-active-accent fw-bold ms-3"
+                onclick="showDiv(1)"
+              >
+                الطلبات
+              </a>
+
               <a
                 href="#"
                 class="btn btn-active-accent fw-bold ms-3"
@@ -93,7 +91,7 @@
           <!--begin::Container-->
           <div class="container-xxl">
             <!--begin::Profile Account-->
-            <div class="card divItem" >
+            <div class="card divItem">
               <!--begin::Form-->
               <form class="form d-flex flex-center">
                 <div class="card-body mw-800px py-20">
@@ -134,14 +132,10 @@
                     </label>
                     <div class="col-lg-9">
                       <div class="input-group input-group-lg input-group-solid">
-                        <span class="input-group-text pe-0"
-                          ><i class="la la-at fs-4"></i
-                        ></span>
                         <input
-                          type="text"
                           class="form-control form-control-lg form-control-solid"
-                          placeholder="nick.watson@loop.com"
-                          placeholder="Email"
+                          type="email"
+                          placeholder="max_stone"
                         />
                       </div>
                       <div class="form-text">
@@ -191,48 +185,19 @@
                   <div class="row mb-8">
                     <label class="col-lg-3 col-form-label">تاريخ ميلاد</label>
                     <div class="col-lg-9">
-                      <select
-                        class="form-select form-select-lg form-select-solid select2-hidden-accessible"
-                        data-control="select2"
-                        data-placeholder="Select Timezone..."
-                        data-select2-id="select2-data-4-iitd"
-                        tabindex="-1"
-                        aria-hidden="true"
-                        data-kt-initialized="1"
-                      >
-                        <option
-                          data-offset="-39600"
-                          placeholder="International Date Line West"
-                          data-select2-id="select2-data-6-lxez"
-                        >
-                          (GMT-11:00) International Date Line West
-                        </option>
-
-                        <option data-offset="43200" placeholder="Auckland">
-                          (GMT+12:00) Auckland
-                        </option>
-                        <option data-offset="43200" placeholder="Wellington">
-                          (GMT+12:00) Wellington
-                        </option>
-                        <option data-offset="46800" placeholder="Nuku'alofa">
-                          (GMT+13:00) Nuku'alofa
-                        </option>
-                        
-                        </select
-                      ><span
-                        class="select2 select2-container select2-container--bootstrap5"
-                        dir="ltr"
-                        data-select2-id="select2-data-5-riz6"
-                        style="width: 100%"
-                        >
-                     
+                      <input
+                        class="form-control form-control-lg form-control-solid"
+                        type="date"
+                        placeholder="max_stone"
+                      />
                     </div>
                   </div>
                   <!--end::Form row-->
 
                   <!--begin::Form row-->
                   <div class="row align-items-center mb-3">
-                    <label class="col-lg-3 col-form-label"> وسائل التواصل
+                    <label class="col-lg-3 col-form-label">
+                      وسائل التواصل
                     </label>
                     <div class="col-lg-9">
                       <div class="d-flex align-items-center">
@@ -252,7 +217,7 @@
                             >Email</label
                           >
                         </div>
-                    
+
                         <div
                           class="form-check form-check-custom form-check-solid"
                         >
@@ -273,18 +238,13 @@
                   </div>
                   <!--begin::Form row-->
 
-
-                  
                   <!--begin::Form row-->
-                
+
                   <!--end::Form row-->
 
                   <!--begin::Form row-->
                   <div class="row mb-13">
-                    <label class="col-lg-3 col-form-label"
-                      >تعطيل الحساب
-                      </label
-                    >
+                    <label class="col-lg-3 col-form-label">تعطيل الحساب </label>
                     <div class="col-lg-9">
                       <div
                         class="form-check form-check-custom form-check-solid me-5"
@@ -298,9 +258,9 @@
                         <label
                           class="form-check-label fw-semibold"
                           for="customCheck5"
-                          >يمكنك حذف حسابك من المتجر ، بما في ذلك طلباتك السابقة ومنتجات قائمة الأمنيات.
-                          </label
-                        >
+                          >يمكنك حذف حسابك من المتجر ، بما في ذلك طلباتك السابقة
+                          ومنتجات قائمة الأمنيات.
+                        </label>
                       </div>
 
                       <div class="form-text py-2">
@@ -345,12 +305,8 @@
 
             <!--  -->
 
-
-            
-
             <div class="divItem">
-              <div class="row g-0 g-xl-5 g-xxl-8 ">
-            
+              <div class="row g-0 g-xl-5 g-xxl-8">
                 <div class="or">
                   <div class="card card-stretch mb-5 mb-xxl-8">
                     <!--begin::Header-->
@@ -364,15 +320,11 @@
                         >
                       </h3>
                       <div class="card-toolbar">
-                    
-                        <span>
-                          11/18/2024
-                        </span>
-                        
+                        <span> 11/18/2024 </span>
                       </div>
                     </div>
                     <!--end::Header-->
-  
+
                     <!--begin::Body-->
                     <div class="card-body pt-2 pb-0 mt-n3">
                       <div class="tab-content mt-5" id="myTabTables1">
@@ -395,11 +347,12 @@
                                 </tr>
                               </thead>
                               <tbody>
-  
                                 <tr>
                                   <th class="px-0 py-3">
                                     <div class="symbol symbol-65px me-5">
-                                      <span class="symbol-label bg-light-primary">
+                                      <span
+                                        class="symbol-label bg-light-primary"
+                                      >
                                         <i
                                           class="ki-duotone ki-message-text-2 fs-1 text-primary"
                                           ><span class="path1"></span
@@ -420,25 +373,24 @@
                                       >100 EGY</span
                                     >
                                   </td>
-  
-  
+
                                   <td>
-                                   <span
-                                   class="text-muted fw-semibold d-block mt-1"
-                                   >                                 1-1-2024
-                                   </span
-                                 >
+                                    <span
+                                      class="text-muted fw-semibold d-block mt-1"
+                                    >
+                                      1-1-2024
+                                    </span>
                                   </td>
-  
+
                                   <style>
                                     a.btn.btn-icon.btn-bg-light.btn-active-primary.btnاطلب.الشحن-sm {
-      background: aquamarine;
-  }
+                                      background: aquamarine;
+                                    }
                                   </style>
-                                  
+
                                   <td class="text-end pe-0">
                                     <a
-                                      href="#"
+                                      href="./order_code.html"
                                       class="btn btn-icon btn-bg-light btn-active-primary btnاطلب الشحن-sm"
                                     >
                                       <i class="ki-duotone ki-arrow-right fs-4"
@@ -448,11 +400,13 @@
                                     </a>
                                   </td>
                                 </tr>
-  
+
                                 <tr>
                                   <th class="px-0 py-3">
                                     <div class="symbol symbol-65px me-5">
-                                      <span class="symbol-label bg-light-primary">
+                                      <span
+                                        class="symbol-label bg-light-primary"
+                                      >
                                         <i
                                           class="ki-duotone ki-message-text-2 fs-1 text-primary"
                                           ><span class="path1"></span
@@ -473,21 +427,20 @@
                                       >100 EGY</span
                                     >
                                   </td>
-  
-  
+
                                   <td>
                                     <span
-                                    class="text-muted fw-semibold d-block mt-1"
-                                    >                                 1-1-2024
-                                    </span
-                                  >
-                                   </td>
+                                      class="text-muted fw-semibold d-block mt-1"
+                                    >
+                                      1-1-2024
+                                    </span>
+                                  </td>
                                   <style>
                                     a.btn.btn-icon.btn-bg-light.btn-active-primary.btnاطلب.الشحن-sm {
-      background: aquamarine;
-  }
+                                      background: aquamarine;
+                                    }
                                   </style>
-                                  
+
                                   <td class="text-end pe-0">
                                     <a
                                       href="#"
@@ -500,12 +453,13 @@
                                     </a>
                                   </td>
                                 </tr>
-  
-  
+
                                 <tr>
                                   <th class="px-0 py-3">
                                     <div class="symbol symbol-65px me-5">
-                                      <span class="symbol-label bg-light-primary">
+                                      <span
+                                        class="symbol-label bg-light-primary"
+                                      >
                                         <i
                                           class="ki-duotone ki-message-text-2 fs-1 text-primary"
                                           ><span class="path1"></span
@@ -526,22 +480,21 @@
                                       >100 EGY</span
                                     >
                                   </td>
-  
-  
+
                                   <td>
                                     <span
-                                    class="text-muted fw-semibold d-block mt-1"
-                                    >                                 1-1-2024
-                                    </span
-                                  >
-                                   </td>
-  
+                                      class="text-muted fw-semibold d-block mt-1"
+                                    >
+                                      1-1-2024
+                                    </span>
+                                  </td>
+
                                   <style>
                                     a.btn.btn-icon.btn-bg-light.btn-active-primary.btnاطلب.الشحن-sm {
-      background: aquamarine;
-  }
+                                      background: aquamarine;
+                                    }
                                   </style>
-                                  
+
                                   <td class="text-end pe-0">
                                     <a
                                       href="#"
@@ -554,33 +507,27 @@
                                     </a>
                                   </td>
                                 </tr>
-                                
                               </tbody>
                             </table>
                           </div>
                           <!--end::Table-->
                         </div>
                         <!--end::Tap pane-->
-  
+
                         <!--begin::Tap pane-->
-                    
+
                         <!--end::Tap pane-->
-  
+
                         <!--begin::Tap pane-->
-                       
+
                         <!--end::Tap pane-->
                       </div>
                     </div>
                   </div>
                   <!--end::Table Widget 1-->
                 </div>
-  
-  
               </div>
             </div>
-
-            
-
 
             <div class="divItem">
               <div class="pay">
@@ -590,148 +537,153 @@
                   <div class="card-body pb-0">
                     <!--begin::Wrapper-->
                     <div class="d-flex flex-column h-100">
+                      <!--  -->
+                      <div class="caer_py">
+                        <!-- عمار -->
+                        <div class="card">
+                          <div class="title_int">
+                            <span>
+                              <svg
+                                width="20"
+                                fill="currentColor"
+                                height="20"
+                                viewBox="0 0 1792 1792"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M1362 1185q0 153-99.5 263.5t-258.5 136.5v175q0 14-9 23t-23 9h-135q-13 0-22.5-9.5t-9.5-22.5v-175q-66-9-127.5-31t-101.5-44.5-74-48-46.5-37.5-17.5-18q-17-21-2-41l103-135q7-10 23-12 15-2 24 9l2 2q113 99 243 125 37 8 74 8 81 0 142.5-43t61.5-122q0-28-15-53t-33.5-42-58.5-37.5-66-32-80-32.5q-39-16-61.5-25t-61.5-26.5-62.5-31-56.5-35.5-53.5-42.5-43.5-49-35.5-58-21-66.5-8.5-78q0-138 98-242t255-134v-180q0-13 9.5-22.5t22.5-9.5h135q14 0 23 9t9 23v176q57 6 110.5 23t87 33.5 63.5 37.5 39 29 15 14q17 18 5 38l-81 146q-8 15-23 16-14 3-27-7-3-3-14.5-12t-39-26.5-58.5-32-74.5-26-85.5-11.5q-95 0-155 43t-60 111q0 26 8.5 48t29.5 41.5 39.5 33 56 31 60.5 27 70 27.5q53 20 81 31.5t76 35 75.5 42.5 62 50 53 63.5 31.5 76.5 13 94z"
+                                ></path>
+                              </svg>
+                            </span>
+                            <p class="title-text">Sales</p>
+                            <p class="percent">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 1792 1792"
+                                fill="currentColor"
+                                height="20"
+                                width="20"
+                              >
+                                <path
+                                  d="M1408 1216q0 26-19 45t-45 19h-896q-26 0-45-19t-19-45 19-45l448-448q19-19 45-19t45 19l448 448q19 19 19 45z"
+                                ></path>
+                              </svg>
+                              20%
+                            </p>
+                          </div>
+                          <div class="data">
+                            <p>39,500</p>
 
-<!--  -->
-<div
-class="caer_py">
+                            <div class="range">
+                              <div class="fill"></div>
+                            </div>
+                          </div>
+                        </div>
 
+                        <style>
+                          .title_int {
+                            display: flex;
+                            align-items: center;
+                          }
 
+                          .title_int span {
+                            position: relative;
+                            padding: 0.5rem;
+                            background-color: #10b981;
+                            width: 1.5rem;
+                            height: 1.5rem;
+                            border-radius: 9999px;
+                          }
 
-<!-- عمار -->
-<div class="card">
-    <div class="title_int">
-      <span>
-        <svg width="20" fill="currentColor" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1362 1185q0 153-99.5 263.5t-258.5 136.5v175q0 14-9 23t-23 9h-135q-13 0-22.5-9.5t-9.5-22.5v-175q-66-9-127.5-31t-101.5-44.5-74-48-46.5-37.5-17.5-18q-17-21-2-41l103-135q7-10 23-12 15-2 24 9l2 2q113 99 243 125 37 8 74 8 81 0 142.5-43t61.5-122q0-28-15-53t-33.5-42-58.5-37.5-66-32-80-32.5q-39-16-61.5-25t-61.5-26.5-62.5-31-56.5-35.5-53.5-42.5-43.5-49-35.5-58-21-66.5-8.5-78q0-138 98-242t255-134v-180q0-13 9.5-22.5t22.5-9.5h135q14 0 23 9t9 23v176q57 6 110.5 23t87 33.5 63.5 37.5 39 29 15 14q17 18 5 38l-81 146q-8 15-23 16-14 3-27-7-3-3-14.5-12t-39-26.5-58.5-32-74.5-26-85.5-11.5q-95 0-155 43t-60 111q0 26 8.5 48t29.5 41.5 39.5 33 56 31 60.5 27 70 27.5q53 20 81 31.5t76 35 75.5 42.5 62 50 53 63.5 31.5 76.5 13 94z"></path>
-        </svg>
-      </span>
-      <p class="title-text">Sales</p>
-      <p class="percent">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" fill="currentColor" height="20" width="20">
-          <path d="M1408 1216q0 26-19 45t-45 19h-896q-26 0-45-19t-19-45 19-45l448-448q19-19 45-19t45 19l448 448q19 19 19 45z"></path>
-        </svg>
-        20%
-      </p>
-    </div>
-    <div class="data">
-      <p>39,500</p>
+                          .title_int span svg {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            color: #ffffff;
+                            height: 1rem;
+                          }
 
-      <div class="range">
-        <div class="fill"></div>
-      </div>
-    </div>
-  </div>
+                          .title-text {
+                            margin-left: 0.5rem;
+                            color: #374151;
+                            font-size: 18px;
+                          }
 
+                          .percent {
+                            margin-left: 0.5rem;
+                            color: #02972f;
+                            font-weight: 600;
+                            display: flex;
+                          }
 
-  <style>
- 
+                          .data {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                          }
 
-    .title_int {
-      display: flex;
-      align-items: center;
-    }
+                          .data p {
+                            margin-top: 1rem;
+                            margin-bottom: 1rem;
+                            font-size: 2.25rem;
+                            line-height: 2.5rem;
+                            font-weight: 700;
+                            text-align: left;
+                          }
 
-    .title_int span {
-      position: relative;
-      padding: 0.5rem;
-      background-color: #10b981;
-      width: 1.5rem;
-      height: 1.5rem;
-      border-radius: 9999px;
-    }
+                          .data .range {
+                            position: relative;
+                            background-color: #e5e7eb;
+                            width: 100%;
+                            height: 0.5rem;
+                            border-radius: 0.25rem;
+                          }
 
-    .title_int span svg {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: #ffffff;
-      height: 1rem;
-    }
-
-    .title-text {
-      margin-left: 0.5rem;
-      color: #374151;
-      font-size: 18px;
-    }
-
-    .percent {
-      margin-left: 0.5rem;
-      color: #02972f;
-      font-weight: 600;
-      display: flex;
-    }
-
-    .data {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-    }
-
-    .data p {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      font-size: 2.25rem;
-      line-height: 2.5rem;
-      font-weight: 700;
-      text-align: left;
-    }
-
-    .data .range {
-      position: relative;
-      background-color: #e5e7eb;
-      width: 100%;
-      height: 0.5rem;
-      border-radius: 0.25rem;
-    }
-
-    .data .range .fill {
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-color: #10b981;
-      width: 76%;
-      height: 100%;
-      border-radius: 0.25rem;
-    }
-    .symbol{
-      background: red !important;
-    }
-  </style>
-
-</div>
+                          .data .range .fill {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            background-color: #10b981;
+                            width: 76%;
+                            height: 100%;
+                            border-radius: 0.25rem;
+                          }
+                          .symbol {
+                            background: red !important;
+                          }
+                        </style>
+                      </div>
                       <!--begin::Text-->
-                
+
                       <div class="flex flex_py">
-                     
-                        
-                      <!--end::Text-->
+                        <!--end::Text-->
 
+                        <div class="payy">
+                          <span class="Sales">شحن رصيد الان</span>
+                          <input
+                            class="form-control form-control-lg form-control-solid"
+                            type="text"
+                            placeholder="max_stone"
+                          />
+                        </div>
 
-                      <div class="payy">
-                        <span class="Sales">شحن رصيد الان</span>
-                        <input class="form-control form-control-lg form-control-solid" type="text" placeholder="max_stone">
-
-                      </div>
-
-                      <!--begin::Action-->
-                      <div class="text-center pt-7">
-                        <a
-                          href="#"
-                          class="btn btn-primary fw-bold fs-6 px-7 py-3"
-                          data-bs-toggle="modal"
-                          data-bs-target="#kt_modal_create_campaign"
-                          >اطلب الشحن</a
-                        >
-                        
-                        
-                      </div>
+                        <!--begin::Action-->
+                        <div class="text-center pt-7">
+                          <a
+                            href="#"
+                            class="btn btn-primary fw-bold fs-6 px-7 py-3"
+                            data-bs-toggle="modal"
+                            data-bs-target="#kt_modal_create_campaign"
+                            >اطلب الشحن</a
+                          >
+                        </div>
                       </div>
 
                       <!--end::Action-->
 
                       <!--begin::Image-->
-                    
+
                       <!--end::Image-->
                     </div>
                     <!--end::Wrapper-->
@@ -740,7 +692,6 @@ class="caer_py">
                 </div>
                 <!--end::Engage Widget 5-->
               </div>
-
             </div>
 
             <!--  -->
@@ -807,53 +758,53 @@ class="caer_py">
       <!--end::Footer-->
     </div>
 
-<script src="../js/header.js"></script>
+    <script src="../js/header.js"></script>
 
-<style>
-  .card{
+    <style>
+      .card {
+        background: #0e121c;
+        color: white;
+      }
+      body {
+        color: white !important;
+      }
+    </style>
 
-    background: #0e121c;
-    color: white;
+    <script>
+      function showDiv(index) {
+        let divs = document.querySelectorAll(".divItem");
+        divs.forEach((div, i) => {
+          div.style.display = i === index ? "block" : "none";
+        });
+      }
+    </script>
 
-  }
-  body{
-    color: white !important;
-  }
-</style>
+    <style>
+      .divItem {
+        display: none;
+      }
+      .divItem:first-child {
+        display: block;
+      }
+      .btn {
+        color: white !important;
+      }
 
-<script>
-  function showDiv(index) {
-    let divs = document.querySelectorAll(".divItem");
-    divs.forEach((div, i) => {
-      div.style.display = i === index ? "block" : "none";
-    });
-  }
-</script>
-
-<style>
-  .divItem {
-    display: none;
-  }
-  .divItem:first-child {
-    display: block;
-  }
-  .btn{
-    color: white !important;
-  }
-
-  .flex_py{display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 5vh 0;
-  }
-  span.Sales {
-    margin-bottom: 2vh;
-}
-a.btn.btn-active-accent.fw-bold:hover{
-  background: none !important;
-}
-</style>
-
-
+      .flex_py {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 5vh 0;
+      }
+      span.Sales {
+        margin-bottom: 2vh;
+      }
+      a.btn.btn-active-accent.fw-bold:hover {
+        background: none !important;
+      }
+      input.form-control.form-control-lg.form-control-solid {
+        background: none !important;
+      }
+    </style>
   </body>
 </html>

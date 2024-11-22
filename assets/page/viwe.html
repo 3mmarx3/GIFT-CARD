@@ -58,8 +58,6 @@
         gap: 20px;
         grid-template-columns: 1fr 1fr;
         border-radius: 10px;
-        padding: 20px;
-        height: 55vh;
         align-items: center;
         justify-content: center;
       }
@@ -96,6 +94,7 @@
         display: flex;
         align-items: center;
         margin-top: 10px;
+        justify-content: space-between;
       }
 
       .price span {
@@ -122,8 +121,8 @@
       .cart {
         margin-top: 20px;
         display: flex;
-        align-items: center;
-        gap: 10px;
+        flex-direction: column;
+        gap: 20px;
       }
 
       .cart input {
@@ -542,17 +541,83 @@
           </p>
           <div class="price">
             <span>$125.00</span>
-            <span class="discount">50%</span>
-            <del>$250.00</del>
+
+            <div class="flex align-items-center">
+              <span>$125.00</span>
+
+              <span class="discount">50%</span>
+            </div>
           </div>
+
+          <div class="block">
+            <input type="text" placeholder="اكتب ID" />
+          </div>
+
           <div class="cart">
-            <input type="number" min="1" value="1" />
+            <div style="display: flex; align-items: center; gap: 5px">
+              <button onclick="decrement()" class="p_m">-</button>
+              <input id="numberInput" type="number" min="1" value="1" />
+              <button onclick="increment()" class="p_m">+</button>
+            </div>
+
+            <script>
+              function increment() {
+                const input = document.getElementById("numberInput");
+                input.value = parseInt(input.value) + 1;
+              }
+
+              function decrement() {
+                const input = document.getElementById("numberInput");
+                if (input.value > input.min) {
+                  input.value = parseInt(input.value) - 1;
+                }
+              }
+            </script>
+
             <button>اضافة الي السلة</button>
           </div>
         </div>
         <!-- comernt -->
 
         <!--  -->
+      </div>
+
+      <div class="description">
+        <h2 class="h2 title">طرق الشحن</h2>
+        <ul>
+          <li>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
+            perferendis facere necessitatibus consectetur magnam asperiores!
+          </li>
+          <li>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
+            perferendis facere necessitatibus consectetur magnam asperiores!
+          </li>
+          <li>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
+            perferendis facere necessitatibus consectetur magnam asperiores!
+          </li>
+          <li>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
+            perferendis facere necessitatibus consectetur magnam asperiores!
+          </li>
+          <li>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
+            perferendis facere necessitatibus consectetur magnam asperiores!
+          </li>
+          <li>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
+            perferendis facere necessitatibus consectetur magnam asperiores!
+          </li>
+          <li>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
+            perferendis facere necessitatibus consectetur magnam asperiores!
+          </li>
+          <li>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
+            perferendis facere necessitatibus consectetur magnam asperiores!
+          </li>
+        </ul>
       </div>
 
       <div class="section-wrapper">
@@ -562,16 +627,8 @@
 
         <section class="section latest-game" aria-label="latest game">
           <div class="container">
-            <p class="section-subtitle">Latest Releases</p>
-
-            <h2 class="h2 section-title" style="color: black">
-              Create &amp; <span class="span">Manage</span>
-            </h2>
-
-            <!-- <div class="Ads_Game">
-            <img src="./assets/images/adss.webp" alt="" />
-          </div> -->
-
+            <h2 class="h2 title">البطاقات المتشابهه</h2>
+            <br />
             <div class="Game">
               <a href="./viwe.html">
                 <div class="card_us">
@@ -587,60 +644,73 @@
                 </div>
               </a>
 
-              <a href="./assets/page/viwe.html">
+              <a href="./viwe.html">
                 <div class="card_us">
                   <div
                     class="card_img"
-                    style="background-image: url(../img/codm-wl_178x178.jpg)"
-                  ></div>
+                    style="background-image: url(../img/bigo_33disc_sa.jpg)"
+                  >
+                    <div class="desc">11%</div>
+                  </div>
                   <div data-v-db7035ba="" class="product-tile__clip-path"></div>
                   <div class="product-tile__item-title">COD:M Web Store</div>
+                  <div class="product-tile__item-title"><p>150,00 EGP</p></div>
                 </div>
               </a>
 
-              <a href="./assets/page/viwe.html">
+              <a href="./viwe.html">
                 <div class="card_us">
                   <div
                     class="card_img"
-                    style="background-image: url(../img/CODM_oct23-tile.png)"
-                  ></div>
+                    style="background-image: url(../img/bigo_33disc_sa.jpg)"
+                  >
+                    <div class="desc">11%</div>
+                  </div>
                   <div data-v-db7035ba="" class="product-tile__clip-path"></div>
                   <div class="product-tile__item-title">COD:M Web Store</div>
+                  <div class="product-tile__item-title"><p>150,00 EGP</p></div>
                 </div>
               </a>
 
-              <a href="#">
+              <a href="./viwe.html">
                 <div class="card_us">
                   <div
                     class="card_img"
-                    style="background-image: url(../img/diablo_tile.png)"
-                  ></div>
+                    style="background-image: url(../img/bigo_33disc_sa.jpg)"
+                  >
+                    <div class="desc">11%</div>
+                  </div>
                   <div data-v-db7035ba="" class="product-tile__clip-path"></div>
                   <div class="product-tile__item-title">COD:M Web Store</div>
+                  <div class="product-tile__item-title"><p>150,00 EGP</p></div>
                 </div>
               </a>
 
-              <a href="#">
+              <a href="./viwe.html">
                 <div class="card_us">
                   <div
                     class="card_img"
-                    style="
-                      background-image: url(../img/goddess-paradise-tile.png);
-                    "
-                  ></div>
+                    style="background-image: url(../img/bigo_33disc_sa.jpg)"
+                  >
+                    <div class="desc">11%</div>
+                  </div>
                   <div data-v-db7035ba="" class="product-tile__clip-path"></div>
                   <div class="product-tile__item-title">COD:M Web Store</div>
+                  <div class="product-tile__item-title"><p>150,00 EGP</p></div>
                 </div>
               </a>
 
-              <a href="#">
+              <a href="./viwe.html">
                 <div class="card_us">
                   <div
                     class="card_img"
-                    style="background-image: url(../img/hago_tile.jpg)"
-                  ></div>
+                    style="background-image: url(../img/bigo_33disc_sa.jpg)"
+                  >
+                    <div class="desc">11%</div>
+                  </div>
                   <div data-v-db7035ba="" class="product-tile__clip-path"></div>
                   <div class="product-tile__item-title">COD:M Web Store</div>
+                  <div class="product-tile__item-title"><p>150,00 EGP</p></div>
                 </div>
               </a>
             </div>
@@ -657,15 +727,14 @@
 
     <style>
       @media screen and (max-width: 992px) {
-        .section-wrapper {
-          margin-top: 20vh;
-        }
-
         .image {
           height: 30vh;
         }
       }
 
+      .description {
+        margin: 5vh 0;
+      }
       .desc {
         color: white;
         font-weight: bold;
@@ -681,6 +750,27 @@
       }
       .product-tile__item-title {
         padding: 0 !important;
+      }
+      .section-title::after {
+        display: none;
+      }
+      h2.h2.title {
+        font-size: xxx-large;
+        color: white;
+        margin: 10px 0;
+      }
+      ul li {
+        font-size: large;
+      }
+      button.p_m {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        /* background: white; */
+        /* color: #025bff; */
       }
     </style>
 
